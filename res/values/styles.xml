@@ -17,4 +17,13 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+    <style name="ThemeSelector" parent="android:Theme.Light">
+        <item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackground</item>
+    </style>
+
+    <style name="WindowTitleBackground">
+        <item name="android:background">@drawable/applabels</item>
+        <item name="android:icon">@android:color/transparent</item>
+    </style>
+
 </resources>

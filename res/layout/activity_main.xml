@@ -2,28 +2,97 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity" >
+    tools:context=".MainScreenActivity" >
+
+    <ImageView
+        android:id="@+id/alertBackground"
+        android:layout_width="450dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/rpsLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/generic_desc"
+        android:scaleType="fitXY"
+        android:src="@drawable/applabelsdark" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/alertLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:text="Unable to Connect to Server" />
+        android:layout_alignTop="@+id/alertBackground"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/alertDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alertLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:maxLines="4"
+        android:scrollbars="vertical"
+        android:text="Information"
+        android:textColor="#FFFFFF" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/schedules"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/alertBackground"
+        android:layout_alignRight="@+id/alertBackground"
+        android:layout_below="@+id/alertDisplay"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/applabels"
+        android:onClick="openSchedule"
+        android:text="Schedules" />
+
+    <Button
+        android:id="@+id/agendaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/schedules"
+        android:layout_alignRight="@+id/schedules"
+        android:layout_below="@+id/schedules"
+        android:layout_marginTop="17dp"
+        android:onClick="openAgenda"
+        android:background="@drawable/applabels"
+        android:text="Agenda" />
+
+    <Button
+        android:id="@+id/callButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/agendaButton"
+        android:layout_alignRight="@+id/agendaButton"
+        android:layout_below="@+id/agendaButton"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/applabels"
+        android:onClick="callPandr"
+        android:text="Call Rec Center" />
+
+    <ImageView
+        android:id="@+id/reloadAlerts"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_alignRight="@+id/alertBackground"
+        android:layout_alignTop="@+id/alertBackground"
+        android:contentDescription="@string/generic_desc"
+        android:onClick="anim"
+        android:src="@drawable/reload" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/callButton"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="14dp"
-        android:text= "Call Parks and Rec" />
+        android:layout_below="@+id/callButton"
+        android:src="@drawable/rec" />
 
 </RelativeLayout>
