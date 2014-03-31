@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
 import org.apache.http.HttpResponse;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
@@ -187,18 +188,18 @@ public class MainScreenActivity extends Activity {
 			try{
 				StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 				StrictMode.setThreadPolicy(policy);
-				Document doc = Jsoup.connect("http://test.nikhilp.org").get();
-				//Element alert = doc.select(null).first();
-				String res = doc.text();
+				Document doc = Jsoup.connect("http://ridgefieldparksandrec.org").get();
+				Element alert = doc.select("div.alert").first();
+				String res = alert.text();
 				//String res = doc.body().text();
-				String regex = "\\s*(\\w\\)|•)\\s*";
+				String regex = "Click here for details.";
 				res = res.replaceAll(regex, "");
 				if (res.contains("No Alerts!")){
 					t.setTextColor(Color.WHITE);
 					t.setText("There are currently no alerts");
-				}    
+				}   
 				else{
-					t.setTextColor(Color.RED);
+					t.setTextColor(Color.WHITE);
 					t.setText(res);
 				}
 			} catch (IOException e) {

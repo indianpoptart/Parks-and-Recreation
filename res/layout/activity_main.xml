@@ -34,47 +34,15 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/alertLabel"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:maxLines="4"
+        android:layout_marginTop="-15dp"
+        android:maxLines="100"
+        android:maxWidth="550px"
+        android:maxHeight="350px"
+        android:gravity="center"
+        android:scrollHorizontally="false"
         android:scrollbars="vertical"
         android:text="Information"
         android:textColor="#FFFFFF" />
-
-    <Button
-        android:id="@+id/schedules"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/alertBackground"
-        android:layout_alignRight="@+id/alertBackground"
-        android:layout_below="@+id/alertDisplay"
-        android:layout_marginTop="56dp"
-        android:background="@drawable/applabels"
-        android:onClick="openSchedule"
-        android:text="Schedules" />
-
-    <Button
-        android:id="@+id/agendaButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/schedules"
-        android:layout_alignRight="@+id/schedules"
-        android:layout_below="@+id/schedules"
-        android:layout_marginTop="17dp"
-        android:onClick="openAgenda"
-        android:background="@drawable/applabels"
-        android:text="Agenda" />
-
-    <Button
-        android:id="@+id/callButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/agendaButton"
-        android:layout_alignRight="@+id/agendaButton"
-        android:layout_below="@+id/agendaButton"
-        android:layout_marginTop="19dp"
-        android:background="@drawable/applabels"
-        android:onClick="callPandr"
-        android:text="Call Rec Center" />
 
     <ImageView
         android:id="@+id/reloadAlerts"
@@ -90,9 +58,46 @@
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/callButton"
         android:layout_alignParentBottom="true"
-        android:layout_below="@+id/callButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
         android:src="@drawable/rec" />
+
+    <Button
+        android:id="@+id/schedules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/alertBackground"
+        android:layout_alignRight="@+id/alertBackground"
+        android:layout_below="@+id/alertBackground"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/applabels"
+        android:onClick="openSchedule"
+        android:text="Schedules" />
+
+    <Button
+        android:id="@+id/agendaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/schedules"
+        android:layout_alignRight="@+id/schedules"
+        android:layout_below="@+id/schedules"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/applabels"
+        android:onClick="openAgenda"
+        android:text="Agenda" />
+
+    <Button
+        android:id="@+id/callButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/agendaButton"
+        android:layout_alignRight="@+id/agendaButton"
+        android:layout_below="@+id/agendaButton"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/applabels"
+        android:onClick="callPandr"
+        android:text="Call Rec Center" />
 
 </RelativeLayout>

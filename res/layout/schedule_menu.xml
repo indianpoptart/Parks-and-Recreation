@@ -39,7 +39,7 @@
         android:layout_marginTop="14dp"
         android:background="@drawable/applabels"
         android:onClick="winterGroupSchedule"
-        android:text="Winter Private Swim" />
+        android:text="Swim Lesson Schedule" />
 
     <Button
         android:id="@+id/button2"
@@ -66,24 +66,12 @@
         android:text="Premium Group Schedule" />
 
     <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/button4"
-        android:layout_marginTop="14dp"
-        android:background="@drawable/applabels"
-        android:onClick="testSchedule"
-        android:text="Winter Swim Test Out" />
-
-    <Button
         android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/button5"
+        android:layout_below="@+id/button4"
         android:layout_marginTop="16dp"
         android:background="@drawable/applabels"
         android:onClick="groupSchedule"
@@ -99,6 +87,6 @@
         android:layout_marginTop="15dp"
         android:background="@drawable/applabels"
         android:onClick="privateSchedule"
-        android:text="Winter Private Swim" />
+        android:text="Spring Private Swim" />
 
 </RelativeLayout>
