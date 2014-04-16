@@ -20,6 +20,7 @@ import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.NetworkOnMainThreadException;
 import android.os.StrictMode;
@@ -39,8 +40,9 @@ import android.widget.Toast;
 import com.github.kevinsawicki.http.HttpRequest.HttpRequestException;
 import com.nikhilparanjape.parksandrec.R;
 
-@SuppressLint("NewApi")
+@SuppressLint({ "NewApi", "CutPasteId" })
 public class MainScreenActivity extends Activity {
+	@SuppressWarnings("unused")
 	private WebView mWebview;
 	public static final String TAG = "MainScreenActivity";
 
@@ -130,7 +132,28 @@ public class MainScreenActivity extends Activity {
 			Toast.makeText(this,"An unknown error has occured!", Toast.LENGTH_LONG).show();
 		}
 	}
-	
+	public String getDeviceName() {
+		  String manufacturer = Build.MANUFACTURER;
+		  String model = Build.MODEL;
+		  if (model.startsWith(manufacturer)) {
+		    return capitalize(model);
+		  } else {
+		    return capitalize(manufacturer) + " " + model;
+		  }
+		}
+
+
+		private String capitalize(String s) {
+		  if (s == null || s.length() == 0) {
+		    return "";
+		  }
+		  char first = s.charAt(0);
+		  if (Character.isUpperCase(first)) {
+		    return s;
+		  } else {
+		    return Character.toUpperCase(first) + s.substring(1);
+		  }
+		} 
 	public void callPandr(View arg0) {
 		Button theButton = (Button)findViewById(R.id.callButton);
 		theButton.setBackgroundResource(R.drawable.label_pressed);
@@ -141,27 +164,28 @@ public class MainScreenActivity extends Activity {
 		}
 		else{
 			try{
+				@SuppressWarnings("unused")
 				Button call = (Button)findViewById(R.id.callButton);
-				//call.setText("2034312755");
-				//Toast.makeText(this,"Calling has been temporarily disabled", Toast.LENGTH_LONG).show();
 				Context context = null;
+				@SuppressWarnings("null")
 				boolean hasTelephony = context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_TELEPHONY);
 				if (hasTelephony) {
-					Intent call1 = new Intent(Intent.ACTION_DIAL);
+					Intent call1 = new Intent(Intent.ACTION_CALL);
 					call1.setData(Uri.parse("tel:2034312755"));
 					startActivity(call1);
 				}
 				else {
-					Toast.makeText(this,"This device doesn't support calling", Toast.LENGTH_LONG).show();
+					Toast.makeText(this, "Your " + getDeviceName() + " doesn't support calling", Toast.LENGTH_LONG).show();
 				}
 			}
 			catch(Exception e){
-				Toast.makeText(this,"An unknown error has occured" + e, Toast.LENGTH_LONG).show();
+				Toast.makeText(this,"An unknown error has occured " + e, Toast.LENGTH_LONG).show();
 			}
 		}
 		theButton.setBackgroundResource(R.drawable.applabels);
 
 	}
+	@SuppressWarnings("unused")
 	private StringBuilder getResult(HttpResponse response) throws IllegalStateException, IOException {
 
 		StringBuilder result = new StringBuilder();
@@ -191,10 +215,9 @@ public class MainScreenActivity extends Activity {
 				Document doc = Jsoup.connect("http://ridgefieldparksandrec.org").get();
 				Element alert = doc.select("div.alert").first();
 				String res = alert.text();
-				//String res = doc.body().text();
 				String regex = "Click here for details.";
 				res = res.replaceAll(regex, "");
-				if (res.contains("No Alerts!")){
+				if (res.contains("")){
 					t.setTextColor(Color.WHITE);
 					t.setText("There are currently no alerts");
 				}   
