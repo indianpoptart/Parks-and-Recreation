@@ -7,6 +7,10 @@ This app is for the Ridgefield Parks and Recreation customers in Ridgefield, Con
 Parks and Rec provides all of the information a customer needs in one place.
 With alerts of closings, the app provides an easy way to stay updated on events taking place at the Rec center.
 
+* [Parks and Rec on the Google Play Store][1] (Free)
+
+[1]: https://play.google.com/store/apps/details?id=com.nikhilparanjape.parksandrec
+
 ## Why go open source?
 
 Just cause I wanted to.
