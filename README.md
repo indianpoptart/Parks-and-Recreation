@@ -1,9 +1,17 @@
 Parks and Recreation App
 ====================
 
+![Pandr](http://images.nikhilp.org/pandr.png)
+
 This app is for the Ridgefield Parks and Recreation customers in Ridgefield, Connecticut.
 Parks and Rec provides all of the information a customer needs in one place.
 With alerts of closings, the app provides an easy way to stay updated on events taking place at the Rec center.
+This app is to be used by the members of the [Ridgefield Parks and Recreation Center][2] 
+
+* [Parks and Rec on the Google Play Store][1] (Free)
+
+[1]: https://play.google.com/store/apps/details?id=com.nikhilparanjape.parksandrec
+[2]: http://ridgefieldparksandrec.org/
 
 ## Why go open source?
 
@@ -20,7 +28,7 @@ If you want to fix bugs, I'll love you forever! If you would like to add some fe
 
 ## License
 
-The Parks and Rec for iOS source code is released under the [MIT License](https://github.com/indianpoptart/Parks-and-Recreation/blob/master/LICENSE).
+The Parks and Rec  source code is released under the [MIT License](https://github.com/indianpoptart/Parks-and-Recreation/blob/master/LICENSE).
 
 While it is not strictly forbidden by the license, I would greatly appreciate it if you didn't redistribute this app exactly the way it is in the App Store. There's nothing stopping you, but please don't do it.
 

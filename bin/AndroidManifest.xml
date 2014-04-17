@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.nikhilparanjape.parksandrec"
     android:versionCode="25"
+<<<<<<< HEAD
     android:versionName="1.4" >
+=======
+    android:versionName="1.4" android:installLocation="auto">
+>>>>>>> FETCH_HEAD
 
     <uses-sdk
         android:minSdkVersion="8"
