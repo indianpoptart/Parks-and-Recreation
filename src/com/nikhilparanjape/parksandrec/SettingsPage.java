@@ -15,7 +15,7 @@ public class SettingsPage extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.settings_page);
 		ActionBar bar = getActionBar();
-		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FF9900")));
+		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFBB33")));
 		bar.setDisplayShowHomeEnabled(false);
 		bar.setTitle("About"); 
 		PackageInfo pInfo;

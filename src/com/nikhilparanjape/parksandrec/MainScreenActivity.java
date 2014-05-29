@@ -45,13 +45,11 @@ public class MainScreenActivity extends Activity {
 	@SuppressWarnings("unused")
 	private WebView mWebview;
 	public static final String TAG = "MainScreenActivity";
-
-	public static final String FRAGTAG = "ImmersiveModeFragment";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		ActionBar bar = getActionBar();
-		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FF9900")));
+		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFBB33")));
 		bar.setDisplayShowHomeEnabled(false);
 		bar.setTitle("Ridgefield Parks and Rec"); 
 		setContentView(R.layout.activity_main);
@@ -66,7 +64,7 @@ public class MainScreenActivity extends Activity {
 			}
 		}catch(Exception e){
 			TextView t = (TextView)findViewById(R.id.alertDisplay);
-			t.setText("Phone call failed!");
+			t.setText("Error");
 		}
 		Button theButton = (Button)findViewById(R.id.schedules);
 		theButton.setBackgroundResource(R.drawable.applabels);
@@ -85,6 +83,9 @@ public class MainScreenActivity extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle item selection
 		switch (item.getItemId()) {
+		case R.id.action_refresh:
+            rLoad(null);
+            return true;
 		case R.id.action_settings:
 			Intent intent = new Intent(MainScreenActivity.this, SettingsPage.class);
 			startActivity(intent);
@@ -159,7 +160,7 @@ public class MainScreenActivity extends Activity {
 		theButton.setBackgroundResource(R.drawable.label_pressed);
 		TelephonyManager tm= (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
 		if(tm.getPhoneType()==TelephonyManager.PHONE_TYPE_NONE){
-			Toast.makeText(this,"This device doesn't support calling", Toast.LENGTH_LONG).show();
+			Toast.makeText(this, "Your " + getDeviceName() + " doesn't support calling", Toast.LENGTH_LONG).show();
 
 		}
 		else{
@@ -216,14 +217,14 @@ public class MainScreenActivity extends Activity {
 				Element alert = doc.select("div.alert").first();
 				String res = alert.text();
 				String regex = "Click here for details.";
-				res = res.replaceAll(regex, "");
+				res = res.replaceAll(regex, "Check the agenda for more information");
 				if (res.contains("")){
 					t.setTextColor(Color.WHITE);
-					t.setText("There are currently no alerts");
+					t.setText(res);
 				}   
 				else{
 					t.setTextColor(Color.WHITE);
-					t.setText(res);
+					t.setText("There are currently no alerts");
 				}
 			} catch (IOException e) {
 				e.printStackTrace();
@@ -234,11 +235,7 @@ public class MainScreenActivity extends Activity {
 				t.setTextColor(Color.RED);
 				t.setText("Error!");
 			}
-
-
-
 		}
-
 	}
 
 	private boolean doubleBackToExitPressedOnce = false;
