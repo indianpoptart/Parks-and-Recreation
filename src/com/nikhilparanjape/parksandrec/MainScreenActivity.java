@@ -14,6 +14,7 @@ import org.jsoup.nodes.Element;
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -29,11 +30,9 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.webkit.WebView;
 import android.widget.Button;
-import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -44,6 +43,7 @@ import com.nikhilparanjape.parksandrec.R;
 public class MainScreenActivity extends Activity {
 	@SuppressWarnings("unused")
 	private WebView mWebview;
+	private ProgressBar spinner;
 	public static final String TAG = "MainScreenActivity";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -51,16 +51,20 @@ public class MainScreenActivity extends Activity {
 		ActionBar bar = getActionBar();
 		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFBB33")));
 		bar.setDisplayShowHomeEnabled(false);
-		bar.setTitle("Ridgefield Parks and Rec"); 
+		bar.setTitle("Parks and Rec"); 
+		
 		setContentView(R.layout.activity_main);
-
+		spinner = (ProgressBar)findViewById(R.id.refreshBar);
+		
 		try{
 			if(!CheckNetwork.isInternetAvailable(MainScreenActivity.this)){
 				TextView t = (TextView)findViewById(R.id.alertDisplay);
 				t.setTextColor(Color.RED);
 				t.setText("Alert! No Internet Connection!");
+				spinner.setVisibility(View.GONE);
 			}   
 			else{
+				spinner.setVisibility(View.GONE);
 			}
 		}catch(Exception e){
 			TextView t = (TextView)findViewById(R.id.alertDisplay);
@@ -133,6 +137,26 @@ public class MainScreenActivity extends Activity {
 			Toast.makeText(this,"An unknown error has occured!", Toast.LENGTH_LONG).show();
 		}
 	}
+	private ProgressDialog progress;
+
+
+
+	public void showLoadingDialog() {
+
+	    if (progress == null) {
+	        progress = new ProgressDialog(this);
+	        progress.setTitle("Loading");
+	        progress.setMessage("Please Wait");
+	    }
+	    progress.show();
+	}
+
+	public void dismissLoadingDialog() {
+
+	    if (progress != null && progress.isShowing()) {
+	        dismissLoadingDialog();
+	    }
+	}
 	public String getDeviceName() {
 		  String manufacturer = Build.MANUFACTURER;
 		  String model = Build.MODEL;
@@ -181,6 +205,10 @@ public class MainScreenActivity extends Activity {
 			}
 			catch(Exception e){
 				Toast.makeText(this,"An unknown error has occured " + e, Toast.LENGTH_LONG).show();
+				if(getDeviceName().equals("Unknown sdk")){
+					Toast.makeText(this, "Your emulator probably doesn't support calling", Toast.LENGTH_LONG).show();
+				}
+				
 			}
 		}
 		theButton.setBackgroundResource(R.drawable.applabels);
@@ -196,18 +224,13 @@ public class MainScreenActivity extends Activity {
 			result.append(output);
 		return result;
 	}
-	public void anim(View v){
-		ImageView animationTarget = (ImageView) this.findViewById(R.id.reloadAlerts);
-		Animation animation = AnimationUtils.loadAnimation(this, R.animator.loading);
-		animationTarget.startAnimation(animation);
-		rLoad(null);
-	}
 	public void rLoad(View view) throws HttpRequestException{
-
+		
 		TextView t = (TextView)findViewById(R.id.alertDisplay);
 		if(!CheckNetwork.isInternetAvailable(MainScreenActivity.this)){
 			t.setTextColor(Color.RED);
 			t.setText("Network Disconnected!");
+			spinner.setVisibility(View.VISIBLE);
 		}   
 		else{
 			try{
@@ -216,13 +239,15 @@ public class MainScreenActivity extends Activity {
 				Document doc = Jsoup.connect("http://ridgefieldparksandrec.org").get();
 				Element alert = doc.select("div.alert").first();
 				String res = alert.text();
-				String regex = "Click here for details.";
+				String regex = ", click here for details.";
 				res = res.replaceAll(regex, "Check the agenda for more information");
 				if (res.contains("")){
+					spinner.setVisibility(View.GONE);
 					t.setTextColor(Color.WHITE);
 					t.setText(res);
 				}   
 				else{
+					spinner.setVisibility(View.GONE);
 					t.setTextColor(Color.WHITE);
 					t.setText("There are currently no alerts");
 				}
@@ -235,6 +260,7 @@ public class MainScreenActivity extends Activity {
 				t.setTextColor(Color.RED);
 				t.setText("Error!");
 			}
+			spinner.setVisibility(View.GONE);
 		}
 	}
 
@@ -249,6 +275,7 @@ public class MainScreenActivity extends Activity {
 		theButton.setBackgroundResource(R.drawable.applabels);
 		Button agendaBut = (Button)findViewById(R.id.agendaButton);
 		agendaBut.setBackgroundResource(R.drawable.applabels);
+		dismissLoadingDialog();
 	}
 	@Override
 	public void onBackPressed() {

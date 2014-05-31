@@ -17,7 +17,7 @@ public class AgendaPage extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		ActionBar bar = getActionBar();
 		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFBB33")));
-		bar.setDisplayShowHomeEnabled(true);
+		bar.setDisplayShowHomeEnabled(false);
 		bar.setTitle("Agenda");
 		super.onCreate(savedInstanceState);
 
