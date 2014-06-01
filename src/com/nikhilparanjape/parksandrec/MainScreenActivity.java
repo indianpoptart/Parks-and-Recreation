@@ -206,7 +206,7 @@ public class MainScreenActivity extends Activity {
 			catch(Exception e){
 				Toast.makeText(this,"An unknown error has occured " + e, Toast.LENGTH_LONG).show();
 				if(getDeviceName().equals("Unknown sdk")){
-					Toast.makeText(this, "Your emulator probably doesn't support calling", Toast.LENGTH_LONG).show();
+					Toast.makeText(this, "Lol, emulator :)", Toast.LENGTH_LONG).show();
 				}
 				
 			}
