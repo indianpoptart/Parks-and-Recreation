@@ -195,7 +195,7 @@ public class MainScreenActivity extends Activity {
 				@SuppressWarnings("null")
 				boolean hasTelephony = context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_TELEPHONY);
 				if (hasTelephony) {
-					Intent call1 = new Intent(Intent.ACTION_CALL);
+					Intent call1 = new Intent(Intent.ACTION_DIAL);
 					call1.setData(Uri.parse("tel:2034312755"));
 					startActivity(call1);
 				}
