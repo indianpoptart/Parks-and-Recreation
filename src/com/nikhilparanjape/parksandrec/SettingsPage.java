@@ -22,8 +22,8 @@ public class SettingsPage extends Activity {
 		try {
 			pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
 			String version = pInfo.versionName;
-			TextView vT = (TextView)findViewById(R.id.versionText);
-			vT.setText("Version " + version);
+			TextView v = (TextView)findViewById(R.id.versionText);
+			v.setText("Version " + version);
 		} catch (NameNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -1,18 +1,22 @@
 package com.nikhilparanjape.parksandrec;
 
 import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebSettings.RenderPriority;
 import android.webkit.WebView;
 import android.widget.Toast;
 
-@SuppressLint("SetJavaScriptEnabled")
+@SuppressLint({ "SetJavaScriptEnabled", "InlinedApi" })
 public class AgendaPage extends Activity {
+	
 	@SuppressWarnings("deprecation")
 	public void onCreate(Bundle savedInstanceState) {
 		ActionBar bar = getActionBar();
@@ -20,8 +24,6 @@ public class AgendaPage extends Activity {
 		bar.setDisplayShowHomeEnabled(false);
 		bar.setTitle("Agenda");
 		super.onCreate(savedInstanceState);
-
-		
 		
 		if(CheckNetwork.isInternetAvailable(AgendaPage.this)) //returns true if internet available
 		{
@@ -35,13 +37,7 @@ public class AgendaPage extends Activity {
 			Toast.makeText(AgendaPage.this,"Loading...",Toast.LENGTH_LONG).show();
 		}   
 		else
-		{
-
 			Toast.makeText(AgendaPage.this,"No Internet Connection",Toast.LENGTH_LONG).show();
-		}  
-
-	}
-	public void halt(){
 
 	}
 
