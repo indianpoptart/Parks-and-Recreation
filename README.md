@@ -34,6 +34,7 @@ If you want to fix bugs, I'll love you forever! If you would like to add some fe
 * HTC One V
 * HTC Thunderbolt
 * LG Optimus S/V (Broken)
+* Motorola DROID RAZR MAXX
 * Moto X
 * Nexus 4
 * Nexus 5
