@@ -195,9 +195,9 @@ public class MainScreenActivity extends Activity {
 				@SuppressWarnings("null")
 				boolean hasTelephony = context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_TELEPHONY);
 				if (hasTelephony) {
-					Intent call1 = new Intent(Intent.ACTION_DIAL);
-					call1.setData(Uri.parse("tel:2034312755"));
-					startActivity(call1);
+					Intent callIntent = new Intent(Intent.ACTION_CALL);
+				    callIntent.setData(Uri.parse("tel:2034312755"));
+				    startActivity(callIntent);
 				}
 				else {
 					Toast.makeText(this, "Your " + getDeviceName() + " doesn't support calling", Toast.LENGTH_LONG).show();
