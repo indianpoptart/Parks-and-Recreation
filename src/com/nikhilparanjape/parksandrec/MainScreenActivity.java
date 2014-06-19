@@ -190,7 +190,7 @@ public class MainScreenActivity extends Activity {
 		else{
 			try{
 				@SuppressWarnings("unused")
-				Button call = (Button)findViewById(R.id.callButton);
+				Button call = (Button)arg0.findViewById(R.id.callButton);
 				Context context = null;
 				@SuppressWarnings("null")
 				boolean hasTelephony = context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_TELEPHONY);
@@ -204,7 +204,7 @@ public class MainScreenActivity extends Activity {
 				}
 			}
 			catch(Exception e){
-				Toast.makeText(this,"An unknown error has occured " + e, Toast.LENGTH_LONG).show();
+				Toast.makeText(this, "Error: Your " + getDeviceName() + " may not support calling", Toast.LENGTH_LONG).show();
 				if(getDeviceName().equals("Unknown sdk")){
 					Toast.makeText(this, "Lol, emulator :)", Toast.LENGTH_LONG).show();
 				}
