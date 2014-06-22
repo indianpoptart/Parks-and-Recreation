@@ -75,6 +75,7 @@ public class MainScreenActivity extends Activity {
 		Button agendaBut = (Button)findViewById(R.id.agendaButton);
 		agendaBut.setText("Agenda");
 		agendaBut.setBackgroundResource(R.drawable.applabels);
+		//Button callButton = (Button)findViewById(R.id.callButton);
 
 	}
 	@Override
@@ -185,7 +186,7 @@ public class MainScreenActivity extends Activity {
 		TelephonyManager tm= (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
 		if(tm.getPhoneType()==TelephonyManager.PHONE_TYPE_NONE){
 			Toast.makeText(this, "Your " + getDeviceName() + " doesn't support calling", Toast.LENGTH_LONG).show();
-
+			theButton.setText("Calling Unsupported");
 		}
 		else{
 			try{
@@ -201,9 +202,12 @@ public class MainScreenActivity extends Activity {
 				}
 				else {
 					Toast.makeText(this, "Your " + getDeviceName() + " doesn't support calling", Toast.LENGTH_LONG).show();
+					call.setText("Calling Unsupported");
 				}
 			}
 			catch(Exception e){
+				Button b = (Button)arg0.findViewById(R.id.callButton);
+				b.setText("Call Error");
 				Toast.makeText(this, "Error: Your " + getDeviceName() + " may not support calling", Toast.LENGTH_LONG).show();
 				if(getDeviceName().equals("Unknown sdk")){
 					Toast.makeText(this, "Lol, emulator :)", Toast.LENGTH_LONG).show();
