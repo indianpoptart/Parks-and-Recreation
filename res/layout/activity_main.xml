@@ -44,25 +44,6 @@
         android:text="Information"
         android:textColor="#FFFFFF" />
 
-    <ImageView
-        android:id="@+id/reloadAlerts"
-        android:layout_width="50sp"
-        android:layout_height="50sp"
-        android:layout_alignRight="@+id/alertBackground"
-        android:layout_alignTop="@+id/alertBackground"
-        android:contentDescription="@string/generic_desc"
-        android:onClick="anim"
-        android:src="@drawable/reload" />
-
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:src="@drawable/rec" />
-
     <Button
         android:id="@+id/schedules"
         android:layout_width="wrap_content"
@@ -99,5 +80,21 @@
         android:background="@drawable/applabels"
         android:onClick="callPandr"
         android:text="Call Rec Center" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/callButton"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/callButton"
+        android:src="@drawable/rec" />
+
+    <ProgressBar
+        android:id="@+id/refreshBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/schedules"
+        android:layout_alignTop="@+id/alertBackground" />
 
 </RelativeLayout>

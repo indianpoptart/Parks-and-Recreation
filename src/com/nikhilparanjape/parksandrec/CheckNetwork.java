@@ -11,10 +11,10 @@ public class CheckNetwork {
 
 
 
-	public static boolean isInternetAvailable(Context context)
+	public static boolean isInternetAvailable(Context c)
 	{
 	    NetworkInfo info = (NetworkInfo) ((ConnectivityManager)
-	    context.getSystemService(Context.CONNECTIVITY_SERVICE)).getActiveNetworkInfo();
+	    c.getSystemService(Context.CONNECTIVITY_SERVICE)).getActiveNetworkInfo();
 
 	    if (info == null)
 	    {

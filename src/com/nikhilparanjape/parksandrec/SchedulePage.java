@@ -6,6 +6,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 import com.nikhilparanjape.parksandrec.R;
+
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -30,7 +31,7 @@ public class SchedulePage extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		ActionBar bar = getActionBar();
-		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FF9900")));
+		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFBB33")));
 		bar.setDisplayShowHomeEnabled(false);
 		bar.setTitle("Schedules"); 
 		setContentView(R.layout.schedule_menu);
@@ -41,7 +42,7 @@ public class SchedulePage extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		MenuInflater inflater = getMenuInflater();
-		inflater.inflate(R.menu.action_bar, menu);
+		inflater.inflate(R.menu.refresh, menu);
 		return true;
 	} 
 	@Override
@@ -55,6 +56,7 @@ public class SchedulePage extends Activity {
 			return super.onOptionsItemSelected(item);
 		}
 	}
+	@SuppressWarnings("deprecation")
 	public void poolSchedule(View arg0) {
 		//Pool schedule opener
 		Toast.makeText(this,"Loading Schedule...", Toast.LENGTH_LONG).show();
@@ -91,6 +93,7 @@ public class SchedulePage extends Activity {
 		}    
 
 	}
+	@SuppressWarnings("deprecation")
 	public void gymSchedule(View arg0) {
 		//gym schedule opener
 		Toast.makeText(this,"Call before coming to check for availablility", Toast.LENGTH_LONG).show();
@@ -128,6 +131,7 @@ public class SchedulePage extends Activity {
 		}    
 
 	}
+	@SuppressWarnings("deprecation")
 	public void groupSchedule(View arg0) {
 		//Pool schedule opener
 		Toast.makeText(this,"Loading Schedule...", Toast.LENGTH_LONG).show();
@@ -164,6 +168,7 @@ public class SchedulePage extends Activity {
 		}    
 
 	}
+	@SuppressWarnings("deprecation")
 	public void premGroupSchedule(View arg0) {
 		//Pool schedule opener
 		Toast.makeText(this,"Loading Schedule...", Toast.LENGTH_LONG).show();
@@ -200,6 +205,7 @@ public class SchedulePage extends Activity {
 		}    
 
 	}
+	@SuppressWarnings("deprecation")
 	public void winterGroupSchedule(View arg0) {
 		//Pool schedule opener
 		Toast.makeText(this,"Loading Schedule...", Toast.LENGTH_LONG).show();
@@ -236,6 +242,7 @@ public class SchedulePage extends Activity {
 		}    
 
 	}
+	@SuppressWarnings("deprecation")
 	public void privateSchedule(View arg0) {
 		//Pool schedule opener
 		Toast.makeText(this,"Loading Schedule...", Toast.LENGTH_LONG).show();
@@ -272,6 +279,7 @@ public class SchedulePage extends Activity {
 		}    
 
 	}
+	@SuppressWarnings("deprecation")
 	public void testSchedule(View arg0) {
 		//Pool schedule opener
 		Toast.makeText(this,"Loading Schedule...", Toast.LENGTH_LONG).show();

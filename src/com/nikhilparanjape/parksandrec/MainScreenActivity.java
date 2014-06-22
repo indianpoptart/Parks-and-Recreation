@@ -14,12 +14,14 @@ import org.jsoup.nodes.Element;
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.NetworkOnMainThreadException;
 import android.os.StrictMode;
@@ -28,49 +30,52 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.webkit.WebView;
 import android.widget.Button;
-import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.github.kevinsawicki.http.HttpRequest.HttpRequestException;
 import com.nikhilparanjape.parksandrec.R;
 
-@SuppressLint("NewApi")
+@SuppressLint({ "NewApi", "CutPasteId" })
 public class MainScreenActivity extends Activity {
+	@SuppressWarnings("unused")
 	private WebView mWebview;
+	private ProgressBar spinner;
 	public static final String TAG = "MainScreenActivity";
-
-	public static final String FRAGTAG = "ImmersiveModeFragment";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		ActionBar bar = getActionBar();
-		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FF9900")));
+		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFBB33")));
 		bar.setDisplayShowHomeEnabled(false);
-		bar.setTitle("Ridgefield Parks and Rec"); 
+		bar.setTitle("Parks and Rec"); 
+		
 		setContentView(R.layout.activity_main);
-
+		spinner = (ProgressBar)findViewById(R.id.refreshBar);
+		
 		try{
 			if(!CheckNetwork.isInternetAvailable(MainScreenActivity.this)){
 				TextView t = (TextView)findViewById(R.id.alertDisplay);
 				t.setTextColor(Color.RED);
 				t.setText("Alert! No Internet Connection!");
+				spinner.setVisibility(View.GONE);
 			}   
 			else{
+				spinner.setVisibility(View.GONE);
 			}
 		}catch(Exception e){
 			TextView t = (TextView)findViewById(R.id.alertDisplay);
-			t.setText("Phone call failed!");
+			t.setText("Error");
 		}
 		Button theButton = (Button)findViewById(R.id.schedules);
 		theButton.setBackgroundResource(R.drawable.applabels);
 		Button agendaBut = (Button)findViewById(R.id.agendaButton);
 		agendaBut.setText("Agenda");
 		agendaBut.setBackgroundResource(R.drawable.applabels);
+		//Button callButton = (Button)findViewById(R.id.callButton);
 
 	}
 	@Override
@@ -83,6 +88,9 @@ public class MainScreenActivity extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle item selection
 		switch (item.getItemId()) {
+		case R.id.action_refresh:
+            rLoad(null);
+            return true;
 		case R.id.action_settings:
 			Intent intent = new Intent(MainScreenActivity.this, SettingsPage.class);
 			startActivity(intent);
@@ -130,38 +138,87 @@ public class MainScreenActivity extends Activity {
 			Toast.makeText(this,"An unknown error has occured!", Toast.LENGTH_LONG).show();
 		}
 	}
-	
+	private ProgressDialog progress;
+
+
+
+	public void showLoadingDialog() {
+
+	    if (progress == null) {
+	        progress = new ProgressDialog(this);
+	        progress.setTitle("Loading");
+	        progress.setMessage("Please Wait");
+	    }
+	    progress.show();
+	}
+
+	public void dismissLoadingDialog() {
+
+	    if (progress != null && progress.isShowing()) {
+	        dismissLoadingDialog();
+	    }
+	}
+	public String getDeviceName() {
+		  String manufacturer = Build.MANUFACTURER;
+		  String model = Build.MODEL;
+		  if (model.startsWith(manufacturer)) {
+		    return capitalize(model);
+		  } else {
+		    return capitalize(manufacturer) + " " + model;
+		  }
+		}
+
+
+		private String capitalize(String s) {
+		  if (s == null || s.length() == 0) {
+		    return "";
+		  }
+		  char first = s.charAt(0);
+		  if (Character.isUpperCase(first)) {
+		    return s;
+		  } else {
+		    return Character.toUpperCase(first) + s.substring(1);
+		  }
+		} 
 	public void callPandr(View arg0) {
 		Button theButton = (Button)findViewById(R.id.callButton);
 		theButton.setBackgroundResource(R.drawable.label_pressed);
 		TelephonyManager tm= (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
 		if(tm.getPhoneType()==TelephonyManager.PHONE_TYPE_NONE){
-			Toast.makeText(this,"This device doesn't support calling", Toast.LENGTH_LONG).show();
-
+			Toast.makeText(this, "Your " + getDeviceName() + " doesn't support calling", Toast.LENGTH_LONG).show();
+			theButton.setText("Calling Unsupported");
 		}
 		else{
 			try{
-				Button call = (Button)findViewById(R.id.callButton);
-				//call.setText("2034312755");
-				//Toast.makeText(this,"Calling has been temporarily disabled", Toast.LENGTH_LONG).show();
+				@SuppressWarnings("unused")
+				Button call = (Button)arg0.findViewById(R.id.callButton);
 				Context context = null;
+				@SuppressWarnings("null")
 				boolean hasTelephony = context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_TELEPHONY);
 				if (hasTelephony) {
-					Intent call1 = new Intent(Intent.ACTION_DIAL);
-					call1.setData(Uri.parse("tel:2034312755"));
-					startActivity(call1);
+					Intent callIntent = new Intent(Intent.ACTION_CALL);
+				    callIntent.setData(Uri.parse("tel:2034312755"));
+				    startActivity(callIntent);
 				}
 				else {
-					Toast.makeText(this,"This device doesn't support calling", Toast.LENGTH_LONG).show();
+					Toast.makeText(this, "Your " + getDeviceName() + " doesn't support calling", Toast.LENGTH_LONG).show();
+					call.setText("Calling Unsupported");
 				}
 			}
 			catch(Exception e){
-				Toast.makeText(this,"An unknown error has occured" + e, Toast.LENGTH_LONG).show();
+				Button b = (Button)arg0.findViewById(R.id.callButton);
+				b.setText("Call Error");
+				Toast.makeText(this, "Error: Your " + getDeviceName() + " may not support calling", Toast.LENGTH_LONG).show();
+				if(getDeviceName().equals("Unknown sdk")){
+					Toast.makeText(this, "Lol, emulator :)", Toast.LENGTH_LONG).show();
+				}
+				
 			}
 		}
 		theButton.setBackgroundResource(R.drawable.applabels);
 
 	}
+	@SuppressWarnings("unused")
 	private StringBuilder getResult(HttpResponse response) throws IllegalStateException, IOException {
 
 		StringBuilder result = new StringBuilder();
@@ -171,18 +228,13 @@ public class MainScreenActivity extends Activity {
 			result.append(output);
 		return result;
 	}
-	public void anim(View v){
-		ImageView animationTarget = (ImageView) this.findViewById(R.id.reloadAlerts);
-		Animation animation = AnimationUtils.loadAnimation(this, R.animator.loading);
-		animationTarget.startAnimation(animation);
-		rLoad(null);
-	}
 	public void rLoad(View view) throws HttpRequestException{
-
+		
 		TextView t = (TextView)findViewById(R.id.alertDisplay);
 		if(!CheckNetwork.isInternetAvailable(MainScreenActivity.this)){
 			t.setTextColor(Color.RED);
 			t.setText("Network Disconnected!");
+			spinner.setVisibility(View.VISIBLE);
 		}   
 		else{
 			try{
@@ -191,16 +243,17 @@ public class MainScreenActivity extends Activity {
 				Document doc = Jsoup.connect("http://ridgefieldparksandrec.org").get();
 				Element alert = doc.select("div.alert").first();
 				String res = alert.text();
-				//String res = doc.body().text();
-				String regex = "Click here for details.";
-				res = res.replaceAll(regex, "");
-				if (res.contains("No Alerts!")){
-					t.setTextColor(Color.WHITE);
-					t.setText("There are currently no alerts");
-				}   
-				else{
+				String regex = ", click here for details.";
+				res = res.replaceAll(regex, "Check the agenda for more information");
+				if (res.contains("")){
+					spinner.setVisibility(View.GONE);
 					t.setTextColor(Color.WHITE);
 					t.setText(res);
+				}   
+				else{
+					spinner.setVisibility(View.GONE);
+					t.setTextColor(Color.WHITE);
+					t.setText("There are currently no alerts");
 				}
 			} catch (IOException e) {
 				e.printStackTrace();
@@ -211,11 +264,8 @@ public class MainScreenActivity extends Activity {
 				t.setTextColor(Color.RED);
 				t.setText("Error!");
 			}
-
-
-
+			spinner.setVisibility(View.GONE);
 		}
-
 	}
 
 	private boolean doubleBackToExitPressedOnce = false;
@@ -229,6 +279,7 @@ public class MainScreenActivity extends Activity {
 		theButton.setBackgroundResource(R.drawable.applabels);
 		Button agendaBut = (Button)findViewById(R.id.agendaButton);
 		agendaBut.setBackgroundResource(R.drawable.applabels);
+		dismissLoadingDialog();
 	}
 	@Override
 	public void onBackPressed() {
