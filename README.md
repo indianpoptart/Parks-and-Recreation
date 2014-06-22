@@ -5,7 +5,7 @@ Parks and Recreation App
 
 Current stable relese: v1.9
 
-Current unstable release: ~~2.0a~~
+Current unstable release: ~~v2.0a~~
 
 Upcoming release: v2.0
 
