@@ -83,7 +83,7 @@ public class MainScreenActivity extends Activity {
 		MenuInflater inflater = getMenuInflater();
 		inflater.inflate(R.menu.action_bar, menu);
 		return true;
-	} 
+	}
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle item selection
@@ -231,10 +231,11 @@ public class MainScreenActivity extends Activity {
 	public void rLoad(View view) throws HttpRequestException{
 		
 		TextView t = (TextView)findViewById(R.id.alertDisplay);
+		ProgressBar mProgress = (ProgressBar) findViewById(R.id.refreshBar);
 		if(!CheckNetwork.isInternetAvailable(MainScreenActivity.this)){
 			t.setTextColor(Color.RED);
 			t.setText("Network Disconnected!");
-			spinner.setVisibility(View.VISIBLE);
+			mProgress.setVisibility(View.VISIBLE);
 		}   
 		else{
 			try{
@@ -246,12 +247,12 @@ public class MainScreenActivity extends Activity {
 				String regex = ", click here for details.";
 				res = res.replaceAll(regex, "Check the agenda for more information");
 				if (res.contains("")){
-					spinner.setVisibility(View.GONE);
+					mProgress.setVisibility(View.GONE);
 					t.setTextColor(Color.WHITE);
 					t.setText(res);
 				}   
 				else{
-					spinner.setVisibility(View.GONE);
+					mProgress.setVisibility(View.GONE);
 					t.setTextColor(Color.WHITE);
 					t.setText("There are currently no alerts");
 				}
