@@ -56,265 +56,63 @@ public class SchedulePage extends Activity {
 			return super.onOptionsItemSelected(item);
 		}
 	}
-	@SuppressWarnings("deprecation")
+	public void mainSchedule(String pdf){
+		//Pool schedule opener
+		Toast.makeText(this,"Loading Schedule...", Toast.LENGTH_LONG).show();
+		AssetManager assetManager = getAssets();
+
+		InputStream in = null;
+		OutputStream out = null;
+		File file = new File(getFilesDir(), pdf);
+		try {
+			in = assetManager.open(pdf);
+			out = openFileOutput(file.getName(), Context.MODE_WORLD_READABLE);
+
+			copyFile(in, out);
+			in.close();
+			in = null;
+			out.flush();
+			out.close();
+			out = null;
+		} catch (Exception e) {
+			Log.e("tag", e.getMessage());
+		}
+		Intent intent = new Intent(Intent.ACTION_VIEW);
+		intent.setDataAndType(
+				Uri.parse("file://" + getFilesDir() + "/" + pdf),
+				"application/pdf");
+
+		try {
+			startActivity(intent);
+		} catch (ActivityNotFoundException e) {
+			Toast.makeText(this,"Please download a PDF reader first", Toast.LENGTH_LONG).show();
+			Intent i = new Intent(android.content.Intent.ACTION_VIEW);
+			i.setData(Uri.parse("https://play.google.com/store/search?q=pdf+reader&c=apps"));
+			startActivity(i);
+		}    
+
+	}
 	public void poolSchedule(View arg0) {
-		//Pool schedule opener
-		Toast.makeText(this,"Loading Schedule...", Toast.LENGTH_LONG).show();
-		AssetManager assetManager = getAssets();
-
-		InputStream in = null;
-		OutputStream out = null;
-		File file = new File(getFilesDir(), "pool.pdf");
-		try {
-			in = assetManager.open("pool.pdf");
-			out = openFileOutput(file.getName(), Context.MODE_WORLD_READABLE);
-
-			copyFile(in, out);
-			in.close();
-			in = null;
-			out.flush();
-			out.close();
-			out = null;
-		} catch (Exception e) {
-			Log.e("tag", e.getMessage());
-		}
-		Intent intent = new Intent(Intent.ACTION_VIEW);
-		intent.setDataAndType(
-				Uri.parse("file://" + getFilesDir() + "/pool.pdf"),
-				"application/pdf");
-
-		try {
-			startActivity(intent);
-		} catch (ActivityNotFoundException e) {
-			Toast.makeText(this,"Please download a PDF reader first", Toast.LENGTH_LONG).show();
-			Intent i = new Intent(android.content.Intent.ACTION_VIEW);
-			i.setData(Uri.parse("https://play.google.com/store/search?q=pdf+reader&c=apps"));
-			startActivity(i);
-		}    
-
+		mainSchedule("pool.pdf");
 	}
-	@SuppressWarnings("deprecation")
 	public void gymSchedule(View arg0) {
-		//gym schedule opener
 		Toast.makeText(this,"Call before coming to check for availablility", Toast.LENGTH_LONG).show();
-		AssetManager assetManager = getAssets();
-		String pdf = "gym.pdf";
-		InputStream in = null;
-		OutputStream out = null;
-		File file = new File(getFilesDir(), pdf);
-		try {
-			in = assetManager.open(pdf);
-			out = openFileOutput(file.getName(), Context.MODE_WORLD_READABLE);
-
-			copyFile(in, out);
-			in.close();
-			in = null;
-			out.flush();
-			out.close();
-			out = null;
-		} catch (Exception e) {
-			Log.e("tag", e.getMessage());
-		}
-		Intent intent = new Intent(Intent.ACTION_VIEW);
-		Toast.makeText(this,"Call before coming to check for availablility", Toast.LENGTH_LONG).show();
-		intent.setDataAndType(
-				Uri.parse("file://" + getFilesDir() + "/" + pdf),
-				"application/pdf");
-
-		try {
-			startActivity(intent);
-		} catch (ActivityNotFoundException e) {
-			Toast.makeText(this,"Please download a PDF reader first", Toast.LENGTH_LONG).show();
-			Intent i = new Intent(android.content.Intent.ACTION_VIEW);
-			i.setData(Uri.parse("https://play.google.com/store/search?q=pdf+reader&c=apps"));
-			startActivity(i);
-		}    
-
+		mainSchedule("gym.pdf");
 	}
-	@SuppressWarnings("deprecation")
 	public void groupSchedule(View arg0) {
-		//Pool schedule opener
-		Toast.makeText(this,"Loading Schedule...", Toast.LENGTH_LONG).show();
-		AssetManager assetManager = getAssets();
-		String pdf = "group.pdf";
-		InputStream in = null;
-		OutputStream out = null;
-		File file = new File(getFilesDir(), pdf);
-		try {
-			in = assetManager.open(pdf);
-			out = openFileOutput(file.getName(), Context.MODE_WORLD_READABLE);
-
-			copyFile(in, out);
-			in.close();
-			in = null;
-			out.flush();
-			out.close();
-			out = null;
-		} catch (Exception e) {
-			Log.e("tag", e.getMessage());
-		}
-		Intent intent = new Intent(Intent.ACTION_VIEW);
-		intent.setDataAndType(
-				Uri.parse("file://" + getFilesDir() + "/" + pdf),
-				"application/pdf");
-
-		try {
-			startActivity(intent);
-		} catch (ActivityNotFoundException e) {
-			Toast.makeText(this,"Please download a PDF reader first", Toast.LENGTH_LONG).show();
-			Intent i = new Intent(android.content.Intent.ACTION_VIEW);
-			i.setData(Uri.parse("https://play.google.com/store/search?q=pdf+reader&c=apps"));
-			startActivity(i);
-		}    
-
+		mainSchedule("group.pdf");
 	}
-	@SuppressWarnings("deprecation")
 	public void premGroupSchedule(View arg0) {
-		//Pool schedule opener
-		Toast.makeText(this,"Loading Schedule...", Toast.LENGTH_LONG).show();
-		AssetManager assetManager = getAssets();
-		String pdf = "prem.pdf";
-		InputStream in = null;
-		OutputStream out = null;
-		File file = new File(getFilesDir(), pdf);
-		try {
-			in = assetManager.open(pdf);
-			out = openFileOutput(file.getName(), Context.MODE_WORLD_READABLE);
-
-			copyFile(in, out);
-			in.close();
-			in = null;
-			out.flush();
-			out.close();
-			out = null;
-		} catch (Exception e) {
-			Log.e("tag", e.getMessage());
-		}
-		Intent intent = new Intent(Intent.ACTION_VIEW);
-		intent.setDataAndType(
-				Uri.parse("file://" + getFilesDir() + "/" + pdf),
-				"application/pdf");
-
-		try {
-			startActivity(intent);
-		} catch (ActivityNotFoundException e) {
-			Toast.makeText(this,"Please download a PDF reader first", Toast.LENGTH_LONG).show();
-			Intent i = new Intent(android.content.Intent.ACTION_VIEW);
-			i.setData(Uri.parse("https://play.google.com/store/search?q=pdf+reader&c=apps"));
-			startActivity(i);
-		}    
-
+		mainSchedule("prem.pdf");
 	}
-	@SuppressWarnings("deprecation")
 	public void winterGroupSchedule(View arg0) {
-		//Pool schedule opener
-		Toast.makeText(this,"Loading Schedule...", Toast.LENGTH_LONG).show();
-		AssetManager assetManager = getAssets();
-		String pdf = "wg.pdf";
-		InputStream in = null;
-		OutputStream out = null;
-		File file = new File(getFilesDir(), pdf);
-		try {
-			in = assetManager.open(pdf);
-			out = openFileOutput(file.getName(), Context.MODE_WORLD_READABLE);
-
-			copyFile(in, out);
-			in.close();
-			in = null;
-			out.flush();
-			out.close();
-			out = null;
-		} catch (Exception e) {
-			Log.e("tag", e.getMessage());
-		}
-		Intent intent = new Intent(Intent.ACTION_VIEW);
-		intent.setDataAndType(
-				Uri.parse("file://" + getFilesDir() + "/" + pdf),
-				"application/pdf");
-
-		try {
-			startActivity(intent);
-		} catch (ActivityNotFoundException e) {
-			Toast.makeText(this,"Please download a PDF reader first", Toast.LENGTH_LONG).show();
-			Intent i = new Intent(android.content.Intent.ACTION_VIEW);
-			i.setData(Uri.parse("https://play.google.com/store/search?q=pdf+reader&c=apps"));
-			startActivity(i);
-		}    
-
+		mainSchedule("wg.pdf");
 	}
-	@SuppressWarnings("deprecation")
 	public void privateSchedule(View arg0) {
-		//Pool schedule opener
-		Toast.makeText(this,"Loading Schedule...", Toast.LENGTH_LONG).show();
-		AssetManager assetManager = getAssets();
-		String pdf = "wpSwim.pdf";
-		InputStream in = null;
-		OutputStream out = null;
-		File file = new File(getFilesDir(), pdf);
-		try {
-			in = assetManager.open(pdf);
-			out = openFileOutput(file.getName(), Context.MODE_WORLD_READABLE);
-
-			copyFile(in, out);
-			in.close();
-			in = null;
-			out.flush();
-			out.close();
-			out = null;
-		} catch (Exception e) {
-			Log.e("tag", e.getMessage());
-		}
-		Intent intent = new Intent(Intent.ACTION_VIEW);
-		intent.setDataAndType(
-				Uri.parse("file://" + getFilesDir() + "/" + pdf),
-				"application/pdf");
-
-		try {
-			startActivity(intent);
-		} catch (ActivityNotFoundException e) {
-			Toast.makeText(this,"Please download a PDF reader first", Toast.LENGTH_LONG).show();
-			Intent i = new Intent(android.content.Intent.ACTION_VIEW);
-			i.setData(Uri.parse("https://play.google.com/store/search?q=pdf+reader&c=apps"));
-			startActivity(i);
-		}    
-
+		mainSchedule("wpSwim.pdf");
 	}
-	@SuppressWarnings("deprecation")
 	public void testSchedule(View arg0) {
-		//Pool schedule opener
-		Toast.makeText(this,"Loading Schedule...", Toast.LENGTH_LONG).show();
-		AssetManager assetManager = getAssets();
-		String pdf = "test.pdf";
-		InputStream in = null;
-		OutputStream out = null;
-		File file = new File(getFilesDir(), pdf);
-		try {
-			in = assetManager.open(pdf);
-			out = openFileOutput(file.getName(), Context.MODE_WORLD_READABLE);
-
-			copyFile(in, out);
-			in.close();
-			in = null;
-			out.flush();
-			out.close();
-			out = null;
-		} catch (Exception e) {
-			Log.e("tag", e.getMessage());
-		}
-		Intent intent = new Intent(Intent.ACTION_VIEW);
-		intent.setDataAndType(
-				Uri.parse("file://" + getFilesDir() + "/" + pdf),
-				"application/pdf");
-
-		try {
-			startActivity(intent);
-		} catch (ActivityNotFoundException e) {
-			Toast.makeText(this,"Please download a PDF reader first", Toast.LENGTH_LONG).show();
-			Intent i = new Intent(android.content.Intent.ACTION_VIEW);
-			i.setData(Uri.parse("https://play.google.com/store/search?q=pdf+reader&c=apps"));
-			startActivity(i);
-		}    
-
+		mainSchedule("test.pdf");
 	}
 	private void copyFile(InputStream in, OutputStream out) throws IOException {
 		byte[] buffer = new byte[1024];

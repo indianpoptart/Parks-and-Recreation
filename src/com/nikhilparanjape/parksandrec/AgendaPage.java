@@ -33,7 +33,8 @@ public class AgendaPage extends Activity {
 			WebSettings webSettings = mywebview.getSettings();
 			webSettings.setJavaScriptEnabled(true);
 			mywebview.getSettings().setRenderPriority(RenderPriority.HIGH);
-			mywebview.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
+			mywebview.getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
+			mywebview.getSettings().setBuiltInZoomControls(true);
 			Toast.makeText(AgendaPage.this,"Loading...",Toast.LENGTH_LONG).show();
 		}   
 		else

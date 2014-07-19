@@ -6,6 +6,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -19,6 +20,13 @@ public class SettingsPage extends Activity {
 		bar.setDisplayShowHomeEnabled(false);
 		bar.setTitle("About"); 
 		PackageInfo pInfo;
+		String vP = null;
+		
+		if(Build.VERSION.SDK_INT == 20){
+			vP = "You are running Android L, Nice";
+		}
+		TextView vZ = (TextView)findViewById(R.id.androidSDK);
+		vZ.setText(vP);
 		try {
 			pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
 			String version = pInfo.versionName;
@@ -28,6 +36,7 @@ public class SettingsPage extends Activity {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+			
 		
 	}
 }

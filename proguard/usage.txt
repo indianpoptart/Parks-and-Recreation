@@ -1,0 +1,1571 @@
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoIcsImpl
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoJellyBeanMr2
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoStubImpl
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompatIcs
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompatJellyBeanMr2
+android.support.v4.app.ActionBarDrawerToggle
+android.support.v4.app.ActionBarDrawerToggle$1
+android.support.v4.app.ActionBarDrawerToggle$ActionBarDrawerToggleImpl
+android.support.v4.app.ActionBarDrawerToggle$ActionBarDrawerToggleImplBase
+android.support.v4.app.ActionBarDrawerToggle$ActionBarDrawerToggleImplHC
+android.support.v4.app.ActionBarDrawerToggle$Delegate
+android.support.v4.app.ActionBarDrawerToggle$DelegateProvider
+android.support.v4.app.ActionBarDrawerToggle$SlideDrawable
+android.support.v4.app.ActionBarDrawerToggleHoneycomb
+android.support.v4.app.ActionBarDrawerToggleHoneycomb$SetIndicatorInfo
+android.support.v4.app.ActivityCompat
+android.support.v4.app.ActivityCompatHoneycomb:
+    27:27:ActivityCompatHoneycomb()
+    34:35:static void dump(android.app.Activity,java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])
+android.support.v4.app.ActivityCompatJB
+android.support.v4.app.ActivityOptionsCompat
+android.support.v4.app.ActivityOptionsCompat$ActivityOptionsImplJB
+android.support.v4.app.ActivityOptionsCompatJB
+android.support.v4.app.BackStackRecord:
+    static final java.lang.String TAG
+    static final int OP_NULL
+    static final int OP_ADD
+    static final int OP_REPLACE
+    static final int OP_REMOVE
+    static final int OP_HIDE
+    static final int OP_SHOW
+    static final int OP_DETACH
+    static final int OP_ATTACH
+    338:338:public int getId()
+    342:342:public int getBreadCrumbTitleRes()
+    346:346:public int getBreadCrumbShortTitleRes()
+    350:353:public java.lang.CharSequence getBreadCrumbTitle()
+    357:360:public java.lang.CharSequence getBreadCrumbShortTitle()
+    379:380:public android.support.v4.app.FragmentTransaction add(android.support.v4.app.Fragment,java.lang.String)
+    384:385:public android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment)
+    421:421:public android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)
+    425:430:public android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment,java.lang.String)
+    434:439:public android.support.v4.app.FragmentTransaction remove(android.support.v4.app.Fragment)
+    443:448:public android.support.v4.app.FragmentTransaction hide(android.support.v4.app.Fragment)
+    452:457:public android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)
+    479:479:public android.support.v4.app.FragmentTransaction setCustomAnimations(int,int)
+    484:488:public android.support.v4.app.FragmentTransaction setCustomAnimations(int,int,int,int)
+    492:493:public android.support.v4.app.FragmentTransaction setTransition(int)
+    497:498:public android.support.v4.app.FragmentTransaction setTransitionStyle(int)
+    502:508:public android.support.v4.app.FragmentTransaction addToBackStack(java.lang.String)
+    512:512:public boolean isAddToBackStackAllowed()
+    516:521:public android.support.v4.app.FragmentTransaction disallowAddToBackStack()
+    525:527:public android.support.v4.app.FragmentTransaction setBreadCrumbTitle(int)
+    531:533:public android.support.v4.app.FragmentTransaction setBreadCrumbTitle(java.lang.CharSequence)
+    537:539:public android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(int)
+    543:545:public android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(java.lang.CharSequence)
+    578:578:public int commitAllowingStateLoss()
+    779:779:public int getTransition()
+    783:783:public int getTransitionStyle()
+    787:787:public boolean isEmpty()
+android.support.v4.app.DialogFragment
+android.support.v4.app.Fragment:
+    static final int INITIALIZING
+    static final int CREATED
+    static final int ACTIVITY_CREATED
+    static final int STOPPED
+    static final int STARTED
+    static final int RESUMED
+    489:489:public final int getId()
+    496:496:public final java.lang.String getTag()
+    507:511:public void setArguments(android.os.Bundle)
+    518:518:public final android.os.Bundle getArguments()
+    530:535:public void setInitialSavedState(android.support.v4.app.Fragment$SavedState)
+    549:551:public void setTargetFragment(android.support.v4.app.Fragment,int)
+    557:557:public final android.support.v4.app.Fragment getTargetFragment()
+    564:564:public final int getTargetRequestCode()
+    591:591:public final java.lang.CharSequence getText(int)
+    601:601:public final java.lang.String getString(int)
+    614:614:public final varargs java.lang.String getString(int,java.lang.Object[])
+    628:628:public final android.support.v4.app.FragmentManager getFragmentManager()
+    636:648:public final android.support.v4.app.FragmentManager getChildFragmentManager()
+    656:656:public final android.support.v4.app.Fragment getParentFragment()
+    663:663:public final boolean isAdded()
+    681:681:public final boolean isRemoving()
+    692:692:public final boolean isInLayout()
+    700:700:public final boolean isResumed()
+    709:709:public final boolean isVisible()
+    721:721:public final boolean isHidden()
+    726:726:public final boolean hasOptionsMenu()
+    731:731:public final boolean isMenuVisible()
+    759:764:public void setRetainInstance(boolean)
+    767:767:public final boolean getRetainInstance()
+    778:784:public void setHasOptionsMenu(boolean)
+    796:802:public void setMenuVisibility(boolean)
+    818:823:public void setUserVisibleHint(boolean)
+    830:830:public boolean getUserVisibleHint()
+    837:845:public android.support.v4.app.LoaderManager getLoaderManager()
+    853:857:public void startActivity(android.content.Intent)
+    864:868:public void startActivityForResult(android.content.Intent,int)
+    1019:1019:public android.view.View getView()
+    1306:1307:public void registerForContextMenu(android.view.View)
+    1317:1318:public void unregisterForContextMenu(android.view.View)
+    1428:1434:android.support.v4.app.Fragment findFragmentByWho(java.lang.String)
+android.support.v4.app.Fragment$SavedState:
+    309:311:Fragment$SavedState(android.os.Bundle)
+android.support.v4.app.FragmentActivity:
+    private static final java.lang.String TAG
+    static final java.lang.String FRAGMENTS_TAG
+    private static final int HONEYCOMB
+    static final int MSG_REALLY_STOPPED
+    static final int MSG_RESUME_PENDING
+    75:134:public FragmentActivity()
+    617:619:public java.lang.Object getLastCustomNonConfigurationInstance()
+    812:812:public android.support.v4.app.FragmentManager getSupportFragmentManager()
+    832:840:public void startActivityFromFragment(android.support.v4.app.Fragment,android.content.Intent,int)
+    861:866:public android.support.v4.app.LoaderManager getSupportLoaderManager()
+android.support.v4.app.FragmentActivity$1
+android.support.v4.app.FragmentActivity$2
+android.support.v4.app.FragmentActivity$FragmentTag:
+    public static final int Fragment_id
+    public static final int Fragment_name
+    public static final int Fragment_tag
+    134:134:FragmentActivity$FragmentTag()
+android.support.v4.app.FragmentManager:
+    public static final int POP_BACK_STACK_INCLUSIVE
+    142:142:public android.support.v4.app.FragmentTransaction openTransaction()
+    public abstract android.support.v4.app.Fragment findFragmentById(int)
+    public abstract void popBackStack()
+    public abstract boolean popBackStackImmediate()
+    public abstract void popBackStack(java.lang.String,int)
+    public abstract boolean popBackStackImmediate(java.lang.String,int)
+    public abstract void popBackStack(int,int)
+    public abstract boolean popBackStackImmediate(int,int)
+    public abstract int getBackStackEntryCount()
+    public abstract android.support.v4.app.FragmentManager$BackStackEntry getBackStackEntryAt(int)
+    public abstract void addOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    public abstract void removeOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    public abstract void putFragment(android.os.Bundle,java.lang.String,android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.Fragment getFragment(android.os.Bundle,java.lang.String)
+    public abstract java.util.List getFragments()
+    public abstract android.support.v4.app.Fragment$SavedState saveFragmentInstanceState(android.support.v4.app.Fragment)
+    public abstract void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])
+    345:346:public static void enableDebugLogging(boolean)
+android.support.v4.app.FragmentManager$BackStackEntry
+android.support.v4.app.FragmentManagerImpl:
+    static final java.lang.String TAG
+    static final java.lang.String TARGET_REQUEST_CODE_STATE_TAG
+    static final java.lang.String TARGET_STATE_TAG
+    static final java.lang.String VIEW_STATE_TAG
+    static final java.lang.String USER_VISIBLE_HINT_TAG
+    static final int ANIM_DUR
+    public static final int ANIM_STYLE_OPEN_ENTER
+    public static final int ANIM_STYLE_OPEN_EXIT
+    public static final int ANIM_STYLE_CLOSE_ENTER
+    public static final int ANIM_STYLE_CLOSE_EXIT
+    public static final int ANIM_STYLE_FADE_ENTER
+    public static final int ANIM_STYLE_FADE_EXIT
+    477:482:public void popBackStack()
+    493:498:public void popBackStack(java.lang.String,int)
+    502:504:public boolean popBackStackImmediate(java.lang.String,int)
+    509:517:public void popBackStack(int,int)
+    521:526:public boolean popBackStackImmediate(int,int)
+    531:531:public int getBackStackEntryCount()
+    536:536:public android.support.v4.app.FragmentManager$BackStackEntry getBackStackEntryAt(int)
+    541:545:public void addOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    549:552:public void removeOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    583:583:public java.util.List getFragments()
+    588:596:public android.support.v4.app.Fragment$SavedState saveFragmentInstanceState(android.support.v4.app.Fragment)
+    1330:1338:public android.support.v4.app.Fragment findFragmentByWho(java.lang.String)
+android.support.v4.app.FragmentManagerImpl$2
+android.support.v4.app.FragmentManagerImpl$3
+android.support.v4.app.FragmentManagerImpl$4
+android.support.v4.app.FragmentPagerAdapter
+android.support.v4.app.FragmentStatePagerAdapter
+android.support.v4.app.FragmentTabHost:
+    private android.widget.FrameLayout mRealTabContent
+    130:132:public FragmentTabHost(android.content.Context)
+    135:137:public FragmentTabHost(android.content.Context,android.util.AttributeSet)
+    140:172:private void initFragmentTabHost(android.content.Context,android.util.AttributeSet)
+    186:190:public void setup(android.content.Context,android.support.v4.app.FragmentManager)
+    193:205:public void setup(android.content.Context,android.support.v4.app.FragmentManager,int)
+    208:215:private void ensureContent()
+    223:242:public void addTab(android.widget.TabHost$TabSpec,java.lang.Class,android.os.Bundle)
+android.support.v4.app.FragmentTabHost$DummyTabFactory
+android.support.v4.app.FragmentTabHost$TabInfo:
+    67:71:FragmentTabHost$TabInfo(java.lang.String,java.lang.Class,android.os.Bundle)
+android.support.v4.app.FragmentTransaction:
+    public static final int TRANSIT_ENTER_MASK
+    public static final int TRANSIT_EXIT_MASK
+    public static final int TRANSIT_UNSET
+    public static final int TRANSIT_NONE
+    public static final int TRANSIT_FRAGMENT_OPEN
+    public static final int TRANSIT_FRAGMENT_CLOSE
+    public static final int TRANSIT_FRAGMENT_FADE
+    public abstract android.support.v4.app.FragmentTransaction add(android.support.v4.app.Fragment,java.lang.String)
+    public abstract android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment,java.lang.String)
+    public abstract android.support.v4.app.FragmentTransaction remove(android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction hide(android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)
+    public abstract boolean isEmpty()
+    public abstract android.support.v4.app.FragmentTransaction setCustomAnimations(int,int)
+    public abstract android.support.v4.app.FragmentTransaction setCustomAnimations(int,int,int,int)
+    public abstract android.support.v4.app.FragmentTransaction setTransition(int)
+    public abstract android.support.v4.app.FragmentTransaction setTransitionStyle(int)
+    public abstract android.support.v4.app.FragmentTransaction addToBackStack(java.lang.String)
+    public abstract boolean isAddToBackStackAllowed()
+    public abstract android.support.v4.app.FragmentTransaction disallowAddToBackStack()
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbTitle(int)
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbTitle(java.lang.CharSequence)
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(int)
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(java.lang.CharSequence)
+    public abstract int commitAllowingStateLoss()
+android.support.v4.app.ListFragment
+android.support.v4.app.ListFragment$1
+android.support.v4.app.ListFragment$2
+android.support.v4.app.LoaderManager:
+    public abstract android.support.v4.content.Loader initLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    public abstract android.support.v4.content.Loader restartLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    public abstract void destroyLoader(int)
+    public abstract android.support.v4.content.Loader getLoader(int)
+    public abstract void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])
+    177:178:public static void enableDebugLogging(boolean)
+android.support.v4.app.LoaderManagerImpl:
+    static final java.lang.String TAG
+    boolean mRetainingStarted
+    boolean mCreatingLoader
+    489:492:private android.support.v4.app.LoaderManagerImpl$LoaderInfo createLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    498:503:private android.support.v4.app.LoaderManagerImpl$LoaderInfo createAndInstallLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    508:515:void installLoader(android.support.v4.app.LoaderManagerImpl$LoaderInfo)
+    543:565:public android.support.v4.content.Loader initLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    593:647:public android.support.v4.content.Loader restartLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    658:678:public void destroyLoader(int)
+    686:697:public android.support.v4.content.Loader getLoader(int)
+android.support.v4.app.LoaderManagerImpl$LoaderInfo:
+    228:232:public LoaderManagerImpl$LoaderInfo(android.support.v4.app.LoaderManagerImpl,int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    362:415:public void onLoadComplete(android.support.v4.content.Loader,java.lang.Object)
+android.support.v4.app.NavUtils
+android.support.v4.app.NavUtils$NavUtilsImpl
+android.support.v4.app.NavUtils$NavUtilsImplBase
+android.support.v4.app.NavUtils$NavUtilsImplJB
+android.support.v4.app.NavUtilsJB
+android.support.v4.app.NotificationCompat
+android.support.v4.app.NotificationCompat$Action
+android.support.v4.app.NotificationCompat$BigPictureStyle
+android.support.v4.app.NotificationCompat$BigTextStyle
+android.support.v4.app.NotificationCompat$Builder
+android.support.v4.app.NotificationCompat$InboxStyle
+android.support.v4.app.NotificationCompat$NotificationCompatImpl
+android.support.v4.app.NotificationCompat$NotificationCompatImplBase
+android.support.v4.app.NotificationCompat$NotificationCompatImplHoneycomb
+android.support.v4.app.NotificationCompat$NotificationCompatImplIceCreamSandwich
+android.support.v4.app.NotificationCompat$NotificationCompatImplJellybean
+android.support.v4.app.NotificationCompat$Style
+android.support.v4.app.NotificationCompatHoneycomb
+android.support.v4.app.NotificationCompatIceCreamSandwich
+android.support.v4.app.NotificationCompatJellybean
+android.support.v4.app.ServiceCompat
+android.support.v4.app.ShareCompat
+android.support.v4.app.ShareCompat$IntentBuilder
+android.support.v4.app.ShareCompat$IntentReader
+android.support.v4.app.ShareCompat$ShareCompatImpl
+android.support.v4.app.ShareCompat$ShareCompatImplBase
+android.support.v4.app.ShareCompat$ShareCompatImplICS
+android.support.v4.app.ShareCompat$ShareCompatImplJB
+android.support.v4.app.ShareCompatICS
+android.support.v4.app.ShareCompatJB
+android.support.v4.app.TaskStackBuilder
+android.support.v4.app.TaskStackBuilder$SupportParentable
+android.support.v4.app.TaskStackBuilder$TaskStackBuilderImpl
+android.support.v4.app.TaskStackBuilder$TaskStackBuilderImplBase
+android.support.v4.app.TaskStackBuilder$TaskStackBuilderImplHoneycomb
+android.support.v4.app.TaskStackBuilder$TaskStackBuilderImplJellybean
+android.support.v4.app.TaskStackBuilderHoneycomb
+android.support.v4.app.TaskStackBuilderJellybean
+android.support.v4.content.AsyncTaskLoader
+android.support.v4.content.AsyncTaskLoader$LoadTask
+android.support.v4.content.ContextCompat
+android.support.v4.content.ContextCompatHoneycomb
+android.support.v4.content.ContextCompatJellybean
+android.support.v4.content.CursorLoader
+android.support.v4.content.FileProvider
+android.support.v4.content.FileProvider$PathStrategy
+android.support.v4.content.FileProvider$SimplePathStrategy
+android.support.v4.content.IntentCompat
+android.support.v4.content.IntentCompat$IntentCompatImpl
+android.support.v4.content.IntentCompat$IntentCompatImplBase
+android.support.v4.content.IntentCompat$IntentCompatImplHC
+android.support.v4.content.IntentCompat$IntentCompatImplIcsMr1
+android.support.v4.content.IntentCompatHoneycomb
+android.support.v4.content.IntentCompatIcsMr1
+android.support.v4.content.Loader:
+    android.content.Context mContext
+    91:93:public Loader(android.content.Context)
+    103:106:public void deliverResult(java.lang.Object)
+    112:112:public android.content.Context getContext()
+    119:119:public int getId()
+    158:158:public boolean isStarted()
+    167:167:public boolean isAbandoned()
+    176:176:public boolean isReset()
+    218:219:public void forceLoad()
+    226:226:protected void onForceLoad()
+    262:264:public void abandon()
+    276:276:protected void onAbandon()
+    314:317:public boolean takeContentChanged()
+    328:329:public void commitContentChanged()
+    339:342:public void rollbackContentChanged()
+    353:361:public void onContentChanged()
+android.support.v4.content.Loader$ForceLoadContentObserver
+android.support.v4.content.Loader$OnLoadCompleteListener:
+    public abstract void onLoadComplete(android.support.v4.content.Loader,java.lang.Object)
+android.support.v4.content.LocalBroadcastManager
+android.support.v4.content.LocalBroadcastManager$1
+android.support.v4.content.LocalBroadcastManager$BroadcastRecord
+android.support.v4.content.LocalBroadcastManager$ReceiverRecord
+android.support.v4.content.ModernAsyncTask
+android.support.v4.content.ModernAsyncTask$1
+android.support.v4.content.ModernAsyncTask$2
+android.support.v4.content.ModernAsyncTask$3
+android.support.v4.content.ModernAsyncTask$4
+android.support.v4.content.ModernAsyncTask$AsyncTaskResult
+android.support.v4.content.ModernAsyncTask$InternalHandler
+android.support.v4.content.ModernAsyncTask$Status
+android.support.v4.content.ModernAsyncTask$WorkerRunnable
+android.support.v4.content.WakefulBroadcastReceiver
+android.support.v4.content.pm.ActivityInfoCompat
+android.support.v4.database.DatabaseUtilsCompat
+android.support.v4.graphics.drawable.DrawableCompat
+android.support.v4.graphics.drawable.DrawableCompat$BaseDrawableImpl
+android.support.v4.graphics.drawable.DrawableCompat$DrawableImpl
+android.support.v4.graphics.drawable.DrawableCompat$HoneycombDrawableImpl
+android.support.v4.graphics.drawable.DrawableCompatHoneycomb
+android.support.v4.hardware.display.DisplayManagerCompat
+android.support.v4.hardware.display.DisplayManagerCompat$JellybeanMr1Impl
+android.support.v4.hardware.display.DisplayManagerCompat$LegacyImpl
+android.support.v4.hardware.display.DisplayManagerJellybeanMr1
+android.support.v4.internal.view.SupportMenu
+android.support.v4.internal.view.SupportMenuItem
+android.support.v4.internal.view.SupportSubMenu
+android.support.v4.media.TransportController
+android.support.v4.media.TransportMediator
+android.support.v4.media.TransportMediator$1
+android.support.v4.media.TransportMediator$2
+android.support.v4.media.TransportMediatorCallback
+android.support.v4.media.TransportMediatorJellybeanMR2
+android.support.v4.media.TransportMediatorJellybeanMR2$1
+android.support.v4.media.TransportMediatorJellybeanMR2$2
+android.support.v4.media.TransportMediatorJellybeanMR2$3
+android.support.v4.media.TransportMediatorJellybeanMR2$4
+android.support.v4.media.TransportPerformer
+android.support.v4.media.TransportStateListener
+android.support.v4.net.ConnectivityManagerCompat
+android.support.v4.net.ConnectivityManagerCompat$BaseConnectivityManagerCompatImpl
+android.support.v4.net.ConnectivityManagerCompat$ConnectivityManagerCompatImpl
+android.support.v4.net.ConnectivityManagerCompat$GingerbreadConnectivityManagerCompatImpl
+android.support.v4.net.ConnectivityManagerCompat$HoneycombMR2ConnectivityManagerCompatImpl
+android.support.v4.net.ConnectivityManagerCompat$JellyBeanConnectivityManagerCompatImpl
+android.support.v4.net.ConnectivityManagerCompatGingerbread
+android.support.v4.net.ConnectivityManagerCompatHoneycombMR2
+android.support.v4.net.ConnectivityManagerCompatJellyBean
+android.support.v4.net.TrafficStatsCompat
+android.support.v4.net.TrafficStatsCompat$1
+android.support.v4.net.TrafficStatsCompat$BaseTrafficStatsCompatImpl
+android.support.v4.net.TrafficStatsCompat$BaseTrafficStatsCompatImpl$1
+android.support.v4.net.TrafficStatsCompat$BaseTrafficStatsCompatImpl$SocketTags
+android.support.v4.net.TrafficStatsCompat$IcsTrafficStatsCompatImpl
+android.support.v4.net.TrafficStatsCompat$TrafficStatsCompatImpl
+android.support.v4.net.TrafficStatsCompatIcs
+android.support.v4.os.ParcelableCompat:
+    26:42:public ParcelableCompat()
+android.support.v4.os.ParcelableCompatCreatorHoneycombMR2Stub:
+    22:22:ParcelableCompatCreatorHoneycombMR2Stub()
+android.support.v4.text.BidiFormatter
+android.support.v4.text.BidiFormatter$1
+android.support.v4.text.BidiFormatter$Builder
+android.support.v4.text.BidiFormatter$DirectionalityEstimator
+android.support.v4.text.ICUCompat
+android.support.v4.text.ICUCompat$ICUCompatImpl
+android.support.v4.text.ICUCompat$ICUCompatImplBase
+android.support.v4.text.ICUCompat$ICUCompatImplIcs
+android.support.v4.text.ICUCompatIcs
+android.support.v4.text.TextDirectionHeuristicCompat
+android.support.v4.text.TextDirectionHeuristicsCompat
+android.support.v4.text.TextDirectionHeuristicsCompat$1
+android.support.v4.text.TextDirectionHeuristicsCompat$AnyStrong
+android.support.v4.text.TextDirectionHeuristicsCompat$FirstStrong
+android.support.v4.text.TextDirectionHeuristicsCompat$TextDirectionAlgorithm
+android.support.v4.text.TextDirectionHeuristicsCompat$TextDirectionHeuristicImpl
+android.support.v4.text.TextDirectionHeuristicsCompat$TextDirectionHeuristicInternal
+android.support.v4.text.TextDirectionHeuristicsCompat$TextDirectionHeuristicLocale
+android.support.v4.text.TextUtilsCompat
+android.support.v4.util.AtomicFile
+android.support.v4.util.DebugUtils:
+    25:25:public DebugUtils()
+android.support.v4.util.LongSparseArray
+android.support.v4.util.LruCache
+android.support.v4.util.SparseArrayCompat:
+    52:52:public java.lang.Object get(int)
+    60:65:public java.lang.Object get(int,java.lang.Object)
+    73:81:public void delete(int)
+    87:88:public void remove(int)
+    94:98:public void removeAt(int)
+    107:111:public void removeAtRange(int,int)
+    146:190:public void put(int,java.lang.Object)
+    236:241:public void setValueAt(int,java.lang.Object)
+    249:253:public int indexOfKey(int)
+    265:273:public int indexOfValue(java.lang.Object)
+    296:323:public void append(int,java.lang.Object)
+    326:342:private static int binarySearch(int[],int,int,int)
+android.support.v4.util.TimeUtils
+android.support.v4.view.AccessibilityDelegateCompat
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateImpl
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateJellyBeanImpl
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateJellyBeanImpl$1
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateStubImpl
+android.support.v4.view.AccessibilityDelegateCompatIcs
+android.support.v4.view.AccessibilityDelegateCompatIcs$1
+android.support.v4.view.AccessibilityDelegateCompatIcs$AccessibilityDelegateBridge
+android.support.v4.view.AccessibilityDelegateCompatJellyBean
+android.support.v4.view.AccessibilityDelegateCompatJellyBean$1
+android.support.v4.view.AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean
+android.support.v4.view.ActionProvider
+android.support.v4.view.ActionProvider$SubUiVisibilityListener
+android.support.v4.view.ActionProvider$VisibilityListener
+android.support.v4.view.GestureDetectorCompat
+android.support.v4.view.GestureDetectorCompat$GestureDetectorCompatImpl
+android.support.v4.view.GestureDetectorCompat$GestureDetectorCompatImplBase
+android.support.v4.view.GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler
+android.support.v4.view.GestureDetectorCompat$GestureDetectorCompatImplJellybeanMr2
+android.support.v4.view.GravityCompat:
+    public static final int RELATIVE_LAYOUT_DIRECTION
+    public static final int START
+    public static final int END
+    public static final int RELATIVE_HORIZONTAL_GRAVITY_MASK
+    27:62:public GravityCompat()
+    132:133:public static void apply(int,int,int,android.graphics.Rect,android.graphics.Rect,int)
+    162:163:public static void apply(int,int,int,android.graphics.Rect,int,int,android.graphics.Rect,int)
+    186:187:public static void applyDisplay(int,android.graphics.Rect,android.graphics.Rect,int)
+android.support.v4.view.GravityCompat$GravityCompatImpl:
+    public abstract void apply(int,int,int,android.graphics.Rect,android.graphics.Rect,int)
+    public abstract void apply(int,int,int,android.graphics.Rect,int,int,android.graphics.Rect,int)
+    public abstract void applyDisplay(int,android.graphics.Rect,android.graphics.Rect,int)
+android.support.v4.view.GravityCompat$GravityCompatImplBase:
+    46:47:public void apply(int,int,int,android.graphics.Rect,android.graphics.Rect,int)
+    52:53:public void apply(int,int,int,android.graphics.Rect,int,int,android.graphics.Rect,int)
+    58:59:public void applyDisplay(int,android.graphics.Rect,android.graphics.Rect,int)
+android.support.v4.view.GravityCompat$GravityCompatImplJellybeanMr1:
+    71:72:public void apply(int,int,int,android.graphics.Rect,android.graphics.Rect,int)
+    77:79:public void apply(int,int,int,android.graphics.Rect,int,int,android.graphics.Rect,int)
+    83:84:public void applyDisplay(int,android.graphics.Rect,android.graphics.Rect,int)
+android.support.v4.view.GravityCompatJellybeanMr1:
+    23:23:GravityCompatJellybeanMr1()
+    31:32:public static void apply(int,int,int,android.graphics.Rect,android.graphics.Rect,int)
+    36:37:public static void apply(int,int,int,android.graphics.Rect,int,int,android.graphics.Rect,int)
+    40:41:public static void applyDisplay(int,android.graphics.Rect,android.graphics.Rect,int)
+android.support.v4.view.KeyEventCompat:
+    26:144:public KeyEventCompat()
+    176:176:public static int normalizeMetaState(int)
+    180:180:public static boolean metaStateHasModifiers(int,int)
+    184:184:public static boolean metaStateHasNoModifiers(int)
+    200:200:public static boolean isTracking(android.view.KeyEvent)
+    204:204:public static java.lang.Object getKeyDispatcherState(android.view.View)
+    209:209:public static boolean dispatch(android.view.KeyEvent,android.view.KeyEvent$Callback,java.lang.Object,java.lang.Object)
+android.support.v4.view.KeyEventCompat$BaseKeyEventVersionImpl:
+    private static final int META_MODIFIER_MASK
+    private static final int META_ALL_MASK
+    103:103:public boolean isTracking(android.view.KeyEvent)
+    108:108:public java.lang.Object getKeyDispatcherState(android.view.View)
+    114:114:public boolean dispatch(android.view.KeyEvent,android.view.KeyEvent$Callback,java.lang.Object,java.lang.Object)
+android.support.v4.view.KeyEventCompat$EclairKeyEventVersionImpl:
+    126:126:public boolean isTracking(android.view.KeyEvent)
+    131:131:public java.lang.Object getKeyDispatcherState(android.view.View)
+    137:137:public boolean dispatch(android.view.KeyEvent,android.view.KeyEvent$Callback,java.lang.Object,java.lang.Object)
+android.support.v4.view.KeyEventCompat$KeyEventVersionImpl:
+    public abstract int normalizeMetaState(int)
+    public abstract boolean isTracking(android.view.KeyEvent)
+    public abstract java.lang.Object getKeyDispatcherState(android.view.View)
+    public abstract boolean dispatch(android.view.KeyEvent,android.view.KeyEvent$Callback,java.lang.Object,java.lang.Object)
+android.support.v4.view.KeyEventCompatEclair:
+    23:23:KeyEventCompatEclair()
+    25:25:public static java.lang.Object getKeyDispatcherState(android.view.View)
+    30:30:public static boolean dispatch(android.view.KeyEvent,android.view.KeyEvent$Callback,java.lang.Object,java.lang.Object)
+    38:38:public static boolean isTracking(android.view.KeyEvent)
+android.support.v4.view.KeyEventCompatHoneycomb:
+    24:24:KeyEventCompatHoneycomb()
+android.support.v4.view.MarginLayoutParamsCompat
+android.support.v4.view.MarginLayoutParamsCompat$MarginLayoutParamsCompatImpl
+android.support.v4.view.MarginLayoutParamsCompat$MarginLayoutParamsCompatImplBase
+android.support.v4.view.MarginLayoutParamsCompat$MarginLayoutParamsCompatImplJbMr1
+android.support.v4.view.MarginLayoutParamsCompatJellybeanMr1
+android.support.v4.view.MenuCompat
+android.support.v4.view.MenuItemCompat
+android.support.v4.view.MenuItemCompat$BaseMenuVersionImpl
+android.support.v4.view.MenuItemCompat$HoneycombMenuVersionImpl
+android.support.v4.view.MenuItemCompat$IcsMenuVersionImpl
+android.support.v4.view.MenuItemCompat$IcsMenuVersionImpl$1
+android.support.v4.view.MenuItemCompat$MenuVersionImpl
+android.support.v4.view.MenuItemCompat$OnActionExpandListener
+android.support.v4.view.MenuItemCompatHoneycomb
+android.support.v4.view.MenuItemCompatIcs
+android.support.v4.view.MenuItemCompatIcs$OnActionExpandListenerWrapper
+android.support.v4.view.MenuItemCompatIcs$SupportActionExpandProxy
+android.support.v4.view.MotionEventCompat:
+    public static final int ACTION_MASK
+    public static final int ACTION_POINTER_DOWN
+    public static final int ACTION_POINTER_UP
+    public static final int ACTION_HOVER_MOVE
+    public static final int ACTION_SCROLL
+    public static final int ACTION_POINTER_INDEX_MASK
+    public static final int ACTION_POINTER_INDEX_SHIFT
+    public static final int ACTION_HOVER_ENTER
+    public static final int ACTION_HOVER_EXIT
+    25:80:public MotionEventCompat()
+android.support.v4.view.MotionEventCompatEclair:
+    24:24:MotionEventCompatEclair()
+android.support.v4.view.PagerAdapter:
+    public static final int POSITION_UNCHANGED
+    public static final int POSITION_NONE
+    78:79:public PagerAdapter()
+    276:277:public void notifyDataSetChanged()
+    307:307:public java.lang.CharSequence getPageTitle(int)
+android.support.v4.view.PagerTabStrip
+android.support.v4.view.PagerTabStrip$1
+android.support.v4.view.PagerTabStrip$2
+android.support.v4.view.PagerTitleStrip
+android.support.v4.view.PagerTitleStrip$1
+android.support.v4.view.PagerTitleStrip$PageListener
+android.support.v4.view.PagerTitleStrip$PagerTitleStripImpl
+android.support.v4.view.PagerTitleStrip$PagerTitleStripImplBase
+android.support.v4.view.PagerTitleStrip$PagerTitleStripImplIcs
+android.support.v4.view.PagerTitleStripIcs
+android.support.v4.view.PagerTitleStripIcs$SingleLineAllCapsTransform
+android.support.v4.view.VelocityTrackerCompat:
+    25:51:public VelocityTrackerCompat()
+android.support.v4.view.VelocityTrackerCompatHoneycomb:
+    24:24:VelocityTrackerCompatHoneycomb()
+android.support.v4.view.ViewCompat:
+    public static final int OVER_SCROLL_ALWAYS
+    public static final int OVER_SCROLL_IF_CONTENT_SCROLLS
+    public static final int OVER_SCROLL_NEVER
+    private static final long FAKE_FRAME_TIME
+    public static final int IMPORTANT_FOR_ACCESSIBILITY_AUTO
+    public static final int IMPORTANT_FOR_ACCESSIBILITY_YES
+    public static final int IMPORTANT_FOR_ACCESSIBILITY_NO
+    public static final int LAYER_TYPE_NONE
+    public static final int LAYER_TYPE_SOFTWARE
+    public static final int LAYER_TYPE_HARDWARE
+    public static final int LAYOUT_DIRECTION_LTR
+    public static final int LAYOUT_DIRECTION_RTL
+    public static final int LAYOUT_DIRECTION_INHERIT
+    public static final int LAYOUT_DIRECTION_LOCALE
+    34:397:public ViewCompat()
+    462:462:public static boolean canScrollVertically(android.view.View,int)
+    491:492:public static void setOverScrollMode(android.view.View,int)
+    528:529:public static void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    561:562:public static void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    597:598:public static void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    612:613:public static void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+    624:624:public static boolean hasTransientState(android.view.View)
+    635:636:public static void setHasTransientState(android.view.View,boolean)
+    697:698:public static void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+    713:713:public static int getImportantForAccessibility(android.view.View)
+    729:730:public static void setImportantForAccessibility(android.view.View,int)
+    747:747:public static boolean performAccessibilityAction(android.view.View,int,android.os.Bundle)
+    774:774:public static android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(android.view.View)
+    785:785:public static float getAlpha(android.view.View)
+    859:859:public static int getLabelFor(android.view.View)
+    870:871:public static void setLabelFor(android.view.View,int)
+    938:939:public static void setLayoutDirection(android.view.View,int)
+    950:950:public static android.view.ViewParent getParentForAccessibility(android.view.View)
+android.support.v4.view.ViewCompat$BaseViewCompatImpl:
+    175:175:public boolean canScrollVertically(android.view.View,int)
+    182:182:public void setOverScrollMode(android.view.View,int)
+    185:185:public void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+    188:188:public void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    191:191:public void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    194:194:public void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    197:197:public boolean hasTransientState(android.view.View)
+    201:201:public void setHasTransientState(android.view.View,boolean)
+    212:213:public void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+    218:218:public int getImportantForAccessibility(android.view.View)
+    222:222:public void setImportantForAccessibility(android.view.View,int)
+    224:224:public boolean performAccessibilityAction(android.view.View,int,android.os.Bundle)
+    227:227:public android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(android.view.View)
+    230:230:public float getAlpha(android.view.View)
+    239:239:public int getLabelFor(android.view.View)
+    243:243:public void setLabelFor(android.view.View,int)
+    256:256:public void setLayoutDirection(android.view.View,int)
+    260:260:public android.view.ViewParent getParentForAccessibility(android.view.View)
+android.support.v4.view.ViewCompat$GBViewCompatImpl:
+    287:288:public void setOverScrollMode(android.view.View,int)
+android.support.v4.view.ViewCompat$HCViewCompatImpl:
+    298:298:public float getAlpha(android.view.View)
+android.support.v4.view.ViewCompat$ICSViewCompatImpl:
+    325:325:public boolean canScrollVertically(android.view.View,int)
+    329:330:public void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    333:334:public void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    337:338:public void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    341:342:public void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+android.support.v4.view.ViewCompat$JBViewCompatImpl:
+    348:348:public boolean hasTransientState(android.view.View)
+    352:353:public void setHasTransientState(android.view.View,boolean)
+    368:369:public void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+    372:372:public int getImportantForAccessibility(android.view.View)
+    376:377:public void setImportantForAccessibility(android.view.View,int)
+    380:380:public boolean performAccessibilityAction(android.view.View,int,android.os.Bundle)
+    384:388:public android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(android.view.View)
+    393:393:public android.view.ViewParent getParentForAccessibility(android.view.View)
+android.support.v4.view.ViewCompat$JbMr1ViewCompatImpl:
+    401:401:public int getLabelFor(android.view.View)
+    406:407:public void setLabelFor(android.view.View,int)
+    421:422:public void setLayoutDirection(android.view.View,int)
+android.support.v4.view.ViewCompat$ViewCompatImpl:
+    public abstract boolean canScrollVertically(android.view.View,int)
+    public abstract void setOverScrollMode(android.view.View,int)
+    public abstract void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    public abstract void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+    public abstract boolean hasTransientState(android.view.View)
+    public abstract void setHasTransientState(android.view.View,boolean)
+    public abstract void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+    public abstract int getImportantForAccessibility(android.view.View)
+    public abstract void setImportantForAccessibility(android.view.View,int)
+    public abstract boolean performAccessibilityAction(android.view.View,int,android.os.Bundle)
+    public abstract android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(android.view.View)
+    public abstract float getAlpha(android.view.View)
+    public abstract int getLabelFor(android.view.View)
+    public abstract void setLabelFor(android.view.View,int)
+    public abstract void setLayoutDirection(android.view.View,int)
+    public abstract android.view.ViewParent getParentForAccessibility(android.view.View)
+android.support.v4.view.ViewCompatEclairMr1:
+    22:22:ViewCompatEclairMr1()
+android.support.v4.view.ViewCompatGingerbread:
+    21:21:ViewCompatGingerbread()
+    27:28:public static void setOverScrollMode(android.view.View,int)
+android.support.v4.view.ViewCompatHC:
+    23:23:ViewCompatHC()
+    29:29:public static float getAlpha(android.view.View)
+android.support.v4.view.ViewCompatICS:
+    27:27:ViewCompatICS()
+    34:34:public static boolean canScrollVertically(android.view.View,int)
+    38:39:public static void setAccessibilityDelegate(android.view.View,java.lang.Object)
+    42:43:public static void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    46:47:public static void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    50:51:public static void onInitializeAccessibilityNodeInfo(android.view.View,java.lang.Object)
+android.support.v4.view.ViewCompatJB:
+    26:26:ViewCompatJB()
+    29:29:public static boolean hasTransientState(android.view.View)
+    33:34:public static void setHasTransientState(android.view.View,boolean)
+    50:51:public static void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+    54:54:public static int getImportantForAccessibility(android.view.View)
+    58:59:public static void setImportantForAccessibility(android.view.View,int)
+    62:62:public static boolean performAccessibilityAction(android.view.View,int,android.os.Bundle)
+    66:66:public static java.lang.Object getAccessibilityNodeProvider(android.view.View)
+    70:70:public static android.view.ViewParent getParentForAccessibility(android.view.View)
+android.support.v4.view.ViewCompatJellybeanMr1:
+    25:25:ViewCompatJellybeanMr1()
+    28:28:public static int getLabelFor(android.view.View)
+    32:33:public static void setLabelFor(android.view.View,int)
+    44:45:public static void setLayoutDirection(android.view.View,int)
+android.support.v4.view.ViewConfigurationCompat
+android.support.v4.view.ViewConfigurationCompat$BaseViewConfigurationVersionImpl
+android.support.v4.view.ViewConfigurationCompat$FroyoViewConfigurationVersionImpl
+android.support.v4.view.ViewConfigurationCompat$ViewConfigurationVersionImpl
+android.support.v4.view.ViewConfigurationCompatFroyo
+android.support.v4.view.ViewGroupCompat
+android.support.v4.view.ViewGroupCompat$ViewGroupCompatHCImpl
+android.support.v4.view.ViewGroupCompat$ViewGroupCompatIcsImpl
+android.support.v4.view.ViewGroupCompat$ViewGroupCompatImpl
+android.support.v4.view.ViewGroupCompat$ViewGroupCompatStubImpl
+android.support.v4.view.ViewGroupCompatHC
+android.support.v4.view.ViewGroupCompatIcs
+android.support.v4.view.ViewPager:
+    private static final java.lang.String TAG
+    private static final boolean DEBUG
+    private static final boolean USE_CACHE
+    private static final int DEFAULT_OFFSCREEN_PAGES
+    private static final int MAX_SETTLE_DURATION
+    private static final int MIN_DISTANCE_FOR_FLING
+    private static final int DEFAULT_GUTTER_SIZE
+    private static final int MIN_FLING_VELOCITY
+    private boolean mIgnoreGutter
+    private static final int INVALID_POINTER
+    private static final int CLOSE_ENOUGH
+    private long mFakeDragBeginTime
+    private static final int DRAW_ORDER_DEFAULT
+    private static final int DRAW_ORDER_FORWARD
+    private static final int DRAW_ORDER_REVERSE
+    public static final int SCROLL_STATE_IDLE
+    public static final int SCROLL_STATE_DRAGGING
+    public static final int SCROLL_STATE_SETTLING
+    344:346:public ViewPager(android.content.Context)
+    349:351:public ViewPager(android.content.Context,android.util.AttributeSet)
+    354:379:void initViewPager()
+    608:620:public void setPageTransformer(boolean,android.support.v4.view.ViewPager$PageTransformer)
+    654:656:android.support.v4.view.ViewPager$OnPageChangeListener setInternalPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener)
+    778:779:void smoothScrollTo(int,int)
+    2259:2275:public boolean beginFakeDrag()
+    2285:2306:public void endFakeDrag()
+    2316:2354:public void fakeDragBy(float)
+    2366:2366:public boolean isFakeDragging()
+    84:84:static synthetic void access$000(android.support.v4.view.ViewPager,int)
+    84:84:static synthetic android.support.v4.view.PagerAdapter access$200(android.support.v4.view.ViewPager)
+    84:84:static synthetic int access$300(android.support.v4.view.ViewPager)
+android.support.v4.view.ViewPager$3
+android.support.v4.view.ViewPager$MyAccessibilityDelegate
+android.support.v4.view.ViewPager$SimpleOnPageChangeListener
+android.support.v4.view.ViewParentCompat
+android.support.v4.view.ViewParentCompat$ViewParentCompatICSImpl
+android.support.v4.view.ViewParentCompat$ViewParentCompatImpl
+android.support.v4.view.ViewParentCompat$ViewParentCompatStubImpl
+android.support.v4.view.ViewParentCompatICS
+android.support.v4.view.WindowCompat
+android.support.v4.view.accessibility.AccessibilityEventCompat
+android.support.v4.view.accessibility.AccessibilityEventCompat$AccessibilityEventIcsImpl
+android.support.v4.view.accessibility.AccessibilityEventCompat$AccessibilityEventStubImpl
+android.support.v4.view.accessibility.AccessibilityEventCompat$AccessibilityEventVersionImpl
+android.support.v4.view.accessibility.AccessibilityEventCompatIcs
+android.support.v4.view.accessibility.AccessibilityManagerCompat
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerIcsImpl
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerIcsImpl$1
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerStubImpl
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerVersionImpl
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityStateChangeListenerCompat
+android.support.v4.view.accessibility.AccessibilityManagerCompatIcs
+android.support.v4.view.accessibility.AccessibilityManagerCompatIcs$1
+android.support.v4.view.accessibility.AccessibilityManagerCompatIcs$AccessibilityStateChangeListenerBridge
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoIcsImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoJellybeanImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoJellybeanMr2Impl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoStubImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompatIcs
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompatJellyBean
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompatJellybeanMr2
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderImpl
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderJellyBeanImpl
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderJellyBeanImpl$1
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderStubImpl
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompatJellyBean
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompatJellyBean$1
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompatJellyBean$AccessibilityNodeInfoBridge
+android.support.v4.view.accessibility.AccessibilityRecordCompat
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordIcsImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordIcsMr1Impl
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordJellyBeanImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordStubImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompatIcs
+android.support.v4.view.accessibility.AccessibilityRecordCompatIcsMr1
+android.support.v4.view.accessibility.AccessibilityRecordCompatJellyBean
+android.support.v4.widget.CursorAdapter
+android.support.v4.widget.CursorAdapter$1
+android.support.v4.widget.CursorAdapter$ChangeObserver
+android.support.v4.widget.CursorAdapter$MyDataSetObserver
+android.support.v4.widget.CursorFilter
+android.support.v4.widget.CursorFilter$CursorFilterClient
+android.support.v4.widget.DrawerLayout:
+    private static final java.lang.String TAG
+    public static final int STATE_IDLE
+    public static final int STATE_DRAGGING
+    public static final int STATE_SETTLING
+    public static final int LOCK_MODE_UNLOCKED
+    public static final int LOCK_MODE_LOCKED_CLOSED
+    public static final int LOCK_MODE_LOCKED_OPEN
+    private static final int MIN_DRAWER_MARGIN
+    private static final int DEFAULT_SCRIM_COLOR
+    private static final int PEEK_DELAY
+    private static final int MIN_FLING_VELOCITY
+    private static final boolean ALLOW_EDGE_LOCK
+    private static final boolean CHILDREN_DISALLOW_INTERCEPT
+    private static final float TOUCH_SLOP_SENSITIVITY
+    217:218:public DrawerLayout(android.content.Context)
+    221:222:public DrawerLayout(android.content.Context,android.util.AttributeSet)
+    225:249:public DrawerLayout(android.content.Context,android.util.AttributeSet,int)
+    265:275:public void setDrawerShadow(android.graphics.drawable.Drawable,int)
+    285:286:public void setDrawerShadow(int,int)
+    394:399:public void setDrawerLockMode(int,android.view.View)
+    409:416:public int getDrawerLockMode(int)
+    536:544:void moveDrawerToOffset(android.view.View,float)
+    1031:1040:public void openDrawer(int)
+    1074:1083:public void closeDrawer(int)
+    1096:1099:public boolean isDrawerOpen(android.view.View)
+    1112:1116:public boolean isDrawerOpen(int)
+    1143:1147:public boolean isDrawerVisible(int)
+    1202:1213:void cancelChildViewTouch()
+android.support.v4.widget.DrawerLayout$AccessibilityDelegate
+android.support.v4.widget.DrawerLayout$LayoutParams:
+    1502:1504:public DrawerLayout$LayoutParams(int,int,int)
+android.support.v4.widget.DrawerLayout$SimpleDrawerListener
+android.support.v4.widget.DrawerLayout$ViewDragCallback:
+    1326:1328:public DrawerLayout$ViewDragCallback(android.support.v4.widget.DrawerLayout,int)
+    1331:1332:public void setDragger(android.support.v4.widget.ViewDragHelper)
+    1411:1433:private void peekDrawer()
+    1316:1316:static synthetic void access$000(android.support.v4.widget.DrawerLayout$ViewDragCallback)
+android.support.v4.widget.DrawerLayout$ViewDragCallback$1
+android.support.v4.widget.EdgeEffectCompat:
+    132:134:public EdgeEffectCompat(android.content.Context)
+    204:204:public boolean onAbsorb(int)
+android.support.v4.widget.EdgeEffectCompat$BaseEdgeEffectImpl:
+    60:60:public java.lang.Object newEdgeEffect(android.content.Context)
+    82:82:public boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectIcsImpl:
+    92:92:public java.lang.Object newEdgeEffect(android.content.Context)
+    116:116:public boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectImpl:
+    public abstract java.lang.Object newEdgeEffect(android.content.Context)
+    public abstract boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.EdgeEffectCompatIcs:
+    28:28:EdgeEffectCompatIcs()
+    30:30:public static java.lang.Object newEdgeEffect(android.content.Context)
+    57:58:public static boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.ExploreByTouchHelper
+android.support.v4.widget.ExploreByTouchHelper$1
+android.support.v4.widget.ExploreByTouchHelper$ExploreByTouchNodeProvider
+android.support.v4.widget.ResourceCursorAdapter
+android.support.v4.widget.ScrollerCompat:
+    251:251:public static android.support.v4.widget.ScrollerCompat create(android.content.Context)
+    255:255:public static android.support.v4.widget.ScrollerCompat create(android.content.Context,android.view.animation.Interpolator)
+    258:260:ScrollerCompat(android.content.Context,android.view.animation.Interpolator)
+    314:314:public float getCurrVelocity()
+    341:342:public void startScroll(int,int,int,int)
+    382:383:public void fling(int,int,int,int,int,int,int,int)
+    410:412:public void fling(int,int,int,int,int,int,int,int,int,int)
+    437:438:public void notifyHorizontalEdgeReached(int,int,int)
+    454:455:public void notifyVerticalEdgeReached(int,int,int)
+    471:471:public boolean isOverScrolled()
+android.support.v4.widget.ScrollerCompat$ScrollerCompatImpl:
+    public abstract java.lang.Object createScroller(android.content.Context,android.view.animation.Interpolator)
+    public abstract float getCurrVelocity(java.lang.Object)
+    public abstract void startScroll(java.lang.Object,int,int,int,int)
+    public abstract void fling(java.lang.Object,int,int,int,int,int,int,int,int)
+    public abstract void fling(java.lang.Object,int,int,int,int,int,int,int,int,int,int)
+    public abstract void notifyHorizontalEdgeReached(java.lang.Object,int,int,int)
+    public abstract void notifyVerticalEdgeReached(java.lang.Object,int,int,int)
+    public abstract boolean isOverScrolled(java.lang.Object)
+android.support.v4.widget.ScrollerCompat$ScrollerCompatImplBase:
+    58:58:public java.lang.Object createScroller(android.content.Context,android.view.animation.Interpolator)
+    79:79:public float getCurrVelocity(java.lang.Object)
+    89:90:public void startScroll(java.lang.Object,int,int,int,int)
+    101:102:public void fling(java.lang.Object,int,int,int,int,int,int,int,int)
+    107:108:public void fling(java.lang.Object,int,int,int,int,int,int,int,int,int,int)
+    119:119:public void notifyHorizontalEdgeReached(java.lang.Object,int,int,int)
+    124:124:public void notifyVerticalEdgeReached(java.lang.Object,int,int,int)
+    129:129:public boolean isOverScrolled(java.lang.Object)
+android.support.v4.widget.ScrollerCompat$ScrollerCompatImplGingerbread:
+    146:146:public java.lang.Object createScroller(android.content.Context,android.view.animation.Interpolator)
+    166:166:public float getCurrVelocity(java.lang.Object)
+    176:177:public void startScroll(java.lang.Object,int,int,int,int)
+    188:190:public void fling(java.lang.Object,int,int,int,int,int,int,int,int)
+    195:197:public void fling(java.lang.Object,int,int,int,int,int,int,int,int,int,int)
+    207:208:public void notifyHorizontalEdgeReached(java.lang.Object,int,int,int)
+    212:213:public void notifyVerticalEdgeReached(java.lang.Object,int,int,int)
+    217:217:public boolean isOverScrolled(java.lang.Object)
+android.support.v4.widget.ScrollerCompat$ScrollerCompatImplIcs:
+    234:234:public float getCurrVelocity(java.lang.Object)
+android.support.v4.widget.ScrollerCompatGingerbread:
+    24:24:ScrollerCompatGingerbread()
+    26:26:public static java.lang.Object createScroller(android.content.Context,android.view.animation.Interpolator)
+    47:48:public static void startScroll(java.lang.Object,int,int,int,int)
+    57:58:public static void fling(java.lang.Object,int,int,int,int,int,int,int,int)
+    62:64:public static void fling(java.lang.Object,int,int,int,int,int,int,int,int,int,int)
+    72:73:public static void notifyHorizontalEdgeReached(java.lang.Object,int,int,int)
+    76:77:public static void notifyVerticalEdgeReached(java.lang.Object,int,int,int)
+    80:80:public static boolean isOverScrolled(java.lang.Object)
+android.support.v4.widget.ScrollerCompatIcs
+android.support.v4.widget.SearchViewCompat
+android.support.v4.widget.SearchViewCompat$OnCloseListenerCompat
+android.support.v4.widget.SearchViewCompat$OnQueryTextListenerCompat
+android.support.v4.widget.SearchViewCompat$SearchViewCompatHoneycombImpl
+android.support.v4.widget.SearchViewCompat$SearchViewCompatHoneycombImpl$1
+android.support.v4.widget.SearchViewCompat$SearchViewCompatHoneycombImpl$2
+android.support.v4.widget.SearchViewCompat$SearchViewCompatIcsImpl
+android.support.v4.widget.SearchViewCompat$SearchViewCompatImpl
+android.support.v4.widget.SearchViewCompat$SearchViewCompatStubImpl
+android.support.v4.widget.SearchViewCompatHoneycomb
+android.support.v4.widget.SearchViewCompatHoneycomb$1
+android.support.v4.widget.SearchViewCompatHoneycomb$2
+android.support.v4.widget.SearchViewCompatHoneycomb$OnCloseListenerCompatBridge
+android.support.v4.widget.SearchViewCompatHoneycomb$OnQueryTextListenerCompatBridge
+android.support.v4.widget.SearchViewCompatIcs
+android.support.v4.widget.SearchViewCompatIcs$MySearchView
+android.support.v4.widget.SimpleCursorAdapter
+android.support.v4.widget.SimpleCursorAdapter$CursorToStringConverter
+android.support.v4.widget.SimpleCursorAdapter$ViewBinder
+android.support.v4.widget.SlidingPaneLayout:
+    private static final java.lang.String TAG
+    private static final int DEFAULT_OVERHANG_SIZE
+    private static final int DEFAULT_FADE_COLOR
+    private static final int MIN_FLING_VELOCITY
+    244:245:public SlidingPaneLayout(android.content.Context)
+    248:249:public SlidingPaneLayout(android.content.Context,android.util.AttributeSet)
+    252:267:public SlidingPaneLayout(android.content.Context,android.util.AttributeSet,int)
+    328:331:void dispatchOnPanelSlide(android.view.View)
+    334:338:void dispatchOnPanelOpened(android.view.View)
+    341:345:void dispatchOnPanelClosed(android.view.View)
+    848:849:public void smoothSlideOpen()
+    866:867:public void smoothSlideClosed()
+    895:895:public boolean canSlide()
+    909:922:private void onPanelDragged(int)
+    1103:1122:protected boolean canScroll(android.view.View,boolean,int,int,int)
+    88:88:static synthetic boolean access$100(android.support.v4.widget.SlidingPaneLayout)
+    88:88:static synthetic android.support.v4.widget.ViewDragHelper access$200(android.support.v4.widget.SlidingPaneLayout)
+    88:88:static synthetic float access$300(android.support.v4.widget.SlidingPaneLayout)
+    88:88:static synthetic android.view.View access$400(android.support.v4.widget.SlidingPaneLayout)
+    88:88:static synthetic boolean access$502(android.support.v4.widget.SlidingPaneLayout,boolean)
+    88:88:static synthetic void access$600(android.support.v4.widget.SlidingPaneLayout,int)
+    88:88:static synthetic int access$700(android.support.v4.widget.SlidingPaneLayout)
+android.support.v4.widget.SlidingPaneLayout$AccessibilityDelegate
+android.support.v4.widget.SlidingPaneLayout$DragHelperCallback
+android.support.v4.widget.SlidingPaneLayout$LayoutParams:
+    1277:1278:public SlidingPaneLayout$LayoutParams(int,int)
+    1289:1291:public SlidingPaneLayout$LayoutParams(android.support.v4.widget.SlidingPaneLayout$LayoutParams)
+android.support.v4.widget.SlidingPaneLayout$PanelSlideListener:
+    public abstract void onPanelSlide(android.view.View,float)
+    public abstract void onPanelOpened(android.view.View)
+    public abstract void onPanelClosed(android.view.View)
+android.support.v4.widget.SlidingPaneLayout$SimplePanelSlideListener
+android.support.v4.widget.ViewDragHelper:
+    private static final java.lang.String TAG
+    public static final int INVALID_POINTER
+    public static final int STATE_IDLE
+    public static final int STATE_DRAGGING
+    public static final int STATE_SETTLING
+    public static final int EDGE_LEFT
+    public static final int EDGE_RIGHT
+    public static final int EDGE_TOP
+    public static final int EDGE_BOTTOM
+    public static final int EDGE_ALL
+    public static final int DIRECTION_HORIZONTAL
+    public static final int DIRECTION_VERTICAL
+    public static final int DIRECTION_ALL
+    private static final int EDGE_SIZE
+    private static final int BASE_SETTLE_DURATION
+    private static final int MAX_SETTLE_DURATION
+    347:347:public static android.support.v4.widget.ViewDragHelper create(android.view.ViewGroup,android.support.v4.widget.ViewDragHelper$Callback)
+    360:362:public static android.support.v4.widget.ViewDragHelper create(android.view.ViewGroup,float,android.support.v4.widget.ViewDragHelper$Callback)
+    373:392:private ViewDragHelper(android.content.Context,android.view.ViewGroup,android.support.v4.widget.ViewDragHelper$Callback)
+    401:402:public void setMinVelocity(float)
+    412:412:public float getMinVelocity()
+    437:438:public void setEdgeTrackingEnabled(int)
+    483:483:public int getActivePointerId()
+    690:701:public void flingCapturedView(int,int,int,int)
+    908:927:protected boolean canScroll(android.view.View,boolean,int,int,int,int)
+    1331:1337:public boolean isEdgeTouched(int)
+    1351:1351:public boolean isEdgeTouched(int,int)
+android.support.v4.widget.ViewDragHelper$2
+android.support.v4.widget.ViewDragHelper$Callback:
+    148:148:public ViewDragHelper$Callback()
+com.github.kevinsawicki.http.HttpRequest:
+    public static final java.lang.String CHARSET_UTF8
+    public static final java.lang.String CONTENT_TYPE_FORM
+    public static final java.lang.String CONTENT_TYPE_JSON
+    public static final java.lang.String ENCODING_GZIP
+    public static final java.lang.String HEADER_ACCEPT
+    public static final java.lang.String HEADER_ACCEPT_CHARSET
+    public static final java.lang.String HEADER_ACCEPT_ENCODING
+    public static final java.lang.String HEADER_AUTHORIZATION
+    public static final java.lang.String HEADER_CACHE_CONTROL
+    public static final java.lang.String HEADER_CONTENT_ENCODING
+    public static final java.lang.String HEADER_CONTENT_LENGTH
+    public static final java.lang.String HEADER_CONTENT_TYPE
+    public static final java.lang.String HEADER_DATE
+    public static final java.lang.String HEADER_ETAG
+    public static final java.lang.String HEADER_EXPIRES
+    public static final java.lang.String HEADER_IF_NONE_MATCH
+    public static final java.lang.String HEADER_LAST_MODIFIED
+    public static final java.lang.String HEADER_LOCATION
+    public static final java.lang.String HEADER_PROXY_AUTHORIZATION
+    public static final java.lang.String HEADER_REFERER
+    public static final java.lang.String HEADER_SERVER
+    public static final java.lang.String HEADER_USER_AGENT
+    public static final java.lang.String METHOD_DELETE
+    public static final java.lang.String METHOD_GET
+    public static final java.lang.String METHOD_HEAD
+    public static final java.lang.String METHOD_OPTIONS
+    public static final java.lang.String METHOD_POST
+    public static final java.lang.String METHOD_PUT
+    public static final java.lang.String METHOD_TRACE
+    public static final java.lang.String PARAM_CHARSET
+    private static final java.lang.String BOUNDARY
+    private static final java.lang.String CONTENT_TYPE_MULTIPART
+    private static final java.lang.String CRLF
+    private static javax.net.ssl.SSLSocketFactory TRUSTED_FACTORY
+    private static javax.net.ssl.HostnameVerifier TRUSTED_VERIFIER
+    private com.github.kevinsawicki.http.HttpRequest$RequestOutputStream output
+    private boolean multipart
+    private boolean form
+    private boolean ignoreCloseExceptions
+    private boolean uncompress
+    private int bufferSize
+    261:264:private static java.lang.String getValidCharset(java.lang.String)
+    269:296:private static javax.net.ssl.SSLSocketFactory getTrustedFactory()
+    300:308:private static javax.net.ssl.HostnameVerifier getTrustedVerifier()
+    317:319:private static java.lang.StringBuilder addPathSeparator(java.lang.String,java.lang.StringBuilder)
+    325:331:private static java.lang.StringBuilder addParamPrefix(java.lang.String,java.lang.StringBuilder)
+    375:379:public static void setConnectionFactory(com.github.kevinsawicki.http.HttpRequest$ConnectionFactory)
+    799:820:public static java.lang.String encode(java.lang.CharSequence)
+    835:864:public static java.lang.String append(java.lang.CharSequence,java.util.Map)
+    879:908:public static varargs java.lang.String append(java.lang.CharSequence,java.lang.Object[])
+    920:920:public static com.github.kevinsawicki.http.HttpRequest get(java.lang.CharSequence)
+    931:931:public static com.github.kevinsawicki.http.HttpRequest get(java.net.URL)
+    950:951:public static com.github.kevinsawicki.http.HttpRequest get(java.lang.CharSequence,java.util.Map,boolean)
+    971:972:public static varargs com.github.kevinsawicki.http.HttpRequest get(java.lang.CharSequence,boolean,java.lang.Object[])
+    984:984:public static com.github.kevinsawicki.http.HttpRequest post(java.lang.CharSequence)
+    995:995:public static com.github.kevinsawicki.http.HttpRequest post(java.net.URL)
+    1014:1015:public static com.github.kevinsawicki.http.HttpRequest post(java.lang.CharSequence,java.util.Map,boolean)
+    1035:1036:public static varargs com.github.kevinsawicki.http.HttpRequest post(java.lang.CharSequence,boolean,java.lang.Object[])
+    1048:1048:public static com.github.kevinsawicki.http.HttpRequest put(java.lang.CharSequence)
+    1059:1059:public static com.github.kevinsawicki.http.HttpRequest put(java.net.URL)
+    1078:1079:public static com.github.kevinsawicki.http.HttpRequest put(java.lang.CharSequence,java.util.Map,boolean)
+    1099:1100:public static varargs com.github.kevinsawicki.http.HttpRequest put(java.lang.CharSequence,boolean,java.lang.Object[])
+    1112:1112:public static com.github.kevinsawicki.http.HttpRequest delete(java.lang.CharSequence)
+    1123:1123:public static com.github.kevinsawicki.http.HttpRequest delete(java.net.URL)
+    1142:1143:public static com.github.kevinsawicki.http.HttpRequest delete(java.lang.CharSequence,java.util.Map,boolean)
+    1163:1164:public static varargs com.github.kevinsawicki.http.HttpRequest delete(java.lang.CharSequence,boolean,java.lang.Object[])
+    1176:1176:public static com.github.kevinsawicki.http.HttpRequest head(java.lang.CharSequence)
+    1187:1187:public static com.github.kevinsawicki.http.HttpRequest head(java.net.URL)
+    1206:1207:public static com.github.kevinsawicki.http.HttpRequest head(java.lang.CharSequence,java.util.Map,boolean)
+    1227:1228:public static varargs com.github.kevinsawicki.http.HttpRequest head(java.lang.CharSequence,boolean,java.lang.Object[])
+    1240:1240:public static com.github.kevinsawicki.http.HttpRequest options(java.lang.CharSequence)
+    1251:1251:public static com.github.kevinsawicki.http.HttpRequest options(java.net.URL)
+    1263:1263:public static com.github.kevinsawicki.http.HttpRequest trace(java.lang.CharSequence)
+    1274:1274:public static com.github.kevinsawicki.http.HttpRequest trace(java.net.URL)
+    1285:1286:public static void keepAlive(boolean)
+    1296:1297:public static void maxConnections(int)
+    1308:1310:public static void proxyHost(java.lang.String)
+    1321:1324:public static void proxyPort(int)
+    1336:1345:public static varargs void nonProxyHosts(java.lang.String[])
+    1358:1372:private static java.lang.String setProperty(java.lang.String,java.lang.String)
+    1404:1412:public HttpRequest(java.lang.CharSequence,java.lang.String)
+    1421:1425:public HttpRequest(java.net.URL,java.lang.String)
+    1471:1472:public com.github.kevinsawicki.http.HttpRequest ignoreCloseExceptions(boolean)
+    1482:1482:public boolean ignoreCloseExceptions()
+    1493:1496:public int code()
+    1510:1511:public com.github.kevinsawicki.http.HttpRequest code(java.util.concurrent.atomic.AtomicInteger)
+    1521:1521:public boolean ok()
+    1531:1531:public boolean created()
+    1541:1541:public boolean serverError()
+    1551:1551:public boolean badRequest()
+    1561:1561:public boolean notFound()
+    1571:1571:public boolean notModified()
+    1582:1585:public java.lang.String message()
+    1595:1596:public com.github.kevinsawicki.http.HttpRequest disconnect()
+    1606:1607:public com.github.kevinsawicki.http.HttpRequest chunk(int)
+    1622:1625:public com.github.kevinsawicki.http.HttpRequest bufferSize(int)
+    1636:1636:public int bufferSize()
+    1658:1659:public com.github.kevinsawicki.http.HttpRequest uncompress(boolean)
+    1668:1672:protected java.io.ByteArrayOutputStream byteStream()
+    1686:1691:public java.lang.String body(java.lang.String)
+    1703:1703:public java.lang.String body()
+    1715:1716:public com.github.kevinsawicki.http.HttpRequest body(java.util.concurrent.atomic.AtomicReference)
+    1729:1730:public com.github.kevinsawicki.http.HttpRequest body(java.util.concurrent.atomic.AtomicReference,java.lang.String)
+    1741:1741:public boolean isBodyEmpty()
+    1751:1757:public byte[] bytes()
+    1768:1768:public java.io.BufferedInputStream buffer()
+    1779:1804:public java.io.InputStream stream()
+    1821:1823:public java.io.InputStreamReader reader(java.lang.String)
+    1835:1835:public java.io.InputStreamReader reader()
+    1850:1850:public java.io.BufferedReader bufferedReader(java.lang.String)
+    1862:1862:public java.io.BufferedReader bufferedReader()
+    1875:1879:public com.github.kevinsawicki.http.HttpRequest receive(java.io.File)
+    1898:1900:public com.github.kevinsawicki.http.HttpRequest receive(java.io.OutputStream)
+    1913:1913:public com.github.kevinsawicki.http.HttpRequest receive(java.io.PrintStream)
+    1925:1926:public com.github.kevinsawicki.http.HttpRequest receive(java.lang.Appendable)
+    1950:1951:public com.github.kevinsawicki.http.HttpRequest receive(java.io.Writer)
+    1967:1968:public com.github.kevinsawicki.http.HttpRequest readTimeout(int)
+    1978:1979:public com.github.kevinsawicki.http.HttpRequest connectTimeout(int)
+    1990:1991:public com.github.kevinsawicki.http.HttpRequest header(java.lang.String,java.lang.String)
+    2002:2002:public com.github.kevinsawicki.http.HttpRequest header(java.lang.String,java.lang.Number)
+    2013:2016:public com.github.kevinsawicki.http.HttpRequest headers(java.util.Map)
+    2026:2026:public com.github.kevinsawicki.http.HttpRequest header(java.util.Map$Entry)
+    2037:2038:public java.lang.String header(java.lang.String)
+    2048:2049:public java.util.Map headers()
+    2061:2061:public long dateHeader(java.lang.String)
+    2075:2076:public long dateHeader(java.lang.String,long)
+    2088:2088:public int intHeader(java.lang.String)
+    2103:2104:public int intHeader(java.lang.String,int)
+    2114:2122:public java.lang.String[] headers(java.lang.String)
+    2133:2133:public java.lang.String parameter(java.lang.String,java.lang.String)
+    2146:2146:public java.util.Map parameters(java.lang.String)
+    2156:2191:protected java.util.Map getParams(java.lang.String)
+    2202:2234:protected java.lang.String getParam(java.lang.String,java.lang.String)
+    2243:2243:public java.lang.String charset()
+    2253:2253:public com.github.kevinsawicki.http.HttpRequest userAgent(java.lang.String)
+    2263:2263:public com.github.kevinsawicki.http.HttpRequest referer(java.lang.String)
+    2273:2274:public com.github.kevinsawicki.http.HttpRequest useCaches(boolean)
+    2284:2284:public com.github.kevinsawicki.http.HttpRequest acceptEncoding(java.lang.String)
+    2294:2294:public com.github.kevinsawicki.http.HttpRequest acceptGzipEncoding()
+    2304:2304:public com.github.kevinsawicki.http.HttpRequest acceptCharset(java.lang.String)
+    2313:2313:public java.lang.String contentEncoding()
+    2322:2322:public java.lang.String server()
+    2331:2331:public long date()
+    2340:2340:public java.lang.String cacheControl()
+    2349:2349:public java.lang.String eTag()
+    2358:2358:public long expires()
+    2367:2367:public long lastModified()
+    2376:2376:public java.lang.String location()
+    2386:2386:public com.github.kevinsawicki.http.HttpRequest authorization(java.lang.String)
+    2396:2396:public com.github.kevinsawicki.http.HttpRequest proxyAuthorization(java.lang.String)
+    2408:2408:public com.github.kevinsawicki.http.HttpRequest basic(java.lang.String,java.lang.String)
+    2420:2420:public com.github.kevinsawicki.http.HttpRequest proxyBasic(java.lang.String,java.lang.String)
+    2430:2431:public com.github.kevinsawicki.http.HttpRequest ifModifiedSince(long)
+    2441:2441:public com.github.kevinsawicki.http.HttpRequest ifNoneMatch(java.lang.String)
+    2451:2451:public com.github.kevinsawicki.http.HttpRequest contentType(java.lang.String)
+    2462:2466:public com.github.kevinsawicki.http.HttpRequest contentType(java.lang.String,java.lang.String)
+    2475:2475:public java.lang.String contentType()
+    2484:2484:public int contentLength()
+    2494:2494:public com.github.kevinsawicki.http.HttpRequest contentLength(java.lang.String)
+    2504:2505:public com.github.kevinsawicki.http.HttpRequest contentLength(int)
+    2515:2515:public com.github.kevinsawicki.http.HttpRequest accept(java.lang.String)
+    2524:2524:public com.github.kevinsawicki.http.HttpRequest acceptJson()
+    2537:2537:protected com.github.kevinsawicki.http.HttpRequest copy(java.io.InputStream,java.io.OutputStream)
+    2560:2560:protected com.github.kevinsawicki.http.HttpRequest copy(java.io.Reader,java.io.Writer)
+    2581:2594:protected com.github.kevinsawicki.http.HttpRequest closeOutput()
+    2606:2608:protected com.github.kevinsawicki.http.HttpRequest closeOutputQuietly()
+    2619:2626:protected com.github.kevinsawicki.http.HttpRequest openOutput()
+    2636:2642:protected com.github.kevinsawicki.http.HttpRequest startPart()
+    2655:2655:protected com.github.kevinsawicki.http.HttpRequest writePartHeader(java.lang.String,java.lang.String)
+    2669:2677:protected com.github.kevinsawicki.http.HttpRequest writePartHeader(java.lang.String,java.lang.String,java.lang.String)
+    2688:2688:public com.github.kevinsawicki.http.HttpRequest part(java.lang.String,java.lang.String)
+    2702:2702:public com.github.kevinsawicki.http.HttpRequest part(java.lang.String,java.lang.String,java.lang.String)
+    2719:2725:public com.github.kevinsawicki.http.HttpRequest part(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+    2738:2738:public com.github.kevinsawicki.http.HttpRequest part(java.lang.String,java.lang.Number)
+    2752:2752:public com.github.kevinsawicki.http.HttpRequest part(java.lang.String,java.lang.String,java.lang.Number)
+    2765:2765:public com.github.kevinsawicki.http.HttpRequest part(java.lang.String,java.io.File)
+    2779:2779:public com.github.kevinsawicki.http.HttpRequest part(java.lang.String,java.lang.String,java.io.File)
+    2797:2801:public com.github.kevinsawicki.http.HttpRequest part(java.lang.String,java.lang.String,java.lang.String,java.io.File)
+    2814:2814:public com.github.kevinsawicki.http.HttpRequest part(java.lang.String,java.io.InputStream)
+    2832:2838:public com.github.kevinsawicki.http.HttpRequest part(java.lang.String,java.lang.String,java.lang.String,java.io.InputStream)
+    2851:2851:public com.github.kevinsawicki.http.HttpRequest partHeader(java.lang.String,java.lang.String)
+    2864:2868:public com.github.kevinsawicki.http.HttpRequest send(java.io.File)
+    2879:2879:public com.github.kevinsawicki.http.HttpRequest send(byte[])
+    2893:2898:public com.github.kevinsawicki.http.HttpRequest send(java.io.InputStream)
+    2912:2918:public com.github.kevinsawicki.http.HttpRequest send(java.io.Reader)
+    2939:2944:public com.github.kevinsawicki.http.HttpRequest send(java.lang.CharSequence)
+    2955:2958:public java.io.OutputStreamWriter writer()
+    2973:2973:public com.github.kevinsawicki.http.HttpRequest form(java.util.Map)
+    2987:2987:public com.github.kevinsawicki.http.HttpRequest form(java.util.Map$Entry)
+    3003:3003:public com.github.kevinsawicki.http.HttpRequest form(java.util.Map$Entry,java.lang.String)
+    3019:3019:public com.github.kevinsawicki.http.HttpRequest form(java.lang.Object,java.lang.Object)
+    3036:3053:public com.github.kevinsawicki.http.HttpRequest form(java.lang.Object,java.lang.Object,java.lang.String)
+    3066:3069:public com.github.kevinsawicki.http.HttpRequest form(java.util.Map,java.lang.String)
+    3081:3085:public com.github.kevinsawicki.http.HttpRequest trustAllCerts()
+    3098:3102:public com.github.kevinsawicki.http.HttpRequest trustAllHosts()
+    3132:3137:public com.github.kevinsawicki.http.HttpRequest useProxy(java.lang.String,int)
+    3148:3149:public com.github.kevinsawicki.http.HttpRequest followRedirects(boolean)
+    260:260:static synthetic java.lang.String access$0(java.lang.String)
+    1391:1391:static synthetic int access$1(com.github.kevinsawicki.http.HttpRequest)
+com.github.kevinsawicki.http.HttpRequest$1
+com.github.kevinsawicki.http.HttpRequest$10
+com.github.kevinsawicki.http.HttpRequest$2
+com.github.kevinsawicki.http.HttpRequest$3
+com.github.kevinsawicki.http.HttpRequest$4
+com.github.kevinsawicki.http.HttpRequest$5
+com.github.kevinsawicki.http.HttpRequest$6
+com.github.kevinsawicki.http.HttpRequest$7
+com.github.kevinsawicki.http.HttpRequest$8
+com.github.kevinsawicki.http.HttpRequest$9
+com.github.kevinsawicki.http.HttpRequest$Base64
+com.github.kevinsawicki.http.HttpRequest$CloseOperation
+com.github.kevinsawicki.http.HttpRequest$FlushOperation
+com.github.kevinsawicki.http.HttpRequest$HttpRequestException:
+    private static final long serialVersionUID
+com.github.kevinsawicki.http.HttpRequest$Operation
+com.github.kevinsawicki.http.HttpRequest$RequestOutputStream
+com.nikhilparanjape.parksandrec.BuildConfig
+com.nikhilparanjape.parksandrec.MainScreenActivity:
+    private android.webkit.WebView mWebview
+    public static final java.lang.String TAG
+    163:169:public void showLoadingDialog()
+    242:247:private java.lang.StringBuilder getResult(org.apache.http.HttpResponse)
+com.nikhilparanjape.parksandrec.R
+com.nikhilparanjape.parksandrec.R$animator
+com.nikhilparanjape.parksandrec.R$attr
+com.nikhilparanjape.parksandrec.R$color
+com.nikhilparanjape.parksandrec.R$dimen
+com.nikhilparanjape.parksandrec.R$drawable
+com.nikhilparanjape.parksandrec.R$id
+com.nikhilparanjape.parksandrec.R$layout
+com.nikhilparanjape.parksandrec.R$menu
+com.nikhilparanjape.parksandrec.R$string
+com.nikhilparanjape.parksandrec.R$style
+org.jsoup.Connection:
+    public abstract org.jsoup.Connection url(java.net.URL)
+    public abstract org.jsoup.Connection userAgent(java.lang.String)
+    public abstract org.jsoup.Connection timeout(int)
+    public abstract org.jsoup.Connection maxBodySize(int)
+    public abstract org.jsoup.Connection referrer(java.lang.String)
+    public abstract org.jsoup.Connection followRedirects(boolean)
+    public abstract org.jsoup.Connection method(org.jsoup.Connection$Method)
+    public abstract org.jsoup.Connection ignoreHttpErrors(boolean)
+    public abstract org.jsoup.Connection ignoreContentType(boolean)
+    public abstract org.jsoup.Connection data(java.lang.String,java.lang.String)
+    public abstract org.jsoup.Connection data(java.util.Collection)
+    public abstract org.jsoup.Connection data(java.util.Map)
+    public varargs abstract org.jsoup.Connection data(java.lang.String[])
+    public abstract org.jsoup.Connection header(java.lang.String,java.lang.String)
+    public abstract org.jsoup.Connection cookie(java.lang.String,java.lang.String)
+    public abstract org.jsoup.Connection cookies(java.util.Map)
+    public abstract org.jsoup.Connection parser(org.jsoup.parser.Parser)
+    public abstract org.jsoup.nodes.Document post()
+    public abstract org.jsoup.Connection$Response execute()
+    public abstract org.jsoup.Connection$Request request()
+    public abstract org.jsoup.Connection request(org.jsoup.Connection$Request)
+    public abstract org.jsoup.Connection$Response response()
+    public abstract org.jsoup.Connection response(org.jsoup.Connection$Response)
+org.jsoup.Connection$Base:
+    public abstract java.lang.String header(java.lang.String)
+    public abstract org.jsoup.Connection$Base header(java.lang.String,java.lang.String)
+    public abstract boolean hasHeader(java.lang.String)
+    public abstract org.jsoup.Connection$Base removeHeader(java.lang.String)
+    public abstract java.lang.String cookie(java.lang.String)
+    public abstract boolean hasCookie(java.lang.String)
+    public abstract org.jsoup.Connection$Base removeCookie(java.lang.String)
+org.jsoup.Connection$KeyVal:
+    public abstract org.jsoup.Connection$KeyVal key(java.lang.String)
+    public abstract org.jsoup.Connection$KeyVal value(java.lang.String)
+org.jsoup.Connection$Request:
+    public abstract org.jsoup.Connection$Request timeout(int)
+    public abstract org.jsoup.Connection$Request maxBodySize(int)
+    public abstract org.jsoup.Connection$Request followRedirects(boolean)
+    public abstract org.jsoup.Connection$Request ignoreHttpErrors(boolean)
+    public abstract org.jsoup.Connection$Request ignoreContentType(boolean)
+    public abstract org.jsoup.Connection$Request data(org.jsoup.Connection$KeyVal)
+    public abstract org.jsoup.Connection$Request parser(org.jsoup.parser.Parser)
+org.jsoup.Connection$Response:
+    public abstract int statusCode()
+    public abstract java.lang.String statusMessage()
+    public abstract java.lang.String charset()
+    public abstract java.lang.String contentType()
+    public abstract java.lang.String body()
+    public abstract byte[] bodyAsBytes()
+org.jsoup.HttpStatusException:
+    19:19:public int getStatusCode()
+    23:23:public java.lang.String getUrl()
+org.jsoup.Jsoup:
+    20:20:private Jsoup()
+    31:31:public static org.jsoup.nodes.Document parse(java.lang.String,java.lang.String)
+    45:45:public static org.jsoup.nodes.Document parse(java.lang.String,java.lang.String,org.jsoup.parser.Parser)
+    58:58:public static org.jsoup.nodes.Document parse(java.lang.String)
+    88:88:public static org.jsoup.nodes.Document parse(java.io.File,java.lang.String,java.lang.String)
+    103:103:public static org.jsoup.nodes.Document parse(java.io.File,java.lang.String)
+    118:118:public static org.jsoup.nodes.Document parse(java.io.InputStream,java.lang.String,java.lang.String)
+    135:135:public static org.jsoup.nodes.Document parse(java.io.InputStream,java.lang.String,java.lang.String,org.jsoup.parser.Parser)
+    148:148:public static org.jsoup.nodes.Document parseBodyFragment(java.lang.String,java.lang.String)
+    160:160:public static org.jsoup.nodes.Document parseBodyFragment(java.lang.String)
+    181:183:public static org.jsoup.nodes.Document parse(java.net.URL,int)
+    198:201:public static java.lang.String clean(java.lang.String,java.lang.String,org.jsoup.safety.Whitelist)
+    215:215:public static java.lang.String clean(java.lang.String,org.jsoup.safety.Whitelist)
+    231:235:public static java.lang.String clean(java.lang.String,java.lang.String,org.jsoup.safety.Whitelist,org.jsoup.nodes.Document$OutputSettings)
+    247:249:public static boolean isValid(java.lang.String,org.jsoup.safety.Whitelist)
+org.jsoup.UnsupportedMimeTypeException:
+    19:19:public java.lang.String getMimeType()
+    23:23:public java.lang.String getUrl()
+org.jsoup.examples.HtmlToPlainText
+org.jsoup.examples.HtmlToPlainText$1
+org.jsoup.examples.HtmlToPlainText$FormattingVisitor
+org.jsoup.examples.ListLinks
+org.jsoup.helper.DataUtil:
+    static final java.lang.String defaultCharset
+    private static final int bufferSize
+    24:24:private DataUtil()
+    35:42:public static org.jsoup.nodes.Document load(java.io.File,java.lang.String,java.lang.String)
+    55:56:public static org.jsoup.nodes.Document load(java.io.InputStream,java.lang.String,java.lang.String)
+    69:70:public static org.jsoup.nodes.Document load(java.io.InputStream,java.lang.String,java.lang.String,org.jsoup.parser.Parser)
+    158:158:static java.nio.ByteBuffer readToByteBuffer(java.io.InputStream)
+org.jsoup.helper.HttpConnection:
+    32:34:public static org.jsoup.Connection connect(java.net.URL)
+    52:53:public org.jsoup.Connection url(java.net.URL)
+    67:69:public org.jsoup.Connection userAgent(java.lang.String)
+    73:74:public org.jsoup.Connection timeout(int)
+    78:79:public org.jsoup.Connection maxBodySize(int)
+    83:84:public org.jsoup.Connection followRedirects(boolean)
+    88:90:public org.jsoup.Connection referrer(java.lang.String)
+    94:95:public org.jsoup.Connection method(org.jsoup.Connection$Method)
+    99:100:public org.jsoup.Connection ignoreHttpErrors(boolean)
+    104:105:public org.jsoup.Connection ignoreContentType(boolean)
+    109:110:public org.jsoup.Connection data(java.lang.String,java.lang.String)
+    114:118:public org.jsoup.Connection data(java.util.Map)
+    122:131:public varargs org.jsoup.Connection data(java.lang.String[])
+    135:139:public org.jsoup.Connection data(java.util.Collection)
+    143:144:public org.jsoup.Connection header(java.lang.String,java.lang.String)
+    148:149:public org.jsoup.Connection cookie(java.lang.String,java.lang.String)
+    153:157:public org.jsoup.Connection cookies(java.util.Map)
+    161:162:public org.jsoup.Connection parser(org.jsoup.parser.Parser)
+    172:174:public org.jsoup.nodes.Document post()
+    183:183:public org.jsoup.Connection$Request request()
+    187:188:public org.jsoup.Connection request(org.jsoup.Connection$Request)
+    192:192:public org.jsoup.Connection$Response response()
+    196:197:public org.jsoup.Connection response(org.jsoup.Connection$Response)
+org.jsoup.helper.HttpConnection$Base:
+    286:287:public java.lang.String cookie(java.lang.String)
+    303:305:public org.jsoup.Connection$Base removeCookie(java.lang.String)
+org.jsoup.helper.HttpConnection$KeyVal
+org.jsoup.helper.HttpConnection$Request:
+    337:339:public org.jsoup.helper.HttpConnection$Request timeout(int)
+    347:349:public org.jsoup.Connection$Request maxBodySize(int)
+    357:358:public org.jsoup.Connection$Request followRedirects(boolean)
+    366:367:public org.jsoup.Connection$Request ignoreHttpErrors(boolean)
+    375:376:public org.jsoup.Connection$Request ignoreContentType(boolean)
+    380:382:public org.jsoup.helper.HttpConnection$Request data(org.jsoup.Connection$KeyVal)
+    390:391:public org.jsoup.helper.HttpConnection$Request parser(org.jsoup.parser.Parser)
+    313:313:public bridge synthetic java.lang.String cookie(java.lang.String)
+    313:313:public bridge synthetic org.jsoup.Connection$Request parser(org.jsoup.parser.Parser)
+    313:313:public bridge synthetic org.jsoup.Connection$Request data(org.jsoup.Connection$KeyVal)
+    313:313:public bridge synthetic org.jsoup.Connection$Request timeout(int)
+org.jsoup.helper.HttpConnection$Response:
+    private static final int MAX_REDIRECTS
+    500:500:public int statusCode()
+    504:504:public java.lang.String statusMessage()
+    508:508:public java.lang.String charset()
+    524:532:public java.lang.String body()
+    536:537:public byte[] bodyAsBytes()
+    399:399:public bridge synthetic java.lang.String cookie(java.lang.String)
+org.jsoup.helper.StringUtil:
+    9:9:public StringUtil()
+org.jsoup.helper.Validate:
+    8:8:private Validate()
+org.jsoup.nodes.Attribute:
+    41:43:public void setKey(java.lang.String)
+    95:96:public static org.jsoup.nodes.Attribute createFromEncoded(java.lang.String,java.lang.String)
+    100:100:protected boolean isDataAttribute()
+org.jsoup.nodes.Attributes:
+    protected static final java.lang.String dataPrefix
+    66:70:public void remove(java.lang.String)
+    129:129:public java.util.Map dataset()
+    247:247:private static java.lang.String dataKey(java.lang.String)
+    17:17:static synthetic java.util.LinkedHashMap access$100(org.jsoup.nodes.Attributes)
+    17:17:static synthetic java.util.LinkedHashMap access$102(org.jsoup.nodes.Attributes,java.util.LinkedHashMap)
+    17:17:static synthetic java.lang.String access$300(java.lang.String)
+org.jsoup.nodes.Attributes$1
+org.jsoup.nodes.Attributes$Dataset
+org.jsoup.nodes.Attributes$Dataset$DatasetIterator
+org.jsoup.nodes.Attributes$Dataset$EntrySet
+org.jsoup.nodes.Comment:
+    private static final java.lang.String COMMENT_KEY
+org.jsoup.nodes.DataNode:
+    private static final java.lang.String DATA_KEY
+    38:39:public org.jsoup.nodes.DataNode setWholeData(java.lang.String)
+    59:60:public static org.jsoup.nodes.DataNode createFromEncoded(java.lang.String,java.lang.String)
+org.jsoup.nodes.Document:
+    39:46:public static org.jsoup.nodes.Document createShell(java.lang.String)
+    55:55:public java.lang.String location()
+    63:63:public org.jsoup.nodes.Element head()
+    71:71:public org.jsoup.nodes.Element body()
+    80:81:public java.lang.String title()
+    90:97:public void title(java.lang.String)
+    105:105:public org.jsoup.nodes.Element createElement(java.lang.String)
+    114:131:public org.jsoup.nodes.Document normalise()
+    136:151:private void normaliseTextNodes(org.jsoup.nodes.Element)
+    155:173:private void normaliseStructure(java.lang.String,org.jsoup.nodes.Element)
+    177:186:private org.jsoup.nodes.Element findFirstElementByTagName(java.lang.String,org.jsoup.nodes.Node)
+    201:202:public org.jsoup.nodes.Element text(java.lang.String)
+    376:378:public org.jsoup.nodes.Document outputSettings(org.jsoup.nodes.Document$OutputSettings)
+org.jsoup.nodes.Document$OutputSettings:
+    248:249:public org.jsoup.nodes.Document$OutputSettings escapeMode(org.jsoup.nodes.Entities$EscapeMode)
+    305:306:public org.jsoup.nodes.Document$OutputSettings prettyPrint(boolean)
+    324:325:public org.jsoup.nodes.Document$OutputSettings outline(boolean)
+    342:344:public org.jsoup.nodes.Document$OutputSettings indentAmount(int)
+org.jsoup.nodes.Element:
+    75:77:public org.jsoup.nodes.Element tagName(java.lang.String)
+    134:134:public java.util.Map dataset()
+    147:149:public org.jsoup.select.Elements parents()
+    153:158:private static void accumulateParents(org.jsoup.nodes.Element,org.jsoup.select.Elements)
+    209:214:public java.util.List textNodes()
+    226:231:public java.util.List dataNodes()
+    275:278:public org.jsoup.nodes.Element prependChild(org.jsoup.nodes.Node)
+    292:300:public org.jsoup.nodes.Element insertChildren(int,java.util.Collection)
+    311:313:public org.jsoup.nodes.Element appendElement(java.lang.String)
+    324:326:public org.jsoup.nodes.Element prependElement(java.lang.String)
+    336:338:public org.jsoup.nodes.Element appendText(java.lang.String)
+    348:350:public org.jsoup.nodes.Element prependText(java.lang.String)
+    360:364:public org.jsoup.nodes.Element append(java.lang.String)
+    374:378:public org.jsoup.nodes.Element prepend(java.lang.String)
+    390:390:public org.jsoup.nodes.Element before(java.lang.String)
+    413:413:public org.jsoup.nodes.Element after(java.lang.String)
+    424:424:public org.jsoup.nodes.Element after(org.jsoup.nodes.Node)
+    432:433:public org.jsoup.nodes.Element empty()
+    444:444:public org.jsoup.nodes.Element wrap(java.lang.String)
+    473:480:public org.jsoup.nodes.Element nextElementSibling()
+    505:506:public org.jsoup.nodes.Element firstElementSibling()
+    524:525:public org.jsoup.nodes.Element lastElementSibling()
+    548:551:public org.jsoup.select.Elements getElementsByTag(java.lang.String)
+    564:570:public org.jsoup.nodes.Element getElementById(java.lang.String)
+    585:587:public org.jsoup.select.Elements getElementsByClass(java.lang.String)
+    597:600:public org.jsoup.select.Elements getElementsByAttribute(java.lang.String)
+    610:613:public org.jsoup.select.Elements getElementsByAttributeStarting(java.lang.String)
+    624:624:public org.jsoup.select.Elements getElementsByAttributeValue(java.lang.String,java.lang.String)
+    635:635:public org.jsoup.select.Elements getElementsByAttributeValueNot(java.lang.String,java.lang.String)
+    646:646:public org.jsoup.select.Elements getElementsByAttributeValueStarting(java.lang.String,java.lang.String)
+    657:657:public org.jsoup.select.Elements getElementsByAttributeValueEnding(java.lang.String,java.lang.String)
+    668:668:public org.jsoup.select.Elements getElementsByAttributeValueContaining(java.lang.String,java.lang.String)
+    678:678:public org.jsoup.select.Elements getElementsByAttributeValueMatching(java.lang.String,java.util.regex.Pattern)
+    691:695:public org.jsoup.select.Elements getElementsByAttributeValueMatching(java.lang.String,java.lang.String)
+    704:704:public org.jsoup.select.Elements getElementsByIndexLessThan(int)
+    713:713:public org.jsoup.select.Elements getElementsByIndexGreaterThan(int)
+    722:722:public org.jsoup.select.Elements getElementsByIndexEquals(int)
+    733:733:public org.jsoup.select.Elements getElementsContainingText(java.lang.String)
+    744:744:public org.jsoup.select.Elements getElementsContainingOwnText(java.lang.String)
+    754:754:public org.jsoup.select.Elements getElementsMatchingText(java.util.regex.Pattern)
+    766:770:public org.jsoup.select.Elements getElementsMatchingText(java.lang.String)
+    780:780:public org.jsoup.select.Elements getElementsMatchingOwnText(java.util.regex.Pattern)
+    792:796:public org.jsoup.select.Elements getElementsMatchingOwnText(java.lang.String)
+    899:905:public org.jsoup.nodes.Element text(java.lang.String)
+    913:924:public boolean hasText()
+    934:946:public java.lang.String data()
+    978:980:public org.jsoup.nodes.Element classNames(java.util.Set)
+    1003:1009:public org.jsoup.nodes.Element addClass(java.lang.String)
+    1018:1024:public org.jsoup.nodes.Element removeClass(java.lang.String)
+    1033:1042:public org.jsoup.nodes.Element toggleClass(java.lang.String)
+    1050:1053:public java.lang.String val()
+    1062:1066:public org.jsoup.nodes.Element val(java.lang.String)
+    1118:1120:public org.jsoup.nodes.Element html(java.lang.String)
+    21:21:public bridge synthetic org.jsoup.nodes.Node wrap(java.lang.String)
+    21:21:public bridge synthetic org.jsoup.nodes.Node after(org.jsoup.nodes.Node)
+    21:21:public bridge synthetic org.jsoup.nodes.Node after(java.lang.String)
+    21:21:public bridge synthetic org.jsoup.nodes.Node before(java.lang.String)
+org.jsoup.nodes.Entities:
+    111:111:static java.lang.String unescape(java.lang.String)
+    121:121:static java.lang.String unescape(java.lang.String,boolean)
+org.jsoup.nodes.FormElement:
+    36:36:public org.jsoup.select.Elements elements()
+    57:66:public org.jsoup.Connection submit()
+    75:92:public java.util.List formData()
+org.jsoup.nodes.Node:
+    122:124:public org.jsoup.nodes.Node removeAttr(java.lang.String)
+    132:132:public java.lang.String baseUri()
+    223:227:public java.util.List childNodesCopy()
+    239:239:protected org.jsoup.nodes.Node[] childNodesAsArray()
+    286:287:public org.jsoup.nodes.Node before(java.lang.String)
+    311:312:public org.jsoup.nodes.Node after(java.lang.String)
+    322:326:public org.jsoup.nodes.Node after(org.jsoup.nodes.Node)
+    330:336:private void addSiblingHtml(int,java.lang.String)
+    344:365:public org.jsoup.nodes.Node wrap(java.lang.String)
+    382:389:public org.jsoup.nodes.Node unwrap()
+    393:397:private org.jsoup.nodes.Element getDeepChild(org.jsoup.nodes.Element)
+    405:408:public void replaceWith(org.jsoup.nodes.Node)
+    417:427:protected void replaceChild(org.jsoup.nodes.Node,org.jsoup.nodes.Node)
+    507:516:public org.jsoup.nodes.Node previousSibling()
+org.jsoup.nodes.TextNode:
+    private static final java.lang.String TEXT_KEY
+    41:41:public java.lang.String text()
+    50:53:public org.jsoup.nodes.TextNode text(java.lang.String)
+    79:89:public org.jsoup.nodes.TextNode splitText(int)
+    115:116:public static org.jsoup.nodes.TextNode createFromEncoded(java.lang.String,java.lang.String)
+    166:167:public org.jsoup.nodes.Node removeAttr(java.lang.String)
+org.jsoup.nodes.XmlDeclaration:
+    private static final java.lang.String DECL_KEY
+    18:21:public XmlDeclaration(java.lang.String,java.lang.String,boolean)
+org.jsoup.parser.CharacterReader:
+    static final char EOF
+    59:59:java.lang.String consumeAsString()
+org.jsoup.parser.HtmlTreeBuilder:
+    59:105:java.util.List parseFragment(java.lang.String,org.jsoup.nodes.Element,java.lang.String,org.jsoup.parser.ParseErrorList)
+    545:546:void setPendingTableCharacters(java.util.List)
+org.jsoup.parser.HtmlTreeBuilderState$Constants:
+    1480:1480:private HtmlTreeBuilderState$Constants()
+org.jsoup.parser.ParseError:
+    25:25:public java.lang.String getErrorMessage()
+    33:33:public int getPosition()
+org.jsoup.parser.ParseErrorList:
+    private static final int INITIAL_CAPACITY
+    24:24:int getMaxSize()
+org.jsoup.parser.Parser:
+    private static final int DEFAULT_MAX_ERRORS
+    40:40:public org.jsoup.parser.TreeBuilder getTreeBuilder()
+    49:50:public org.jsoup.parser.Parser setTreeBuilder(org.jsoup.parser.TreeBuilder)
+    67:68:public org.jsoup.parser.Parser setTrackErrors(int)
+    76:76:public java.util.List getErrors()
+    89:90:public static org.jsoup.nodes.Document parse(java.lang.String,java.lang.String)
+    104:105:public static java.util.List parseFragment(java.lang.String,org.jsoup.nodes.Element,java.lang.String)
+    116:117:public static java.util.List parseXmlFragment(java.lang.String,java.lang.String)
+    129:136:public static org.jsoup.nodes.Document parseBodyFragment(java.lang.String,java.lang.String)
+    146:147:public static java.lang.String unescapeEntities(java.lang.String,boolean)
+    158:158:public static org.jsoup.nodes.Document parseBodyFragmentRelaxed(java.lang.String,java.lang.String)
+    178:178:public static org.jsoup.parser.Parser xmlParser()
+org.jsoup.parser.Tag:
+    91:91:public boolean canContainBlock()
+    100:100:public boolean isInline()
+    109:109:public boolean isData()
+    118:118:public boolean isEmpty()
+    146:146:public static boolean isKnownTag(java.lang.String)
+    171:171:public boolean isFormSubmittable()
+org.jsoup.parser.TokenQueue:
+    private static final char ESC
+    43:43:public char peek()
+    51:52:public void addFirst(java.lang.Character)
+    60:62:public void addFirst(java.lang.String)
+    79:79:public boolean matchesCS(java.lang.String)
+    109:109:public boolean matchesStartTag()
+    147:148:public void advance()
+    192:213:public java.lang.String consumeToIgnoreCase(java.lang.String)
+    248:250:public java.lang.String chompToIgnoreCase(java.lang.String)
+    325:328:public java.lang.String consumeWord()
+    337:341:public java.lang.String consumeTagName()
+    375:379:public java.lang.String consumeAttributeKey()
+org.jsoup.parser.Tokeniser:
+    static final char replacementChar
+    88:88:org.jsoup.parser.TokeniserState getState()
+    223:223:boolean currentNodeInHtmlNS()
+    234:246:java.lang.String unescapeEntities(boolean)
+org.jsoup.parser.TokeniserState:
+    private static final char nullChar
+    private static final char replacementChar
+    private static final char eof
+org.jsoup.parser.TreeBuilder:
+    36:36:org.jsoup.nodes.Document parse(java.lang.String,java.lang.String)
+org.jsoup.parser.XmlTreeBuilder
+org.jsoup.parser.XmlTreeBuilder$1
+org.jsoup.safety.Cleaner
+org.jsoup.safety.Cleaner$1
+org.jsoup.safety.Cleaner$CleaningVisitor
+org.jsoup.safety.Cleaner$ElementMeta
+org.jsoup.safety.Whitelist
+org.jsoup.safety.Whitelist$AttributeKey
+org.jsoup.safety.Whitelist$AttributeValue
+org.jsoup.safety.Whitelist$Protocol
+org.jsoup.safety.Whitelist$TagName
+org.jsoup.safety.Whitelist$TypedValue
+org.jsoup.select.Collector:
+    13:14:private Collector()
+org.jsoup.select.CombiningEvaluator$Or:
+    73:79:CombiningEvaluator$Or(java.util.Collection)
+org.jsoup.select.Elements:
+    27:29:public Elements(java.util.Collection)
+    36:37:public varargs Elements(org.jsoup.nodes.Element[])
+    70:74:public java.lang.String attr(java.lang.String)
+    83:87:public boolean hasAttr(java.lang.String)
+    97:100:public org.jsoup.select.Elements attr(java.lang.String,java.lang.String)
+    109:112:public org.jsoup.select.Elements removeAttr(java.lang.String)
+    121:124:public org.jsoup.select.Elements addClass(java.lang.String)
+    133:136:public org.jsoup.select.Elements removeClass(java.lang.String)
+    145:148:public org.jsoup.select.Elements toggleClass(java.lang.String)
+    157:161:public boolean hasClass(java.lang.String)
+    170:173:public java.lang.String val()
+    182:184:public org.jsoup.select.Elements val(java.lang.String)
+    196:202:public java.lang.String text()
+    206:210:public boolean hasText()
+    220:226:public java.lang.String html()
+    263:266:public org.jsoup.select.Elements tagName(java.lang.String)
+    276:279:public org.jsoup.select.Elements html(java.lang.String)
+    289:292:public org.jsoup.select.Elements prepend(java.lang.String)
+    302:305:public org.jsoup.select.Elements append(java.lang.String)
+    315:318:public org.jsoup.select.Elements before(java.lang.String)
+    328:331:public org.jsoup.select.Elements after(java.lang.String)
+    344:348:public org.jsoup.select.Elements wrap(java.lang.String)
+    365:368:public org.jsoup.select.Elements unwrap()
+    383:386:public org.jsoup.select.Elements empty()
+    402:405:public org.jsoup.select.Elements remove()
+    416:416:public org.jsoup.select.Elements select(java.lang.String)
+    430:431:public org.jsoup.select.Elements not(java.lang.String)
+    442:442:public org.jsoup.select.Elements eq(int)
+    451:452:public boolean is(java.lang.String)
+    460:464:public org.jsoup.select.Elements parents()
+    481:481:public org.jsoup.nodes.Element last()
+    490:495:public org.jsoup.select.Elements traverse(org.jsoup.select.NodeVisitor)
+    504:508:public java.util.List forms()
+org.jsoup.select.Evaluator$CssNthEvaluator:
+    406:407:public Evaluator$CssNthEvaluator(int)
+org.jsoup.select.Selector:
+    104:111:public static org.jsoup.select.Elements select(java.lang.String,java.lang.Iterable)
+    120:132:static org.jsoup.select.Elements filterOut(java.util.Collection,java.util.Collection)

@@ -1,5 +1,21 @@
 package com.nikhilparanjape.parksandrec;
 
+/* 
+ * Parks and Recreation:
+ * 
+ * MainScreenActivity.java
+ *
+ * This code is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation.
+ *
+ * This code is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * @author Nikhil Paranjape
+ */
 
 
 import java.io.BufferedReader;
@@ -197,8 +213,8 @@ public class MainScreenActivity extends Activity {
 				boolean hasTelephony = context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_TELEPHONY);
 				if (hasTelephony) {
 					Intent callIntent = new Intent(Intent.ACTION_CALL);
-				    callIntent.setData(Uri.parse("tel:2034312755"));
-				    startActivity(callIntent);
+					callIntent.setData(Uri.parse("tel:2034312755"));
+					startActivity(callIntent);
 				}
 				else {
 					Toast.makeText(this, "Your " + getDeviceName() + " doesn't support calling", Toast.LENGTH_LONG).show();
@@ -208,9 +224,11 @@ public class MainScreenActivity extends Activity {
 			catch(Exception e){
 				Button b = (Button)arg0.findViewById(R.id.callButton);
 				b.setText("Call Error");
-				Toast.makeText(this, "Error: Your " + getDeviceName() + " may not support calling", Toast.LENGTH_LONG).show();
 				if(getDeviceName().equals("Unknown sdk")){
-					Toast.makeText(this, "Lol, emulator :)", Toast.LENGTH_LONG).show();
+					Toast.makeText(this, "Emulators do not support calling", Toast.LENGTH_LONG).show();
+				}
+				else if(getDeviceName().equals("Unknown google_sdk")){
+					Toast.makeText(this, "Android L emulators do not work", Toast.LENGTH_LONG).show();
 				}
 				
 			}

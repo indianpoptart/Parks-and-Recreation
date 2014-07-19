@@ -50,12 +50,13 @@ public final class R {
     }
     public static final class id {
         public static final int TextView01=0x7f0a0010;
-        public static final int action_refresh=0x7f0a0015;
-        public static final int action_settings=0x7f0a0016;
+        public static final int action_refresh=0x7f0a0016;
+        public static final int action_settings=0x7f0a0017;
         public static final int agendaButton=0x7f0a0005;
         public static final int alertBackground=0x7f0a0000;
         public static final int alertDisplay=0x7f0a0003;
         public static final int alertLabel=0x7f0a0002;
+        public static final int androidSDK=0x7f0a0015;
         public static final int button1=0x7f0a000a;
         public static final int button2=0x7f0a000d;
         public static final int button3=0x7f0a000c;
