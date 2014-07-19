@@ -50817,7 +50817,7 @@ Interfaces (count = 0):
 
 Constant Pool (count = 114):
   + Integer [2130903041]
-  + Integer [2131361801]
+  + Integer [2131361800]
   + String [#FFBB33]
   + String [Agenda]
   + String [Loading...]
@@ -50989,7 +50989,7 @@ Methods (count = 2):
         + Methodref [com/nikhilparanjape/parksandrec/AgendaPage.setContentView (I)V]
       [50] aload_0 v0
       [51] ldc #2
-        + Integer [2131361801]
+        + Integer [2131361800]
       [53] invokevirtual #34
         + Methodref [com/nikhilparanjape/parksandrec/AgendaPage.findViewById (I)Landroid/view/View;]
       [56] checkcast #14
@@ -51223,7 +51223,7 @@ _____________________________________________________________________
 
 Interfaces (count = 0):
 
-Constant Pool (count = 397):
+Constant Pool (count = 388):
   + Integer [-65536]
   + Integer [2130837504]
   + Integer [2130837518]
@@ -51233,7 +51233,6 @@ Constant Pool (count = 397):
   + Integer [2131361796]
   + Integer [2131361797]
   + Integer [2131361798]
-  + Integer [2131361800]
   + String []
   + String [ ]
   + String [ doesn't support calling]
@@ -51290,7 +51289,6 @@ Constant Pool (count = 397):
   + Class [android/view/MenuItem]
   + Class [android/view/View]
   + Class [android/widget/Button]
-  + Class [android/widget/ProgressBar]
   + Class [android/widget/TextView]
   + Class [android/widget/Toast]
   + Class [com/nikhilparanjape/parksandrec/AgendaPage]
@@ -51305,9 +51303,8 @@ Constant Pool (count = 397):
   + Class [java/lang/StringBuilder]
   + Fieldref [android/os/Build.MANUFACTURER Ljava/lang/String;]
   + Fieldref [android/os/Build.MODEL Ljava/lang/String;]
-  + Fieldref [com/nikhilparanjape/parksandrec/MainScreenActivity.a Landroid/widget/ProgressBar;]
-  + Fieldref [com/nikhilparanjape/parksandrec/MainScreenActivity.b Landroid/app/ProgressDialog;]
-  + Fieldref [com/nikhilparanjape/parksandrec/MainScreenActivity.c Z]
+  + Fieldref [com/nikhilparanjape/parksandrec/MainScreenActivity.a Landroid/app/ProgressDialog;]
+  + Fieldref [com/nikhilparanjape/parksandrec/MainScreenActivity.b Z]
   + Methodref [a/a/b/e.a (Ljava/lang/String;)La/a/d/f;]
   + Methodref [a/a/b/i.r ()Ljava/lang/String;]
   + Methodref [a/a/d/f.c ()La/a/b/i;]
@@ -51338,7 +51335,6 @@ Constant Pool (count = 397):
   + Methodref [android/view/View.findViewById (I)Landroid/view/View;]
   + Methodref [android/widget/Button.setBackgroundResource (I)V]
   + Methodref [android/widget/Button.setText (Ljava/lang/CharSequence;)V]
-  + Methodref [android/widget/ProgressBar.setVisibility (I)V]
   + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
   + Methodref [android/widget/TextView.setTextColor (I)V]
   + Methodref [android/widget/Toast.makeText (Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
@@ -51384,13 +51380,12 @@ Constant Pool (count = 397):
   + NameAndType [a (Ljava/lang/String;)La/a/a;]
   + NameAndType [a (Ljava/lang/String;)La/a/d/f;]
   + NameAndType [a (Ljava/lang/String;)Ljava/lang/String;]
-  + NameAndType [a Landroid/widget/ProgressBar;]
+  + NameAndType [a Landroid/app/ProgressDialog;]
   + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
   + NameAndType [b ()Ljava/lang/String;]
-  + NameAndType [b Landroid/app/ProgressDialog;]
+  + NameAndType [b Z]
   + NameAndType [build ()Landroid/os/StrictMode$ThreadPolicy;]
   + NameAndType [c ()La/a/b/i;]
-  + NameAndType [c Z]
   + NameAndType [charAt (I)C]
   + NameAndType [contains (Ljava/lang/CharSequence;)Z]
   + NameAndType [equals (Ljava/lang/Object;)Z]
@@ -51427,7 +51422,6 @@ Constant Pool (count = 397):
   + NameAndType [setTextColor (I)V]
   + NameAndType [setThreadPolicy (Landroid/os/StrictMode$ThreadPolicy;)V]
   + NameAndType [setTitle (Ljava/lang/CharSequence;)V]
-  + NameAndType [setVisibility (I)V]
   + NameAndType [show ()V]
   + NameAndType [startActivity (Landroid/content/Intent;)V]
   + NameAndType [startAgenda (Landroid/view/View;)V]
@@ -51502,7 +51496,6 @@ Constant Pool (count = 397):
   + Utf8 [Error!]
   + Utf8 [Landroid/annotation/SuppressLint;]
   + Utf8 [Landroid/app/ProgressDialog;]
-  + Utf8 [Landroid/widget/ProgressBar;]
   + Utf8 [Ljava/lang/String;]
   + Utf8 [Loading...]
   + Utf8 [MANUFACTURER]
@@ -51548,7 +51541,6 @@ Constant Pool (count = 397):
   + Utf8 [android/view/MenuItem]
   + Utf8 [android/view/View]
   + Utf8 [android/widget/Button]
-  + Utf8 [android/widget/ProgressBar]
   + Utf8 [android/widget/TextView]
   + Utf8 [android/widget/Toast]
   + Utf8 [append]
@@ -51608,7 +51600,6 @@ Constant Pool (count = 397):
   + Utf8 [setTextColor]
   + Utf8 [setThreadPolicy]
   + Utf8 [setTitle]
-  + Utf8 [setVisibility]
   + Utf8 [show]
   + Utf8 [showError]
   + Utf8 [startActivity]
@@ -51621,16 +51612,13 @@ Constant Pool (count = 397):
   + Utf8 [value]
   + Utf8 [valueOf]
 
-Fields (count = 3):
-  + Field:        a Landroid/widget/ProgressBar;
+Fields (count = 2):
+  + Field:        a Landroid/app/ProgressDialog;
     Access flags: 0x2
-      = private android.widget.ProgressBar a
-  + Field:        b Landroid/app/ProgressDialog;
+      = private android.app.ProgressDialog a
+  + Field:        b Z
     Access flags: 0x2
-      = private android.app.ProgressDialog b
-  + Field:        c Z
-    Access flags: 0x2
-      = private boolean c
+      = private boolean b
 
 Methods (count = 15):
   - Method:       <init>()V
@@ -51639,12 +51627,12 @@ Methods (count = 15):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 10, locals = 1, stack = 2):
       [0] aload_0 v0
-      [1] invokespecial #92
+      [1] invokespecial #89
         + Methodref [android/app/Activity.<init> ()V]
       [4] aload_0 v0
       [5] iconst_0
-      [6] putfield #84
-        + Fieldref [com/nikhilparanjape/parksandrec/MainScreenActivity.c Z]
+      [6] putfield #81
+        + Fieldref [com/nikhilparanjape/parksandrec/MainScreenActivity.b Z]
       [9] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
@@ -51652,156 +51640,132 @@ Methods (count = 15):
     Access flags: 0x4
       = protected void onCreate(android.os.Bundle)
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 170, locals = 5, stack = 4):
+    + Code attribute instructions (code length = 136, locals = 5, stack = 4):
       [0] aload_0 v0
       [1] aload_1 v1
-      [2] invokespecial #94
+      [2] invokespecial #91
         + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
       [5] aload_0 v0
-      [6] invokevirtual #124
+      [6] invokevirtual #120
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.getActionBar ()Landroid/app/ActionBar;]
       [9] astore_2 v2
       [10] aload_2 v2
-      [11] new #55
+      [11] new #54
         + Class [android/graphics/drawable/ColorDrawable]
       [14] dup
-      [15] ldc #14
+      [15] ldc #13
         + String [#FFBB33]
-      [17] invokestatic #103
+      [17] invokestatic #100
         + Methodref [android/graphics/Color.parseColor (Ljava/lang/String;)I]
-      [20] invokespecial #104
+      [20] invokespecial #101
         + Methodref [android/graphics/drawable/ColorDrawable.<init> (I)V]
-      [23] invokevirtual #89
+      [23] invokevirtual #86
         + Methodref [android/app/ActionBar.setBackgroundDrawable (Landroid/graphics/drawable/Drawable;)V]
       [26] aload_2 v2
       [27] iconst_0
-      [28] invokevirtual #90
+      [28] invokevirtual #87
         + Methodref [android/app/ActionBar.setDisplayShowHomeEnabled (Z)V]
       [31] aload_2 v2
-      [32] ldc #30
+      [32] ldc #29
         + String [Parks and Rec]
-      [34] invokevirtual #91
+      [34] invokevirtual #88
         + Methodref [android/app/ActionBar.setTitle (Ljava/lang/CharSequence;)V]
       [37] aload_0 v0
       [38] ldc #4
         + Integer [2130903040]
-      [40] invokevirtual #128
+      [40] invokevirtual #124
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.setContentView (I)V]
       [43] aload_0 v0
-      [44] aload_0 v0
-      [45] ldc #10
-        + Integer [2131361800]
-      [47] invokevirtual #123
-        + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.findViewById (I)Landroid/view/View;]
-      [50] checkcast #67
-        + Class [android/widget/ProgressBar]
-      [53] putfield #82
-        + Fieldref [com/nikhilparanjape/parksandrec/MainScreenActivity.a Landroid/widget/ProgressBar;]
-      [56] aload_0 v0
-      [57] invokestatic #131
+      [44] invokestatic #127
         + Methodref [com/nikhilparanjape/parksandrec/a.a (Landroid/content/Context;)Z]
-      [60] ifne +37 (target=97)
-      [63] aload_0 v0
-      [64] ldc #6
+      [47] ifne +47 (target=94)
+      [50] aload_0 v0
+      [51] ldc #6
         + Integer [2131361795]
-      [66] invokevirtual #123
+      [53] invokevirtual #119
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.findViewById (I)Landroid/view/View;]
-      [69] checkcast #68
+      [56] checkcast #66
         + Class [android/widget/TextView]
-      [72] astore_3 v3
-      [73] aload_3 v3
-      [74] ldc #1
+      [59] astore_3 v3
+      [60] aload_3 v3
+      [61] ldc #1
         + Integer [-65536]
-      [76] invokevirtual #117
+      [63] invokevirtual #113
         + Methodref [android/widget/TextView.setTextColor (I)V]
-      [79] aload_3 v3
-      [80] ldc #17
+      [66] aload_3 v3
+      [67] ldc #16
         + String [Alert! No Internet Connection!]
-      [82] invokevirtual #116
+      [69] invokevirtual #112
         + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
-      [85] aload_0 v0
-      [86] getfield #82
-        + Fieldref [com/nikhilparanjape/parksandrec/MainScreenActivity.a Landroid/widget/ProgressBar;]
-      [89] bipush 8
-      [91] invokevirtual #115
-        + Methodref [android/widget/ProgressBar.setVisibility (I)V]
-      [94] goto +34 (target=128)
-      [97] aload_0 v0
-      [98] getfield #82
-        + Fieldref [com/nikhilparanjape/parksandrec/MainScreenActivity.a Landroid/widget/ProgressBar;]
-      [101] bipush 8
-      [103] invokevirtual #115
-        + Methodref [android/widget/ProgressBar.setVisibility (I)V]
-      [106] goto +22 (target=128)
-      [109] astore_3 v3
-      [110] aload_0 v0
-      [111] ldc #6
+      [72] goto +22 (target=94)
+      [75] astore_3 v3
+      [76] aload_0 v0
+      [77] ldc #6
         + Integer [2131361795]
-      [113] invokevirtual #123
+      [79] invokevirtual #119
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.findViewById (I)Landroid/view/View;]
-      [116] checkcast #68
+      [82] checkcast #66
         + Class [android/widget/TextView]
+      [85] astore v4
+      [87] aload v4
+      [89] ldc #23
+        + String [Error]
+      [91] invokevirtual #112
+        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [94] aload_0 v0
+      [95] ldc #7
+        + Integer [2131361796]
+      [97] invokevirtual #119
+        + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.findViewById (I)Landroid/view/View;]
+      [100] checkcast #65
+        + Class [android/widget/Button]
+      [103] astore_3 v3
+      [104] aload_3 v3
+      [105] ldc #2
+        + Integer [2130837504]
+      [107] invokevirtual #110
+        + Methodref [android/widget/Button.setBackgroundResource (I)V]
+      [110] aload_0 v0
+      [111] ldc #8
+        + Integer [2131361797]
+      [113] invokevirtual #119
+        + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.findViewById (I)Landroid/view/View;]
+      [116] checkcast #65
+        + Class [android/widget/Button]
       [119] astore v4
       [121] aload v4
-      [123] ldc #24
-        + String [Error]
-      [125] invokevirtual #116
-        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
-      [128] aload_0 v0
-      [129] ldc #7
-        + Integer [2131361796]
-      [131] invokevirtual #123
-        + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.findViewById (I)Landroid/view/View;]
-      [134] checkcast #66
-        + Class [android/widget/Button]
-      [137] astore_3 v3
-      [138] aload_3 v3
-      [139] ldc #2
-        + Integer [2130837504]
-      [141] invokevirtual #113
-        + Methodref [android/widget/Button.setBackgroundResource (I)V]
-      [144] aload_0 v0
-      [145] ldc #8
-        + Integer [2131361797]
-      [147] invokevirtual #123
-        + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.findViewById (I)Landroid/view/View;]
-      [150] checkcast #66
-        + Class [android/widget/Button]
-      [153] astore v4
-      [155] aload v4
-      [157] ldc #16
+      [123] ldc #15
         + String [Agenda]
-      [159] invokevirtual #114
+      [125] invokevirtual #111
         + Methodref [android/widget/Button.setText (Ljava/lang/CharSequence;)V]
-      [162] aload v4
-      [164] ldc #2
+      [128] aload v4
+      [130] ldc #2
         + Integer [2130837504]
-      [166] invokevirtual #113
+      [132] invokevirtual #110
         + Methodref [android/widget/Button.setBackgroundResource (I)V]
-      [169] return
+      [135] return
       Code attribute exceptions (count = 1):
-      - ExceptionInfo (56 -> 106: 109):
+      - ExceptionInfo (43 -> 72: 75):
       + Class [java/lang/Exception]
       Code attribute attributes (attribute count = 1):
-      + Stack map table attribute (count = 4):
-        - [97] Var: ...[a:android/app/ActionBar], Stack: (empty)
-        - [106] Var: ..., Stack: (empty)
-        - [109] Var: ..., Stack: [a:java/lang/Exception]
-        - [128] Var: ..., Stack: (empty)
+      + Stack map table attribute (count = 3):
+        - [72] Var: ...[a:android/app/ActionBar], Stack: (empty)
+        - [75] Var: ..., Stack: [a:java/lang/Exception]
+        - [94] Var: ..., Stack: (empty)
   + Method:       onCreateOptionsMenu(Landroid/view/Menu;)Z
     Access flags: 0x1
       = public boolean onCreateOptionsMenu(android.view.Menu)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 14, locals = 3, stack = 3):
       [0] aload_0 v0
-      [1] invokevirtual #125
+      [1] invokevirtual #121
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.getMenuInflater ()Landroid/view/MenuInflater;]
       [4] astore_2 v2
       [5] aload_2 v2
       [6] ldc #5
         + Integer [2131296256]
       [8] aload_1 v1
-      [9] invokevirtual #111
+      [9] invokevirtual #108
         + Methodref [android/view/MenuInflater.inflate (ILandroid/view/Menu;)V]
       [12] iconst_1
       [13] ireturn
@@ -51813,34 +51777,34 @@ Methods (count = 15):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 57, locals = 3, stack = 4):
       [0] aload_1 v1
-      [1] invokeinterface #148
+      [1] invokeinterface #144
         + InterfaceMethodref [android/view/MenuItem.getItemId ()I]
       [6] tableswitch (2 offsets, default=45) (target=51)
-        2131361814: offset = 22, target = 28
-        2131361815: offset = 29, target = 35
+        2131361813: offset = 22, target = 28
+        2131361814: offset = 29, target = 35
         default: offset = 45, target = 51
       [28] aload_0 v0
       [29] aconst_null
-      [30] invokevirtual #127
+      [30] invokevirtual #123
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.rLoad (Landroid/view/View;)V]
       [33] iconst_1
       [34] ireturn
-      [35] new #52
+      [35] new #51
         + Class [android/content/Intent]
       [38] dup
       [39] aload_0 v0
-      [40] ldc #73
+      [40] ldc #71
         + Class [com/nikhilparanjape/parksandrec/SettingsPage]
-      [42] invokespecial #99
+      [42] invokespecial #96
         + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
       [45] astore_2 v2
       [46] aload_0 v0
       [47] aload_2 v2
-      [48] invokevirtual #129
+      [48] invokevirtual #125
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.startActivity (Landroid/content/Intent;)V]
       [51] aload_0 v0
       [52] aload_1 v1
-      [53] invokespecial #95
+      [53] invokespecial #92
         + Methodref [android/app/Activity.onOptionsItemSelected (Landroid/view/MenuItem;)Z]
       [56] ireturn
       Code attribute exceptions (count = 0):
@@ -51857,28 +51821,28 @@ Methods (count = 15):
       [0] aload_0 v0
       [1] ldc #7
         + Integer [2131361796]
-      [3] invokevirtual #123
+      [3] invokevirtual #119
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.findViewById (I)Landroid/view/View;]
-      [6] checkcast #66
+      [6] checkcast #65
         + Class [android/widget/Button]
       [9] astore_2 v2
       [10] aload_2 v2
       [11] ldc #3
         + Integer [2130837518]
-      [13] invokevirtual #113
+      [13] invokevirtual #110
         + Methodref [android/widget/Button.setBackgroundResource (I)V]
-      [16] new #52
+      [16] new #51
         + Class [android/content/Intent]
       [19] dup
       [20] aload_0 v0
-      [21] ldc #72
+      [21] ldc #70
         + Class [com/nikhilparanjape/parksandrec/SchedulePage]
-      [23] invokespecial #99
+      [23] invokespecial #96
         + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
       [26] astore_3 v3
       [27] aload_0 v0
       [28] aload_3 v3
-      [29] invokevirtual #129
+      [29] invokevirtual #125
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.startActivity (Landroid/content/Intent;)V]
       [32] return
       Code attribute exceptions (count = 0):
@@ -51891,20 +51855,20 @@ Methods (count = 15):
       [0] aload_0 v0
       [1] ldc #6
         + Integer [2131361795]
-      [3] invokevirtual #123
+      [3] invokevirtual #119
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.findViewById (I)Landroid/view/View;]
-      [6] checkcast #68
+      [6] checkcast #66
         + Class [android/widget/TextView]
       [9] astore_2 v2
       [10] aload_2 v2
       [11] ldc #1
         + Integer [-65536]
-      [13] invokevirtual #117
+      [13] invokevirtual #113
         + Methodref [android/widget/TextView.setTextColor (I)V]
       [16] aload_2 v2
-      [17] ldc #33
+      [17] ldc #32
         + String [There was a problem loading the agenda!]
-      [19] invokevirtual #116
+      [19] invokevirtual #112
         + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
       [22] return
       Code attribute exceptions (count = 0):
@@ -51917,39 +51881,39 @@ Methods (count = 15):
       [0] aload_0 v0
       [1] ldc #8
         + Integer [2131361797]
-      [3] invokevirtual #123
+      [3] invokevirtual #119
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.findViewById (I)Landroid/view/View;]
-      [6] checkcast #66
+      [6] checkcast #65
         + Class [android/widget/Button]
       [9] astore_2 v2
       [10] aload_2 v2
-      [11] ldc #26
+      [11] ldc #25
         + String [Loading...]
-      [13] invokevirtual #114
+      [13] invokevirtual #111
         + Methodref [android/widget/Button.setText (Ljava/lang/CharSequence;)V]
       [16] aload_2 v2
       [17] ldc #3
         + Integer [2130837518]
-      [19] invokevirtual #113
+      [19] invokevirtual #110
         + Methodref [android/widget/Button.setBackgroundResource (I)V]
       [22] aload_0 v0
-      [23] invokestatic #131
+      [23] invokestatic #127
         + Methodref [com/nikhilparanjape/parksandrec/a.a (Landroid/content/Context;)Z]
       [26] ifne +18 (target=44)
       [29] aload_2 v2
       [30] ldc #2
         + Integer [2130837504]
-      [32] invokevirtual #113
+      [32] invokevirtual #110
         + Methodref [android/widget/Button.setBackgroundResource (I)V]
       [35] aload_2 v2
-      [36] ldc #29
+      [36] ldc #28
         + String [No Internet Connection!]
-      [38] invokevirtual #114
+      [38] invokevirtual #111
         + Methodref [android/widget/Button.setText (Ljava/lang/CharSequence;)V]
       [41] goto +8 (target=49)
       [44] aload_0 v0
       [45] aconst_null
-      [46] invokevirtual #130
+      [46] invokevirtual #126
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.startAgenda (Landroid/view/View;)V]
       [49] return
       Code attribute exceptions (count = 0):
@@ -51962,41 +51926,41 @@ Methods (count = 15):
       = public void startAgenda(android.view.View)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 47, locals = 4, stack = 4):
-      [0] new #52
+      [0] new #51
         + Class [android/content/Intent]
       [3] dup
       [4] aload_0 v0
-      [5] ldc #70
+      [5] ldc #68
         + Class [com/nikhilparanjape/parksandrec/AgendaPage]
-      [7] invokespecial #99
+      [7] invokespecial #96
         + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
       [10] astore_2 v2
       [11] aload_0 v0
       [12] ldc #8
         + Integer [2131361797]
-      [14] invokevirtual #123
+      [14] invokevirtual #119
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.findViewById (I)Landroid/view/View;]
-      [17] checkcast #66
+      [17] checkcast #65
         + Class [android/widget/Button]
       [20] astore_3 v3
       [21] aload_3 v3
-      [22] ldc #16
+      [22] ldc #15
         + String [Agenda]
-      [24] invokevirtual #114
+      [24] invokevirtual #111
         + Methodref [android/widget/Button.setText (Ljava/lang/CharSequence;)V]
       [27] aload_0 v0
       [28] aload_2 v2
-      [29] invokevirtual #129
+      [29] invokevirtual #125
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.startActivity (Landroid/content/Intent;)V]
       [32] goto +14 (target=46)
       [35] astore_2 v2
       [36] aload_0 v0
-      [37] ldc #18
+      [37] ldc #17
         + String [An unknown error has occured!]
       [39] iconst_1
-      [40] invokestatic #118
+      [40] invokestatic #114
         + Methodref [android/widget/Toast.makeText (Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
-      [43] invokevirtual #119
+      [43] invokevirtual #115
         + Methodref [android/widget/Toast.show ()V]
       [46] return
       Code attribute exceptions (count = 1):
@@ -52012,17 +51976,17 @@ Methods (count = 15):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 22, locals = 1, stack = 1):
       [0] aload_0 v0
-      [1] getfield #83
-        + Fieldref [com/nikhilparanjape/parksandrec/MainScreenActivity.b Landroid/app/ProgressDialog;]
+      [1] getfield #80
+        + Fieldref [com/nikhilparanjape/parksandrec/MainScreenActivity.a Landroid/app/ProgressDialog;]
       [4] ifnull +17 (target=21)
       [7] aload_0 v0
-      [8] getfield #83
-        + Fieldref [com/nikhilparanjape/parksandrec/MainScreenActivity.b Landroid/app/ProgressDialog;]
-      [11] invokevirtual #97
+      [8] getfield #80
+        + Fieldref [com/nikhilparanjape/parksandrec/MainScreenActivity.a Landroid/app/ProgressDialog;]
+      [11] invokevirtual #94
         + Methodref [android/app/ProgressDialog.isShowing ()Z]
       [14] ifeq +7 (target=21)
       [17] aload_0 v0
-      [18] invokevirtual #120
+      [18] invokevirtual #116
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.a ()V]
       [21] return
       Code attribute exceptions (count = 0):
@@ -52034,41 +51998,41 @@ Methods (count = 15):
       = public java.lang.String b()
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 50, locals = 3, stack = 4):
-      [0] getstatic #80
+      [0] getstatic #78
         + Fieldref [android/os/Build.MANUFACTURER Ljava/lang/String;]
       [3] astore_1 v1
-      [4] getstatic #81
+      [4] getstatic #79
         + Fieldref [android/os/Build.MODEL Ljava/lang/String;]
       [7] astore_2 v2
       [8] aload_2 v2
       [9] aload_1 v1
-      [10] invokevirtual #140
+      [10] invokevirtual #136
         + Methodref [java/lang/String.startsWith (Ljava/lang/String;)Z]
       [13] ifeq +9 (target=22)
       [16] aload_0 v0
       [17] aload_2 v2
-      [18] invokespecial #121
+      [18] invokespecial #117
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.a (Ljava/lang/String;)Ljava/lang/String;]
       [21] areturn
-      [22] new #79
+      [22] new #77
         + Class [java/lang/StringBuilder]
       [25] dup
       [26] aload_0 v0
       [27] aload_1 v1
-      [28] invokespecial #121
+      [28] invokespecial #117
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.a (Ljava/lang/String;)Ljava/lang/String;]
-      [31] invokestatic #143
+      [31] invokestatic #139
         + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
-      [34] invokespecial #144
+      [34] invokespecial #140
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
-      [37] ldc #12
+      [37] ldc #11
         + String [ ]
-      [39] invokevirtual #145
+      [39] invokevirtual #141
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [42] aload_2 v2
-      [43] invokevirtual #145
+      [43] invokevirtual #141
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [46] invokevirtual #146
+      [46] invokevirtual #142
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
       [49] areturn
       Code attribute exceptions (count = 0):
@@ -52083,40 +52047,40 @@ Methods (count = 15):
       [0] aload_1 v1
       [1] ifnull +10 (target=11)
       [4] aload_1 v1
-      [5] invokevirtual #138
+      [5] invokevirtual #134
         + Methodref [java/lang/String.length ()I]
       [8] ifne +6 (target=14)
-      [11] ldc #11
+      [11] ldc #10
         + String []
       [13] areturn
       [14] aload_1 v1
       [15] iconst_0
-      [16] invokevirtual #135
+      [16] invokevirtual #131
         + Methodref [java/lang/String.charAt (I)C]
       [19] istore_2 v2
       [20] iload_2 v2
-      [21] invokestatic #133
+      [21] invokestatic #129
         + Methodref [java/lang/Character.isUpperCase (C)Z]
       [24] ifeq +5 (target=29)
       [27] aload_1 v1
       [28] areturn
-      [29] new #79
+      [29] new #77
         + Class [java/lang/StringBuilder]
       [32] dup
       [33] iload_2 v2
-      [34] invokestatic #134
+      [34] invokestatic #130
         + Methodref [java/lang/Character.toUpperCase (C)C]
-      [37] invokestatic #142
+      [37] invokestatic #138
         + Methodref [java/lang/String.valueOf (C)Ljava/lang/String;]
-      [40] invokespecial #144
+      [40] invokespecial #140
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
       [43] aload_1 v1
       [44] iconst_1
-      [45] invokevirtual #141
+      [45] invokevirtual #137
         + Methodref [java/lang/String.substring (I)Ljava/lang/String;]
-      [48] invokevirtual #145
+      [48] invokevirtual #141
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [51] invokevirtual #146
+      [51] invokevirtual #142
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
       [54] areturn
       Code attribute exceptions (count = 0):
@@ -52133,180 +52097,180 @@ Methods (count = 15):
       [0] aload_0 v0
       [1] ldc #9
         + Integer [2131361798]
-      [3] invokevirtual #123
+      [3] invokevirtual #119
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.findViewById (I)Landroid/view/View;]
-      [6] checkcast #66
+      [6] checkcast #65
         + Class [android/widget/Button]
       [9] astore_2 v2
       [10] aload_2 v2
       [11] ldc #3
         + Integer [2130837518]
-      [13] invokevirtual #113
+      [13] invokevirtual #110
         + Methodref [android/widget/Button.setBackgroundResource (I)V]
       [16] aload_0 v0
-      [17] ldc #41
+      [17] ldc #40
         + String [phone]
-      [19] invokevirtual #126
+      [19] invokevirtual #122
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
-      [22] checkcast #62
+      [22] checkcast #61
         + Class [android/telephony/TelephonyManager]
       [25] astore_3 v3
       [26] aload_3 v3
-      [27] invokevirtual #110
+      [27] invokevirtual #107
         + Methodref [android/telephony/TelephonyManager.getPhoneType ()I]
       [30] ifne +44 (target=74)
       [33] aload_0 v0
-      [34] new #79
+      [34] new #77
         + Class [java/lang/StringBuilder]
       [37] dup
-      [38] ldc #36
+      [38] ldc #35
         + String [Your ]
-      [40] invokespecial #144
+      [40] invokespecial #140
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
       [43] aload_0 v0
-      [44] invokevirtual #122
+      [44] invokevirtual #118
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.b ()Ljava/lang/String;]
-      [47] invokevirtual #145
+      [47] invokevirtual #141
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [50] ldc #13
+      [50] ldc #12
         + String [ doesn't support calling]
-      [52] invokevirtual #145
+      [52] invokevirtual #141
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [55] invokevirtual #146
+      [55] invokevirtual #142
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
       [58] iconst_1
-      [59] invokestatic #118
+      [59] invokestatic #114
         + Methodref [android/widget/Toast.makeText (Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
-      [62] invokevirtual #119
+      [62] invokevirtual #115
         + Methodref [android/widget/Toast.show ()V]
       [65] aload_2 v2
-      [66] ldc #21
+      [66] ldc #20
         + String [Calling Unsupported]
-      [68] invokevirtual #114
+      [68] invokevirtual #111
         + Methodref [android/widget/Button.setText (Ljava/lang/CharSequence;)V]
       [71] goto +174 (target=245)
       [74] aload_1 v1
       [75] ldc #9
         + Integer [2131361798]
-      [77] invokevirtual #112
+      [77] invokevirtual #109
         + Methodref [android/view/View.findViewById (I)Landroid/view/View;]
-      [80] checkcast #66
+      [80] checkcast #65
         + Class [android/widget/Button]
       [83] astore v4
       [85] aconst_null
       [86] astore v5
       [88] aload v5
-      [90] invokevirtual #98
+      [90] invokevirtual #95
         + Methodref [android/content/Context.getPackageManager ()Landroid/content/pm/PackageManager;]
-      [93] ldc #37
+      [93] ldc #36
         + String [android.hardware.telephony]
-      [95] invokevirtual #102
+      [95] invokevirtual #99
         + Methodref [android/content/pm/PackageManager.hasSystemFeature (Ljava/lang/String;)Z]
       [98] istore v6
       [100] iload v6
       [102] ifeq +34 (target=136)
-      [105] new #52
+      [105] new #51
         + Class [android/content/Intent]
       [108] dup
-      [109] ldc #38
+      [109] ldc #37
         + String [android.intent.action.CALL]
-      [111] invokespecial #100
+      [111] invokespecial #97
         + Methodref [android/content/Intent.<init> (Ljava/lang/String;)V]
       [114] astore v7
       [116] aload v7
-      [118] ldc #42
+      [118] ldc #41
         + String [tel:2034312755]
-      [120] invokestatic #105
+      [120] invokestatic #102
         + Methodref [android/net/Uri.parse (Ljava/lang/String;)Landroid/net/Uri;]
-      [123] invokevirtual #101
+      [123] invokevirtual #98
         + Methodref [android/content/Intent.setData (Landroid/net/Uri;)Landroid/content/Intent;]
       [126] pop
       [127] aload_0 v0
       [128] aload v7
-      [130] invokevirtual #129
+      [130] invokevirtual #125
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.startActivity (Landroid/content/Intent;)V]
       [133] goto +112 (target=245)
       [136] aload_0 v0
-      [137] new #79
+      [137] new #77
         + Class [java/lang/StringBuilder]
       [140] dup
-      [141] ldc #36
+      [141] ldc #35
         + String [Your ]
-      [143] invokespecial #144
+      [143] invokespecial #140
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
       [146] aload_0 v0
-      [147] invokevirtual #122
+      [147] invokevirtual #118
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.b ()Ljava/lang/String;]
-      [150] invokevirtual #145
+      [150] invokevirtual #141
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [153] ldc #13
+      [153] ldc #12
         + String [ doesn't support calling]
-      [155] invokevirtual #145
+      [155] invokevirtual #141
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [158] invokevirtual #146
+      [158] invokevirtual #142
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
       [161] iconst_1
-      [162] invokestatic #118
+      [162] invokestatic #114
         + Methodref [android/widget/Toast.makeText (Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
-      [165] invokevirtual #119
+      [165] invokevirtual #115
         + Methodref [android/widget/Toast.show ()V]
       [168] aload v4
-      [170] ldc #21
+      [170] ldc #20
         + String [Calling Unsupported]
-      [172] invokevirtual #114
+      [172] invokevirtual #111
         + Methodref [android/widget/Button.setText (Ljava/lang/CharSequence;)V]
       [175] goto +70 (target=245)
       [178] astore v4
       [180] aload_1 v1
       [181] ldc #9
         + Integer [2131361798]
-      [183] invokevirtual #112
+      [183] invokevirtual #109
         + Methodref [android/view/View.findViewById (I)Landroid/view/View;]
-      [186] checkcast #66
+      [186] checkcast #65
         + Class [android/widget/Button]
       [189] astore v5
       [191] aload v5
-      [193] ldc #20
+      [193] ldc #19
         + String [Call Error]
-      [195] invokevirtual #114
+      [195] invokevirtual #111
         + Methodref [android/widget/Button.setText (Ljava/lang/CharSequence;)V]
       [198] aload_0 v0
-      [199] invokevirtual #122
+      [199] invokevirtual #118
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.b ()Ljava/lang/String;]
-      [202] ldc #35
+      [202] ldc #34
         + String [Unknown sdk]
-      [204] invokevirtual #137
+      [204] invokevirtual #133
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
       [207] ifeq +16 (target=223)
       [210] aload_0 v0
-      [211] ldc #23
+      [211] ldc #22
         + String [Emulators do not support calling]
       [213] iconst_1
-      [214] invokestatic #118
+      [214] invokestatic #114
         + Methodref [android/widget/Toast.makeText (Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
-      [217] invokevirtual #119
+      [217] invokevirtual #115
         + Methodref [android/widget/Toast.show ()V]
       [220] goto +25 (target=245)
       [223] aload_0 v0
-      [224] invokevirtual #122
+      [224] invokevirtual #118
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.b ()Ljava/lang/String;]
-      [227] ldc #34
+      [227] ldc #33
         + String [Unknown google_sdk]
-      [229] invokevirtual #137
+      [229] invokevirtual #133
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
       [232] ifeq +13 (target=245)
       [235] aload_0 v0
-      [236] ldc #19
+      [236] ldc #18
         + String [Android L emulators do not work]
       [238] iconst_1
-      [239] invokestatic #118
+      [239] invokestatic #114
         + Methodref [android/widget/Toast.makeText (Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
-      [242] invokevirtual #119
+      [242] invokevirtual #115
         + Methodref [android/widget/Toast.show ()V]
       [245] aload_2 v2
       [246] ldc #2
         + Integer [2130837504]
-      [248] invokevirtual #113
+      [248] invokevirtual #110
         + Methodref [android/widget/Button.setBackgroundResource (I)V]
       [251] return
       Code attribute exceptions (count = 1):
@@ -52324,209 +52288,182 @@ Methods (count = 15):
     Access flags: 0x1
       = public void rLoad(android.view.View)
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 214, locals = 9, stack = 3):
+    + Code attribute instructions (code length = 172, locals = 8, stack = 3):
       [0] aload_0 v0
       [1] ldc #6
         + Integer [2131361795]
-      [3] invokevirtual #123
+      [3] invokevirtual #119
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.findViewById (I)Landroid/view/View;]
-      [6] checkcast #68
+      [6] checkcast #66
         + Class [android/widget/TextView]
       [9] astore_2 v2
       [10] aload_0 v0
-      [11] ldc #10
-        + Integer [2131361800]
-      [13] invokevirtual #123
-        + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.findViewById (I)Landroid/view/View;]
-      [16] checkcast #67
-        + Class [android/widget/ProgressBar]
-      [19] astore_3 v3
-      [20] aload_0 v0
-      [21] invokestatic #131
+      [11] invokestatic #127
         + Methodref [com/nikhilparanjape/parksandrec/a.a (Landroid/content/Context;)Z]
-      [24] ifne +23 (target=47)
-      [27] aload_2 v2
-      [28] ldc #1
+      [14] ifne +18 (target=32)
+      [17] aload_2 v2
+      [18] ldc #1
         + Integer [-65536]
-      [30] invokevirtual #117
+      [20] invokevirtual #113
         + Methodref [android/widget/TextView.setTextColor (I)V]
-      [33] aload_2 v2
-      [34] ldc #27
+      [23] aload_2 v2
+      [24] ldc #26
         + String [Network Disconnected!]
-      [36] invokevirtual #116
+      [26] invokevirtual #112
         + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
-      [39] aload_3 v3
-      [40] iconst_0
-      [41] invokevirtual #115
-        + Methodref [android/widget/ProgressBar.setVisibility (I)V]
-      [44] goto +169 (target=213)
-      [47] new #61
+      [29] goto +142 (target=171)
+      [32] new #60
         + Class [android/os/StrictMode$ThreadPolicy$Builder]
-      [50] dup
-      [51] invokespecial #107
+      [35] dup
+      [36] invokespecial #104
         + Methodref [android/os/StrictMode$ThreadPolicy$Builder.<init> ()V]
-      [54] invokevirtual #109
+      [39] invokevirtual #106
         + Methodref [android/os/StrictMode$ThreadPolicy$Builder.permitAll ()Landroid/os/StrictMode$ThreadPolicy$Builder;]
-      [57] invokevirtual #108
+      [42] invokevirtual #105
         + Methodref [android/os/StrictMode$ThreadPolicy$Builder.build ()Landroid/os/StrictMode$ThreadPolicy;]
+      [45] astore_3 v3
+      [46] aload_3 v3
+      [47] invokestatic #103
+        + Methodref [android/os/StrictMode.setThreadPolicy (Landroid/os/StrictMode$ThreadPolicy;)V]
+      [50] ldc #39
+        + String [http://ridgefieldparksandrec.org]
+      [52] invokestatic #85
+        + Methodref [a/a/h.a (Ljava/lang/String;)La/a/a;]
+      [55] invokeinterface #143
+        + InterfaceMethodref [a/a/a.a ()La/a/b/e;]
       [60] astore v4
       [62] aload v4
-      [64] invokestatic #106
-        + Methodref [android/os/StrictMode.setThreadPolicy (Landroid/os/StrictMode$ThreadPolicy;)V]
-      [67] ldc #40
-        + String [http://ridgefieldparksandrec.org]
-      [69] invokestatic #88
-        + Methodref [a/a/h.a (Ljava/lang/String;)La/a/a;]
-      [72] invokeinterface #147
-        + InterfaceMethodref [a/a/a.a ()La/a/b/e;]
-      [77] astore v5
-      [79] aload v5
-      [81] ldc #39
+      [64] ldc #38
         + String [div.alert]
-      [83] invokevirtual #85
+      [66] invokevirtual #82
         + Methodref [a/a/b/e.a (Ljava/lang/String;)La/a/d/f;]
-      [86] invokevirtual #87
+      [69] invokevirtual #84
         + Methodref [a/a/d/f.c ()La/a/b/i;]
-      [89] astore v6
-      [91] aload v6
-      [93] invokevirtual #86
+      [72] astore v5
+      [74] aload v5
+      [76] invokevirtual #83
         + Methodref [a/a/b/i.r ()Ljava/lang/String;]
-      [96] astore v7
-      [98] ldc #15
+      [79] astore v6
+      [81] ldc #14
         + String [, click here for details.]
-      [100] astore v8
-      [102] aload v7
-      [104] aload v8
-      [106] ldc #22
+      [83] astore v7
+      [85] aload v6
+      [87] aload v7
+      [89] ldc #21
         + String [Check the agenda for more information]
-      [108] invokevirtual #139
+      [91] invokevirtual #135
         + Methodref [java/lang/String.replaceAll (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
-      [111] astore v7
-      [113] aload v7
-      [115] ldc #11
+      [94] astore v6
+      [96] aload v6
+      [98] ldc #10
         + String []
-      [117] invokevirtual #136
+      [100] invokevirtual #132
         + Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
-      [120] ifeq +23 (target=143)
-      [123] aload_3 v3
-      [124] bipush 8
-      [126] invokevirtual #115
-        + Methodref [android/widget/ProgressBar.setVisibility (I)V]
-      [129] aload_2 v2
-      [130] iconst_m1
-      [131] invokevirtual #117
+      [103] ifeq +17 (target=120)
+      [106] aload_2 v2
+      [107] iconst_m1
+      [108] invokevirtual #113
         + Methodref [android/widget/TextView.setTextColor (I)V]
-      [134] aload_2 v2
-      [135] aload v7
-      [137] invokevirtual #116
+      [111] aload_2 v2
+      [112] aload v6
+      [114] invokevirtual #112
         + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
-      [140] goto +64 (target=204)
-      [143] aload_3 v3
-      [144] bipush 8
-      [146] invokevirtual #115
-        + Methodref [android/widget/ProgressBar.setVisibility (I)V]
-      [149] aload_2 v2
-      [150] iconst_m1
-      [151] invokevirtual #117
+      [117] goto +54 (target=171)
+      [120] aload_2 v2
+      [121] iconst_m1
+      [122] invokevirtual #113
         + Methodref [android/widget/TextView.setTextColor (I)V]
-      [154] aload_2 v2
-      [155] ldc #32
+      [125] aload_2 v2
+      [126] ldc #31
         + String [There are currently no alerts]
-      [157] invokevirtual #116
+      [128] invokevirtual #112
         + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
-      [160] goto +44 (target=204)
-      [163] astore v4
-      [165] aload v4
-      [167] invokevirtual #132
+      [131] goto +40 (target=171)
+      [134] astore_3 v3
+      [135] aload_3 v3
+      [136] invokevirtual #128
         + Methodref [java/io/IOException.printStackTrace ()V]
-      [170] goto +34 (target=204)
-      [173] astore v4
-      [175] aload_2 v2
-      [176] ldc #1
+      [139] goto +32 (target=171)
+      [142] astore_3 v3
+      [143] aload_2 v2
+      [144] ldc #1
         + Integer [-65536]
-      [178] invokevirtual #117
+      [146] invokevirtual #113
         + Methodref [android/widget/TextView.setTextColor (I)V]
-      [181] aload_2 v2
-      [182] ldc #28
+      [149] aload_2 v2
+      [150] ldc #27
         + String [Network Error!]
-      [184] invokevirtual #116
+      [152] invokevirtual #112
         + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
-      [187] goto +17 (target=204)
-      [190] astore v4
-      [192] aload_2 v2
-      [193] ldc #1
+      [155] goto +16 (target=171)
+      [158] astore_3 v3
+      [159] aload_2 v2
+      [160] ldc #1
         + Integer [-65536]
-      [195] invokevirtual #117
+      [162] invokevirtual #113
         + Methodref [android/widget/TextView.setTextColor (I)V]
-      [198] aload_2 v2
-      [199] ldc #25
+      [165] aload_2 v2
+      [166] ldc #24
         + String [Error!]
-      [201] invokevirtual #116
+      [168] invokevirtual #112
         + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
-      [204] aload_0 v0
-      [205] getfield #82
-        + Fieldref [com/nikhilparanjape/parksandrec/MainScreenActivity.a Landroid/widget/ProgressBar;]
-      [208] bipush 8
-      [210] invokevirtual #115
-        + Methodref [android/widget/ProgressBar.setVisibility (I)V]
-      [213] return
+      [171] return
       Code attribute exceptions (count = 3):
-      - ExceptionInfo (47 -> 160: 163):
+      - ExceptionInfo (32 -> 131: 134):
       + Class [java/io/IOException]
-      - ExceptionInfo (47 -> 160: 173):
+      - ExceptionInfo (32 -> 131: 142):
       + Class [android/os/NetworkOnMainThreadException]
-      - ExceptionInfo (47 -> 160: 190):
+      - ExceptionInfo (32 -> 131: 158):
       + Class [java/lang/Exception]
       Code attribute attributes (attribute count = 1):
-      + Stack map table attribute (count = 8):
-        - [47] Var: ...[a:android/widget/TextView][a:android/widget/ProgressBar], Stack: (empty)
-        - [143] Var: [a:com/nikhilparanjape/parksandrec/MainScreenActivity][a:android/view/View][a:android/widget/TextView][a:android/widget/ProgressBar][a:android/os/StrictMode$ThreadPolicy][a:a/a/b/e][a:a/a/b/i][a:java/lang/String][a:java/lang/String], Stack: 
-        - [160] Var: [a:com/nikhilparanjape/parksandrec/MainScreenActivity][a:android/view/View][a:android/widget/TextView][a:android/widget/ProgressBar], Stack: 
-        - [163] Var: ..., Stack: [a:java/io/IOException]
-        - [173] Var: ..., Stack: [a:android/os/NetworkOnMainThreadException]
-        - [190] Var: ..., Stack: [a:java/lang/Exception]
-        - [204] Var: ..., Stack: (empty)
-        - [213] Var: ..., Stack: (empty)
+      + Stack map table attribute (count = 7):
+        - [32] Var: ...[a:android/widget/TextView], Stack: (empty)
+        - [120] Var: [a:com/nikhilparanjape/parksandrec/MainScreenActivity][a:android/view/View][a:android/widget/TextView][a:android/os/StrictMode$ThreadPolicy][a:a/a/b/e][a:a/a/b/i][a:java/lang/String][a:java/lang/String], Stack: 
+        - [131] Var: [a:com/nikhilparanjape/parksandrec/MainScreenActivity][a:android/view/View][a:android/widget/TextView], Stack: 
+        - [134] Var: ..., Stack: [a:java/io/IOException]
+        - [142] Var: ..., Stack: [a:android/os/NetworkOnMainThreadException]
+        - [158] Var: ..., Stack: [a:java/lang/Exception]
+        - [171] Var: ..., Stack: (empty)
   + Method:       onResume()V
     Access flags: 0x4
       = protected void onResume()
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 46, locals = 3, stack = 2):
       [0] aload_0 v0
-      [1] invokespecial #96
+      [1] invokespecial #93
         + Methodref [android/app/Activity.onResume ()V]
       [4] aload_0 v0
       [5] iconst_0
-      [6] putfield #84
-        + Fieldref [com/nikhilparanjape/parksandrec/MainScreenActivity.c Z]
+      [6] putfield #81
+        + Fieldref [com/nikhilparanjape/parksandrec/MainScreenActivity.b Z]
       [9] aload_0 v0
       [10] ldc #7
         + Integer [2131361796]
-      [12] invokevirtual #123
+      [12] invokevirtual #119
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.findViewById (I)Landroid/view/View;]
-      [15] checkcast #66
+      [15] checkcast #65
         + Class [android/widget/Button]
       [18] astore_1 v1
       [19] aload_1 v1
       [20] ldc #2
         + Integer [2130837504]
-      [22] invokevirtual #113
+      [22] invokevirtual #110
         + Methodref [android/widget/Button.setBackgroundResource (I)V]
       [25] aload_0 v0
       [26] ldc #8
         + Integer [2131361797]
-      [28] invokevirtual #123
+      [28] invokevirtual #119
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.findViewById (I)Landroid/view/View;]
-      [31] checkcast #66
+      [31] checkcast #65
         + Class [android/widget/Button]
       [34] astore_2 v2
       [35] aload_2 v2
       [36] ldc #2
         + Integer [2130837504]
-      [38] invokevirtual #113
+      [38] invokevirtual #110
         + Methodref [android/widget/Button.setBackgroundResource (I)V]
       [41] aload_0 v0
-      [42] invokevirtual #120
+      [42] invokevirtual #116
         + Methodref [com/nikhilparanjape/parksandrec/MainScreenActivity.a ()V]
       [45] return
       Code attribute exceptions (count = 0):
@@ -52537,24 +52474,24 @@ Methods (count = 15):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 28, locals = 1, stack = 3):
       [0] aload_0 v0
-      [1] getfield #84
-        + Fieldref [com/nikhilparanjape/parksandrec/MainScreenActivity.c Z]
+      [1] getfield #81
+        + Fieldref [com/nikhilparanjape/parksandrec/MainScreenActivity.b Z]
       [4] ifeq +8 (target=12)
       [7] aload_0 v0
-      [8] invokespecial #93
+      [8] invokespecial #90
         + Methodref [android/app/Activity.onBackPressed ()V]
       [11] return
       [12] aload_0 v0
       [13] iconst_1
-      [14] putfield #84
-        + Fieldref [com/nikhilparanjape/parksandrec/MainScreenActivity.c Z]
+      [14] putfield #81
+        + Fieldref [com/nikhilparanjape/parksandrec/MainScreenActivity.b Z]
       [17] aload_0 v0
-      [18] ldc #31
+      [18] ldc #30
         + String [Press back again to exit]
       [20] iconst_0
-      [21] invokestatic #118
+      [21] invokestatic #114
         + Methodref [android/widget/Toast.makeText (Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
-      [24] invokevirtual #119
+      [24] invokevirtual #115
         + Methodref [android/widget/Toast.show ()V]
       [27] return
       Code attribute exceptions (count = 0):
@@ -52919,7 +52856,7 @@ Methods (count = 14):
       [1] invokeinterface #82
         + InterfaceMethodref [android/view/MenuItem.getItemId ()I]
       [6] tableswitch (1 offsets, default=34) (target=40)
-        2131361815: offset = 18, target = 24
+        2131361814: offset = 18, target = 24
         default: offset = 34, target = 40
       [24] new #26
         + Class [android/content/Intent]
@@ -53242,8 +53179,8 @@ Interfaces (count = 0):
 
 Constant Pool (count = 114):
   + Integer [2130903043]
-  + Integer [2131361810]
-  + Integer [2131361813]
+  + Integer [2131361809]
+  + Integer [2131361812]
   + String [#FFBB33]
   + String [About]
   + String [Version ]
@@ -53419,7 +53356,7 @@ Methods (count = 2):
       [56] astore v4
       [58] aload_0 v0
       [59] ldc #3
-        + Integer [2131361813]
+        + Integer [2131361812]
       [61] invokevirtual #33
         + Methodref [com/nikhilparanjape/parksandrec/SettingsPage.findViewById (I)Landroid/view/View;]
       [64] checkcast #17
@@ -53445,7 +53382,7 @@ Methods (count = 2):
       [93] astore v6
       [95] aload_0 v0
       [96] ldc #2
-        + Integer [2131361810]
+        + Integer [2131361809]
       [98] invokevirtual #33
         + Methodref [com/nikhilparanjape/parksandrec/SettingsPage.findViewById (I)Landroid/view/View;]
       [101] checkcast #17

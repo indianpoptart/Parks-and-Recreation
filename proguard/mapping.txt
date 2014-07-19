@@ -1283,9 +1283,8 @@ com.nikhilparanjape.parksandrec.CheckNetwork -> com.nikhilparanjape.parksandrec.
     java.lang.String TAG -> a
     boolean isInternetAvailable(android.content.Context) -> a
 com.nikhilparanjape.parksandrec.MainScreenActivity -> com.nikhilparanjape.parksandrec.MainScreenActivity:
-    android.widget.ProgressBar spinner -> a
-    android.app.ProgressDialog progress -> b
-    boolean doubleBackToExitPressedOnce -> c
+    android.app.ProgressDialog progress -> a
+    boolean doubleBackToExitPressedOnce -> b
     void onCreate(android.os.Bundle) -> onCreate
     boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
     boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected

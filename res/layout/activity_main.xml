@@ -90,11 +90,4 @@
         android:layout_below="@+id/callButton"
         android:src="@drawable/rec" />
 
-    <ProgressBar
-        android:id="@+id/refreshBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/schedules"
-        android:layout_alignTop="@+id/alertBackground" />
-
 </RelativeLayout>

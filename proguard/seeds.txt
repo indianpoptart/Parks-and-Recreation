@@ -113,7 +113,6 @@ com.nikhilparanjape.parksandrec.R$id: int button7
 com.nikhilparanjape.parksandrec.R$id: int callButton
 com.nikhilparanjape.parksandrec.R$id: int imageView1
 com.nikhilparanjape.parksandrec.R$id: int imageView2
-com.nikhilparanjape.parksandrec.R$id: int refreshBar
 com.nikhilparanjape.parksandrec.R$id: int rpsLabel
 com.nikhilparanjape.parksandrec.R$id: int schedules
 com.nikhilparanjape.parksandrec.R$id: int textView1

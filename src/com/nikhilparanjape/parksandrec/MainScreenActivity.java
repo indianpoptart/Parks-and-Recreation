@@ -59,7 +59,6 @@ import com.nikhilparanjape.parksandrec.R;
 public class MainScreenActivity extends Activity {
 	@SuppressWarnings("unused")
 	private WebView mWebview;
-	private ProgressBar spinner;
 	public static final String TAG = "MainScreenActivity";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -70,17 +69,12 @@ public class MainScreenActivity extends Activity {
 		bar.setTitle("Parks and Rec"); 
 		
 		setContentView(R.layout.activity_main);
-		spinner = (ProgressBar)findViewById(R.id.refreshBar);
 		
 		try{
 			if(!CheckNetwork.isInternetAvailable(MainScreenActivity.this)){
 				TextView t = (TextView)findViewById(R.id.alertDisplay);
 				t.setTextColor(Color.RED);
 				t.setText("Alert! No Internet Connection!");
-				spinner.setVisibility(View.GONE);
-			}   
-			else{
-				spinner.setVisibility(View.GONE);
 			}
 		}catch(Exception e){
 			TextView t = (TextView)findViewById(R.id.alertDisplay);
@@ -249,11 +243,9 @@ public class MainScreenActivity extends Activity {
 	public void rLoad(View view) throws HttpRequestException{
 		
 		TextView t = (TextView)findViewById(R.id.alertDisplay);
-		ProgressBar mProgress = (ProgressBar) findViewById(R.id.refreshBar);
 		if(!CheckNetwork.isInternetAvailable(MainScreenActivity.this)){
 			t.setTextColor(Color.RED);
 			t.setText("Network Disconnected!");
-			mProgress.setVisibility(View.VISIBLE);
 		}   
 		else{
 			try{
@@ -265,12 +257,10 @@ public class MainScreenActivity extends Activity {
 				String regex = ", click here for details.";
 				res = res.replaceAll(regex, "Check the agenda for more information");
 				if (res.contains("")){
-					mProgress.setVisibility(View.GONE);
 					t.setTextColor(Color.WHITE);
 					t.setText(res);
 				}   
 				else{
-					mProgress.setVisibility(View.GONE);
 					t.setTextColor(Color.WHITE);
 					t.setText("There are currently no alerts");
 				}
@@ -283,7 +273,6 @@ public class MainScreenActivity extends Activity {
 				t.setTextColor(Color.RED);
 				t.setText("Error!");
 			}
-			spinner.setVisibility(View.GONE);
 		}
 	}
 

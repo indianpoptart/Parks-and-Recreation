@@ -1176,8 +1176,8 @@ com.nikhilparanjape.parksandrec.BuildConfig
 com.nikhilparanjape.parksandrec.MainScreenActivity:
     private android.webkit.WebView mWebview
     public static final java.lang.String TAG
-    163:169:public void showLoadingDialog()
-    242:247:private java.lang.StringBuilder getResult(org.apache.http.HttpResponse)
+    157:163:public void showLoadingDialog()
+    236:241:private java.lang.StringBuilder getResult(org.apache.http.HttpResponse)
 com.nikhilparanjape.parksandrec.R
 com.nikhilparanjape.parksandrec.R$animator
 com.nikhilparanjape.parksandrec.R$attr
