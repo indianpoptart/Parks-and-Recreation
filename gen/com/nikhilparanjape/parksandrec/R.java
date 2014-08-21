@@ -50,21 +50,20 @@ public final class R {
     }
     public static final class id {
         public static final int TextView01=0x7f0a000f;
-        public static final int action_refresh=0x7f0a0015;
-        public static final int action_settings=0x7f0a0016;
-        public static final int agendaButton=0x7f0a0005;
+        public static final int action_refresh=0x7f0a0014;
+        public static final int action_settings=0x7f0a0015;
+        public static final int agendaButton=0x7f0a0006;
         public static final int alertBackground=0x7f0a0000;
         public static final int alertDisplay=0x7f0a0003;
         public static final int alertLabel=0x7f0a0002;
-        public static final int androidSDK=0x7f0a0014;
         public static final int button1=0x7f0a0009;
         public static final int button2=0x7f0a000c;
         public static final int button3=0x7f0a000b;
         public static final int button4=0x7f0a000a;
         public static final int button6=0x7f0a000d;
         public static final int button7=0x7f0a000e;
-        public static final int callButton=0x7f0a0006;
-        public static final int imageView1=0x7f0a0007;
+        public static final int callButton=0x7f0a0007;
+        public static final int imageView1=0x7f0a0005;
         public static final int imageView2=0x7f0a0010;
         public static final int rpsLabel=0x7f0a0001;
         public static final int schedules=0x7f0a0004;
@@ -121,17 +120,14 @@ public final class R {
         Base application theme for API 11+. This theme completely replaces
         AppBaseTheme from res/values/styles.xml on API 11+ devices.
     
- API 11 theme customizations can go here. 
 
         Base application theme for API 14+. This theme completely replaces
         AppBaseTheme from BOTH res/values/styles.xml and
         res/values-v11/styles.xml on API 14+ devices.
     
- API 14 theme customizations can go here. 
          */
         public static final int AppBaseTheme=0x7f080000;
         /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f080001;
         public static final int CustomAlertDialogStyle=0x7f080005;

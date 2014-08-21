@@ -19,7 +19,7 @@
 # view AndroidManifest.xml #generated:101
 -keep class com.nikhilparanjape.parksandrec.wifiState { <init>(...); }
 
-# onClick res/layout/activity_main.xml #generated:72
+# onClick res/layout/activity_main.xml #generated:74
 -keepclassmembers class * { *** callPandr(...); }
 
 # onClick res/layout/schedule_menu.xml #generated:68
@@ -28,10 +28,10 @@
 # onClick res/layout/schedule_menu.xml #generated:44
 -keepclassmembers class * { *** gymSchedule(...); }
 
-# onClick res/layout/activity_main.xml #generated:60
+# onClick res/layout/activity_main.xml #generated:62
 -keepclassmembers class * { *** openAgenda(...); }
 
-# onClick res/layout/activity_main.xml #generated:47
+# onClick res/layout/activity_main.xml #generated:49
 -keepclassmembers class * { *** openSchedule(...); }
 
 # onClick res/layout/schedule_menu.xml #generated:21

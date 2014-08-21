@@ -21,12 +21,6 @@ public class SettingsPage extends Activity {
 		bar.setTitle("About"); 
 		PackageInfo pInfo;
 		String vP = null;
-		
-		if(Build.VERSION.SDK_INT == 20){
-			vP = "You are running Android L, Nice";
-		}
-		TextView vZ = (TextView)findViewById(R.id.androidSDK);
-		vZ.setText(vP);
 		try {
 			pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
 			String version = pInfo.versionName;
