@@ -3,11 +3,11 @@ Parks and Recreation App
 
 ![Pandr](http://images.nikhilp.org/pandr.png)
 
-Current stable relese: v2.0
+Current stable relese: v2.1
 
 Current unstable release: N/A
 
-Upcoming release: v2.1
+Upcoming release: v2.2 - The L Update
 
 This app is for the Ridgefield Parks and Recreation customers in Ridgefield, Connecticut.
 Parks and Rec provides all of the information a customer needs in one place.
@@ -19,13 +19,6 @@ This app is to be used by the members of the [Ridgefield Parks and Recreation Ce
 [1]: https://play.google.com/store/apps/details?id=com.nikhilparanjape.parksandrec
 [2]: http://ridgefieldparksandrec.org/
 
-## Why go open source?
-
-Just cause I wanted to.
-
-Nah, this app is open source since the app is already free. It is intended to be a source of sample code for everyone to benefit from. You can make cool apps that use core features of this app and hopefully get more users because you built something cool.
-
-Also you may help squash bugs :)
 
 ## Helping out
 
@@ -39,7 +32,7 @@ If you would like to add some features, I may, or may not merge it. If I think i
 * Motorola DROID RAZR MAXX
 * Moto X
 * Nexus 4
-* Nexus 5
+* Nexus 5 (And Android L)
 * ~~Nexus 7 (2013)~~
 * ~~Nexus 10~~
 * Samsung Galaxy S5
@@ -51,7 +44,7 @@ If you would like to add some features, I may, or may not merge it. If I think i
 
 The Parks and Rec  source code is released under the [MIT License](https://github.com/indianpoptart/Parks-and-Recreation/blob/master/LICENSE).
 
-While it is not strictly forbidden by the license, I would greatly appreciate it if you didn't redistribute this app exactly the way it is in the App Store. There's nothing stopping you, but please don't do it.
+While it is not strictly forbidden by the license, I would greatly appreciate it if you didn't redistribute this app exactly the way it is in the Play Store. There's nothing stopping you, but please don't do it.
 
 ## 3rd Party API's
 
