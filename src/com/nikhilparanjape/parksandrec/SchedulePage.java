@@ -31,7 +31,7 @@ public class SchedulePage extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		ActionBar bar = getActionBar();
-		//bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFBB33")));
+		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFBB33")));
 		bar.setDisplayShowHomeEnabled(false);
 		bar.setTitle("Schedules"); 
 		setContentView(R.layout.schedule_menu);

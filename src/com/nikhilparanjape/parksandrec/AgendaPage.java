@@ -20,7 +20,7 @@ public class AgendaPage extends Activity {
 	@SuppressWarnings("deprecation")
 	public void onCreate(Bundle savedInstanceState) {
 		ActionBar bar = getActionBar();
-		//bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFBB33")));
+		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFBB33")));
 		bar.setDisplayShowHomeEnabled(false);
 		bar.setTitle("Agenda");
 		super.onCreate(savedInstanceState);
