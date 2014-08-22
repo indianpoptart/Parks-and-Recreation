@@ -13,12 +13,9 @@
     </style>
 
     <!-- Application theme. -->
-    <style name="AppTheme" parent="android:Theme.Material.Light">
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
 
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
-        <item name="android:colorPrimary">#FF9900</item>
-        <item name="android:statusBarColor">#ccff8c00</item>
-        <item name="android:colorAccent">#FFBB33</item>
     </style>
 
     <style name="ThemeSelector" parent="android:Theme.Light">

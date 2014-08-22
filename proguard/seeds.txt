@@ -103,7 +103,6 @@ com.nikhilparanjape.parksandrec.R$id: int agendaButton
 com.nikhilparanjape.parksandrec.R$id: int alertBackground
 com.nikhilparanjape.parksandrec.R$id: int alertDisplay
 com.nikhilparanjape.parksandrec.R$id: int alertLabel
-com.nikhilparanjape.parksandrec.R$id: int androidSDK
 com.nikhilparanjape.parksandrec.R$id: int button1
 com.nikhilparanjape.parksandrec.R$id: int button2
 com.nikhilparanjape.parksandrec.R$id: int button3

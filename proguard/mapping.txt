@@ -757,15 +757,15 @@ android.support.v4.view.ViewPager -> android.support.v4.view.ViewPager:
     boolean mCalledSuper -> U
     int mDecorChildCount -> V
     android.support.v4.view.ViewPager$OnPageChangeListener mOnPageChangeListener -> W
-    android.support.v4.view.ViewPager$OnPageChangeListener mInternalPageChangeListener -> Z
-    android.support.v4.view.ViewPager$OnAdapterChangeListener mAdapterChangeListener -> aa
-    android.support.v4.view.ViewPager$PageTransformer mPageTransformer -> ab
-    java.lang.reflect.Method mSetChildrenDrawingOrderEnabled -> ac
-    int mDrawingOrder -> ad
-    java.util.ArrayList mDrawingOrderedChildren -> ae
-    android.support.v4.view.ViewPager$ViewPositionComparator sPositionComparator -> af
-    java.lang.Runnable mEndScrollRunnable -> ag
-    int mScrollState -> ah
+    android.support.v4.view.ViewPager$OnPageChangeListener mInternalPageChangeListener -> aa
+    android.support.v4.view.ViewPager$OnAdapterChangeListener mAdapterChangeListener -> ab
+    android.support.v4.view.ViewPager$PageTransformer mPageTransformer -> ac
+    java.lang.reflect.Method mSetChildrenDrawingOrderEnabled -> ad
+    int mDrawingOrder -> ae
+    java.util.ArrayList mDrawingOrderedChildren -> af
+    android.support.v4.view.ViewPager$ViewPositionComparator sPositionComparator -> ag
+    java.lang.Runnable mEndScrollRunnable -> ah
+    int mScrollState -> ai
     void onDetachedFromWindow() -> onDetachedFromWindow
     void setScrollState(int) -> setScrollState
     void setAdapter(android.support.v4.view.PagerAdapter) -> setAdapter

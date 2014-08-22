@@ -64,7 +64,7 @@ public class MainScreenActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		ActionBar bar = getActionBar();
-		//bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFBB33")));
+		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFBB33")));
 		bar.setDisplayShowHomeEnabled(false);
 		bar.setTitle("Parks and Rec"); 
 		
@@ -222,7 +222,7 @@ public class MainScreenActivity extends Activity {
 					Toast.makeText(this, "Emulators do not support calling", Toast.LENGTH_LONG).show();
 				}
 				else if(getDeviceName().equals("Unknown google_sdk")){
-					Toast.makeText(this, "Android L emulators do not work", Toast.LENGTH_LONG).show();
+					Toast.makeText(this, "Emulators do not support calling", Toast.LENGTH_LONG).show();
 				}
 				
 			}
