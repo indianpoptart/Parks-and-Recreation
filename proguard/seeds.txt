@@ -166,6 +166,8 @@ com.nikhilparanjape.parksandrec.SettingsPage
 com.nikhilparanjape.parksandrec.SettingsPage: SettingsPage()
 org.jsoup.Connection$Method: org.jsoup.Connection$Method[] values()
 org.jsoup.Connection$Method: org.jsoup.Connection$Method valueOf(java.lang.String)
+org.jsoup.nodes.Document$OutputSettings$Syntax: org.jsoup.nodes.Document$OutputSettings$Syntax[] values()
+org.jsoup.nodes.Document$OutputSettings$Syntax: org.jsoup.nodes.Document$OutputSettings$Syntax valueOf(java.lang.String)
 org.jsoup.nodes.Document$QuirksMode: org.jsoup.nodes.Document$QuirksMode[] values()
 org.jsoup.nodes.Document$QuirksMode: org.jsoup.nodes.Document$QuirksMode valueOf(java.lang.String)
 org.jsoup.nodes.Entities$EscapeMode: org.jsoup.nodes.Entities$EscapeMode[] values()

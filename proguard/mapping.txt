@@ -757,15 +757,15 @@ android.support.v4.view.ViewPager -> android.support.v4.view.ViewPager:
     boolean mCalledSuper -> U
     int mDecorChildCount -> V
     android.support.v4.view.ViewPager$OnPageChangeListener mOnPageChangeListener -> W
-    android.support.v4.view.ViewPager$OnPageChangeListener mInternalPageChangeListener -> aa
-    android.support.v4.view.ViewPager$OnAdapterChangeListener mAdapterChangeListener -> ab
-    android.support.v4.view.ViewPager$PageTransformer mPageTransformer -> ac
-    java.lang.reflect.Method mSetChildrenDrawingOrderEnabled -> ad
-    int mDrawingOrder -> ae
-    java.util.ArrayList mDrawingOrderedChildren -> af
-    android.support.v4.view.ViewPager$ViewPositionComparator sPositionComparator -> ag
-    java.lang.Runnable mEndScrollRunnable -> ah
-    int mScrollState -> ai
+    android.support.v4.view.ViewPager$OnPageChangeListener mInternalPageChangeListener -> Z
+    android.support.v4.view.ViewPager$OnAdapterChangeListener mAdapterChangeListener -> aa
+    android.support.v4.view.ViewPager$PageTransformer mPageTransformer -> ab
+    java.lang.reflect.Method mSetChildrenDrawingOrderEnabled -> ac
+    int mDrawingOrder -> ad
+    java.util.ArrayList mDrawingOrderedChildren -> ae
+    android.support.v4.view.ViewPager$ViewPositionComparator sPositionComparator -> af
+    java.lang.Runnable mEndScrollRunnable -> ag
+    int mScrollState -> ah
     void onDetachedFromWindow() -> onDetachedFromWindow
     void setScrollState(int) -> setScrollState
     void setAdapter(android.support.v4.view.PagerAdapter) -> setAdapter
@@ -1293,8 +1293,6 @@ com.nikhilparanjape.parksandrec.MainScreenActivity -> com.nikhilparanjape.parksa
     void openAgenda(android.view.View) -> openAgenda
     void startAgenda(android.view.View) -> startAgenda
     void dismissLoadingDialog() -> a
-    java.lang.String getDeviceName() -> b
-    java.lang.String capitalize(java.lang.String) -> a
     void callPandr(android.view.View) -> callPandr
     void rLoad(android.view.View) -> rLoad
     void onResume() -> onResume
@@ -1432,6 +1430,7 @@ org.jsoup.helper.HttpConnection$Response -> a.a.a.i:
     boolean executed -> j
     int numRedirects -> k
     org.jsoup.Connection$Request req -> l
+    java.util.regex.Pattern xmlContentTypeRxp -> m
     org.jsoup.helper.HttpConnection$Response execute(org.jsoup.Connection$Request) -> a
     org.jsoup.helper.HttpConnection$Response execute(org.jsoup.Connection$Request,org.jsoup.helper.HttpConnection$Response) -> a
     java.lang.String contentType() -> f
@@ -1457,7 +1456,7 @@ org.jsoup.helper.StringUtil -> a.a.a.j:
     boolean isBlank(java.lang.String) -> a
     boolean isNumeric(java.lang.String) -> b
     boolean isWhitespace(int) -> b
-    java.lang.String normaliseWhitespace(java.lang.String) -> c
+    void appendNormalisedWhitespace(java.lang.StringBuilder,java.lang.String,boolean) -> a
     boolean in(java.lang.String,java.lang.String[]) -> a
 org.jsoup.helper.Validate -> a.a.a.k:
     void notNull(java.lang.Object) -> a
@@ -1472,14 +1471,16 @@ org.jsoup.helper.Validate -> a.a.a.k:
     void notEmpty(java.lang.String,java.lang.String) -> a
     void fail(java.lang.String) -> b
 org.jsoup.nodes.Attribute -> a.a.b.a:
-    java.lang.String key -> a
-    java.lang.String value -> b
+    java.lang.String[] booleanAttributes -> a
+    java.lang.String key -> b
+    java.lang.String value -> c
     java.lang.String getKey() -> a
     java.lang.String getValue() -> b
     java.lang.String setValue(java.lang.String) -> a
     java.lang.String html() -> c
     void html(java.lang.StringBuilder,org.jsoup.nodes.Document$OutputSettings) -> a
     java.lang.String toString() -> toString
+    boolean shouldCollapseAttribute(org.jsoup.nodes.Document$OutputSettings) -> a
     boolean equals(java.lang.Object) -> equals
     int hashCode() -> hashCode
     org.jsoup.nodes.Attribute clone() -> d
@@ -1537,28 +1538,36 @@ org.jsoup.nodes.Document$OutputSettings -> a.a.b.f:
     boolean prettyPrint -> d
     boolean outline -> e
     int indentAmount -> f
+    org.jsoup.nodes.Document$OutputSettings$Syntax syntax -> g
     org.jsoup.nodes.Entities$EscapeMode escapeMode() -> a
     java.nio.charset.Charset charset() -> b
     org.jsoup.nodes.Document$OutputSettings charset(java.nio.charset.Charset) -> a
     org.jsoup.nodes.Document$OutputSettings charset(java.lang.String) -> a
     java.nio.charset.CharsetEncoder encoder() -> c
-    boolean prettyPrint() -> d
-    boolean outline() -> e
-    int indentAmount() -> f
-    org.jsoup.nodes.Document$OutputSettings clone() -> g
+    org.jsoup.nodes.Document$OutputSettings$Syntax syntax() -> d
+    boolean prettyPrint() -> e
+    boolean outline() -> f
+    int indentAmount() -> g
+    org.jsoup.nodes.Document$OutputSettings clone() -> h
     java.lang.Object clone() -> clone
-org.jsoup.nodes.Document$QuirksMode -> a.a.b.g:
+org.jsoup.nodes.Document$OutputSettings$Syntax -> a.a.b.g:
+    org.jsoup.nodes.Document$OutputSettings$Syntax html -> a
+    org.jsoup.nodes.Document$OutputSettings$Syntax xml -> b
+    org.jsoup.nodes.Document$OutputSettings$Syntax[] $VALUES -> c
+    org.jsoup.nodes.Document$OutputSettings$Syntax[] values() -> values
+    org.jsoup.nodes.Document$OutputSettings$Syntax valueOf(java.lang.String) -> valueOf
+org.jsoup.nodes.Document$QuirksMode -> a.a.b.h:
     org.jsoup.nodes.Document$QuirksMode noQuirks -> a
     org.jsoup.nodes.Document$QuirksMode quirks -> b
     org.jsoup.nodes.Document$QuirksMode limitedQuirks -> c
     org.jsoup.nodes.Document$QuirksMode[] $VALUES -> d
     org.jsoup.nodes.Document$QuirksMode[] values() -> values
     org.jsoup.nodes.Document$QuirksMode valueOf(java.lang.String) -> valueOf
-org.jsoup.nodes.DocumentType -> a.a.b.h:
+org.jsoup.nodes.DocumentType -> a.a.b.i:
     java.lang.String nodeName() -> a
     void outerHtmlHead(java.lang.StringBuilder,int,org.jsoup.nodes.Document$OutputSettings) -> a
     void outerHtmlTail(java.lang.StringBuilder,int,org.jsoup.nodes.Document$OutputSettings) -> b
-org.jsoup.nodes.Element -> a.a.b.i:
+org.jsoup.nodes.Element -> a.a.b.j:
     org.jsoup.parser.Tag tag -> f
     java.util.Set classNames -> g
     java.lang.String nodeName() -> a
@@ -1602,31 +1611,28 @@ org.jsoup.nodes.Element -> a.a.b.i:
     java.lang.Object clone() -> clone
     void access$000(java.lang.StringBuilder,org.jsoup.nodes.TextNode) -> a
     org.jsoup.parser.Tag access$100(org.jsoup.nodes.Element) -> a
-org.jsoup.nodes.Element$1 -> a.a.b.j:
+org.jsoup.nodes.Element$1 -> a.a.b.k:
     java.lang.StringBuilder val$accum -> a
     org.jsoup.nodes.Element this$0 -> b
     void head(org.jsoup.nodes.Node,int) -> a
     void tail(org.jsoup.nodes.Node,int) -> b
-org.jsoup.nodes.Entities -> a.a.b.k:
+org.jsoup.nodes.Entities -> a.a.b.l:
     java.util.Map full -> a
     java.util.Map xhtmlByVal -> b
     java.util.Map base -> c
     java.util.Map baseByVal -> d
     java.util.Map fullByVal -> e
-    java.util.regex.Pattern unescapePattern -> f
-    java.util.regex.Pattern strictUnescapePattern -> g
-    java.lang.Object[][] xhtmlArray -> h
+    java.lang.Object[][] xhtmlArray -> f
     boolean isNamedEntity(java.lang.String) -> a
     boolean isBaseNamedEntity(java.lang.String) -> b
     java.lang.Character getCharacterByName(java.lang.String) -> c
-    java.lang.String escape(java.lang.String,org.jsoup.nodes.Document$OutputSettings) -> a
-    java.lang.String escape(java.lang.String,java.nio.charset.CharsetEncoder,org.jsoup.nodes.Entities$EscapeMode) -> a
+    void escape(java.lang.StringBuilder,java.lang.String,org.jsoup.nodes.Document$OutputSettings,boolean,boolean,boolean) -> a
     java.util.Map loadEntities(java.lang.String) -> d
     java.util.Map toCharacterKey(java.util.Map) -> a
     java.util.Map access$000() -> a
     java.util.Map access$100() -> b
     java.util.Map access$200() -> c
-org.jsoup.nodes.Entities$EscapeMode -> a.a.b.l:
+org.jsoup.nodes.Entities$EscapeMode -> a.a.b.m:
     org.jsoup.nodes.Entities$EscapeMode xhtml -> a
     org.jsoup.nodes.Entities$EscapeMode base -> b
     org.jsoup.nodes.Entities$EscapeMode extended -> c
@@ -1635,11 +1641,11 @@ org.jsoup.nodes.Entities$EscapeMode -> a.a.b.l:
     org.jsoup.nodes.Entities$EscapeMode[] values() -> values
     org.jsoup.nodes.Entities$EscapeMode valueOf(java.lang.String) -> valueOf
     java.util.Map getMap() -> a
-org.jsoup.nodes.FormElement -> a.a.b.m:
+org.jsoup.nodes.FormElement -> a.a.b.n:
     org.jsoup.select.Elements elements -> f
     org.jsoup.nodes.FormElement addElement(org.jsoup.nodes.Element) -> b
     boolean equals(java.lang.Object) -> equals
-org.jsoup.nodes.Node -> a.a.b.n:
+org.jsoup.nodes.Node -> a.a.b.o:
     org.jsoup.nodes.Node parentNode -> a
     java.util.List childNodes -> b
     org.jsoup.nodes.Attributes attributes -> c
@@ -1673,7 +1679,7 @@ org.jsoup.nodes.Node -> a.a.b.n:
     org.jsoup.nodes.Node traverse(org.jsoup.select.NodeVisitor) -> a
     java.lang.String outerHtml() -> a_
     void outerHtml(java.lang.StringBuilder) -> a
-    org.jsoup.nodes.Document$OutputSettings getOutputSettings() -> d
+    org.jsoup.nodes.Document$OutputSettings getOutputSettings() -> G
     void outerHtmlHead(java.lang.StringBuilder,int,org.jsoup.nodes.Document$OutputSettings) -> a
     void outerHtmlTail(java.lang.StringBuilder,int,org.jsoup.nodes.Document$OutputSettings) -> b
     java.lang.String toString() -> toString
@@ -1683,17 +1689,17 @@ org.jsoup.nodes.Node -> a.a.b.n:
     org.jsoup.nodes.Node clone() -> g
     org.jsoup.nodes.Node doClone(org.jsoup.nodes.Node) -> g
     java.lang.Object clone() -> clone
-org.jsoup.nodes.Node$1 -> a.a.b.o:
+org.jsoup.nodes.Node$1 -> a.a.b.p:
     java.lang.String val$baseUri -> a
     org.jsoup.nodes.Node this$0 -> b
     void head(org.jsoup.nodes.Node,int) -> a
     void tail(org.jsoup.nodes.Node,int) -> b
-org.jsoup.nodes.Node$OuterHtmlVisitor -> a.a.b.p:
+org.jsoup.nodes.Node$OuterHtmlVisitor -> a.a.b.q:
     java.lang.StringBuilder accum -> a
     org.jsoup.nodes.Document$OutputSettings out -> b
     void head(org.jsoup.nodes.Node,int) -> a
     void tail(org.jsoup.nodes.Node,int) -> b
-org.jsoup.nodes.TextNode -> a.a.b.q:
+org.jsoup.nodes.TextNode -> a.a.b.r:
     java.lang.String text -> f
     java.lang.String nodeName() -> a
     java.lang.String getWholeText() -> c
@@ -1701,8 +1707,6 @@ org.jsoup.nodes.TextNode -> a.a.b.q:
     void outerHtmlHead(java.lang.StringBuilder,int,org.jsoup.nodes.Document$OutputSettings) -> a
     void outerHtmlTail(java.lang.StringBuilder,int,org.jsoup.nodes.Document$OutputSettings) -> b
     java.lang.String toString() -> toString
-    java.lang.String normaliseWhitespace(java.lang.String) -> a
-    java.lang.String stripLeadingWhitespace(java.lang.String) -> b
     boolean lastCharIsWhitespace(java.lang.StringBuilder) -> b
     void ensureAttributes() -> e
     java.lang.String attr(java.lang.String) -> c
@@ -1710,7 +1714,7 @@ org.jsoup.nodes.TextNode -> a.a.b.q:
     org.jsoup.nodes.Node attr(java.lang.String,java.lang.String) -> b
     boolean hasAttr(java.lang.String) -> d
     java.lang.String absUrl(java.lang.String) -> f
-org.jsoup.nodes.XmlDeclaration -> a.a.b.r:
+org.jsoup.nodes.XmlDeclaration -> a.a.b.s:
     boolean isProcessingInstruction -> f
     java.lang.String nodeName() -> a
     java.lang.String getWholeDeclaration() -> c
@@ -2015,11 +2019,12 @@ org.jsoup.parser.Tag -> a.a.c.af:
     org.jsoup.parser.Tag valueOf(java.lang.String) -> a
     boolean isBlock() -> b
     boolean formatAsBlock() -> c
-    boolean isSelfClosing() -> d
-    boolean isKnownTag() -> e
-    boolean preserveWhitespace() -> f
-    boolean isFormListed() -> g
-    org.jsoup.parser.Tag setSelfClosing() -> h
+    boolean isEmpty() -> d
+    boolean isSelfClosing() -> e
+    boolean isKnownTag() -> f
+    boolean preserveWhitespace() -> g
+    boolean isFormListed() -> h
+    org.jsoup.parser.Tag setSelfClosing() -> i
     boolean equals(java.lang.Object) -> equals
     int hashCode() -> hashCode
     java.lang.String toString() -> toString

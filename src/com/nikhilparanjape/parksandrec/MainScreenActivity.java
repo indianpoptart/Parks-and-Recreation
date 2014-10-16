@@ -66,10 +66,10 @@ public class MainScreenActivity extends Activity {
 		ActionBar bar = getActionBar();
 		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFBB33")));
 		bar.setDisplayShowHomeEnabled(false);
-		bar.setTitle("Parks and Rec"); 
-		
+		bar.setTitle("myParksandRec"); 
+
 		setContentView(R.layout.activity_main);
-		
+
 		try{
 			if(!CheckNetwork.isInternetAvailable(MainScreenActivity.this)){
 				TextView t = (TextView)findViewById(R.id.alertDisplay);
@@ -99,8 +99,8 @@ public class MainScreenActivity extends Activity {
 		// Handle item selection
 		switch (item.getItemId()) {
 		case R.id.action_refresh:
-            rLoad(null);
-            return true;
+			rLoad(null);
+			return true;
 		case R.id.action_settings:
 			Intent intent = new Intent(MainScreenActivity.this, SettingsPage.class);
 			startActivity(intent);
@@ -154,79 +154,49 @@ public class MainScreenActivity extends Activity {
 
 	public void showLoadingDialog() {
 
-	    if (progress == null) {
-	        progress = new ProgressDialog(this);
-	        progress.setTitle("Loading");
-	        progress.setMessage("Please Wait");
-	    }
-	    progress.show();
+		if (progress == null) {
+			progress = new ProgressDialog(this);
+			progress.setTitle("Loading");
+			progress.setMessage("Please Wait");
+		}
+		progress.show();
 	}
 
 	public void dismissLoadingDialog() {
 
-	    if (progress != null && progress.isShowing()) {
-	        dismissLoadingDialog();
-	    }
+		if (progress != null && progress.isShowing()) {
+			dismissLoadingDialog();
+		}
 	}
 	public String getDeviceName() {
-		  String manufacturer = Build.MANUFACTURER;
-		  String model = Build.MODEL;
-		  if (model.startsWith(manufacturer)) {
-		    return capitalize(model);
-		  } else {
-		    return capitalize(manufacturer) + " " + model;
-		  }
+		String manufacturer = Build.MANUFACTURER;
+		String model = Build.MODEL;
+		if (model.startsWith(manufacturer)) {
+			return capitalize(model);
+		} else {
+			return capitalize(manufacturer) + " " + model;
 		}
+	}
 
 
-		private String capitalize(String s) {
-		  if (s == null || s.length() == 0) {
-		    return "";
-		  }
-		  char first = s.charAt(0);
-		  if (Character.isUpperCase(first)) {
-		    return s;
-		  } else {
-		    return Character.toUpperCase(first) + s.substring(1);
-		  }
-		} 
+	private String capitalize(String s) {
+		if (s == null || s.length() == 0) {
+			return "";
+		}
+		char first = s.charAt(0);
+		if (Character.isUpperCase(first)) {
+			return s;
+		} else {
+			return Character.toUpperCase(first) + s.substring(1);
+		}
+	} 
 	public void callPandr(View arg0) {
 		Button theButton = (Button)findViewById(R.id.callButton);
 		theButton.setBackgroundResource(R.drawable.label_pressed);
-		TelephonyManager tm= (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
-		if(tm.getPhoneType()==TelephonyManager.PHONE_TYPE_NONE){
-			Toast.makeText(this, "Your " + getDeviceName() + " doesn't support calling", Toast.LENGTH_LONG).show();
-			theButton.setText("Calling Unsupported");
-		}
-		else{
-			try{
-				@SuppressWarnings("unused")
-				Button call = (Button)arg0.findViewById(R.id.callButton);
-				Context context = null;
-				@SuppressWarnings("null")
-				boolean hasTelephony = context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_TELEPHONY);
-				if (hasTelephony) {
-					Intent callIntent = new Intent(Intent.ACTION_CALL);
-					callIntent.setData(Uri.parse("tel:2034312755"));
-					startActivity(callIntent);
-				}
-				else {
-					Toast.makeText(this, "Your " + getDeviceName() + " doesn't support calling", Toast.LENGTH_LONG).show();
-					call.setText("Calling Unsupported");
-				}
-			}
-			catch(Exception e){
-				Button b = (Button)arg0.findViewById(R.id.callButton);
-				b.setText("Call Error");
-				if(getDeviceName().equals("Unknown sdk")){
-					Toast.makeText(this, "Emulators do not support calling", Toast.LENGTH_LONG).show();
-				}
-				else if(getDeviceName().equals("Unknown google_sdk")){
-					Toast.makeText(this, "Emulators do not support calling", Toast.LENGTH_LONG).show();
-				}
-				
-			}
-		}
+		
+		Intent callIntent = new Intent(Intent.ACTION_CALL);
+		callIntent.setData(Uri.parse("tel:2034312755"));
+		startActivity(callIntent);
 		theButton.setBackgroundResource(R.drawable.applabels);
 
 	}
@@ -241,7 +211,7 @@ public class MainScreenActivity extends Activity {
 		return result;
 	}
 	public void rLoad(View view) throws HttpRequestException{
-		
+
 		TextView t = (TextView)findViewById(R.id.alertDisplay);
 		if(!CheckNetwork.isInternetAvailable(MainScreenActivity.this)){
 			t.setTextColor(Color.RED);
@@ -252,17 +222,18 @@ public class MainScreenActivity extends Activity {
 				StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 				StrictMode.setThreadPolicy(policy);
 				Document doc = Jsoup.connect("http://ridgefieldparksandrec.org").get();
-				Element alert = doc.select("div.alert").first();
+				Element alert = doc.select("ul.featured-custom-posts").first();
 				String res = alert.text();
-				String regex = ", click here for details.";
-				res = res.replaceAll(regex, "Check the agenda for more information");
+				String regex = "Field Report:";
+				res = res.replaceAll(regex, "");
 				if (res.contains("")){
 					t.setTextColor(Color.WHITE);
-					t.setText(res);
+					t.setText("There are currently no field reports");
 				}   
 				else{
 					t.setTextColor(Color.WHITE);
-					t.setText("There are currently no alerts");
+					t.setText(res);
+
 				}
 			} catch (IOException e) {
 				e.printStackTrace();
