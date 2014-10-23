@@ -14,7 +14,7 @@ Parks and Rec provides all of the information a customer needs in one place.
 With alerts of closings, the app provides an easy way to stay updated on events taking place at the Rec center.
 This app is to be used by the members of the [Ridgefield Parks and Recreation Center][2] 
 
-* [Parks and Rec on the Google Play Store][1] (Free)
+![Parks and Rec on the Google Play Store](http://fusionspan.com/wp-content/uploads/2014/03/en_app_rgb_wo_60.png)[1] (Free)
 
 [1]: https://play.google.com/store/apps/details?id=com.nikhilparanjape.parksandrec
 [2]: http://ridgefieldparksandrec.org/
