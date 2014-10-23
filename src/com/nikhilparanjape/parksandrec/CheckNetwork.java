@@ -3,7 +3,6 @@ package com.nikhilparanjape.parksandrec;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.provider.Settings;
 import android.util.Log;
 
 /* 

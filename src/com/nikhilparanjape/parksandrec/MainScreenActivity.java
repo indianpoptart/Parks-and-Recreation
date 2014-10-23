@@ -223,8 +223,9 @@ public class MainScreenActivity extends Activity {
 				String regex = "Field Report for";
 				String res2 = res.replaceAll(regex, "");
 				
-					t.setTextColor(Color.WHITE);
-					t.setText(res2);
+				//Show on display
+				t.setTextColor(Color.WHITE);
+				t.setText(res2);
 
 				
 			} catch (IOException e) {

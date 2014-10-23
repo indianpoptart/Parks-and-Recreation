@@ -1,48 +1,48 @@
-# view AndroidManifest.xml #generated:99
+# view AndroidManifest.xml #generated:101
 -keep class com.nikhilparanjape.parksandrec.AgendaPage { <init>(...); }
 
 # view AndroidManifest.xml #generated:83
 -keep class com.nikhilparanjape.parksandrec.MainScreenActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:95
+# view AndroidManifest.xml #generated:97
 -keep class com.nikhilparanjape.parksandrec.NoInternetConnection { <init>(...); }
 
-# view AndroidManifest.xml #generated:93
+# view AndroidManifest.xml #generated:95
 -keep class com.nikhilparanjape.parksandrec.SchedulePage { <init>(...); }
 
-# view AndroidManifest.xml #generated:97
+# view AndroidManifest.xml #generated:99
 -keep class com.nikhilparanjape.parksandrec.SettingsPage { <init>(...); }
 
-# view AndroidManifest.xml #generated:98
+# view AndroidManifest.xml #generated:100
 -keep class com.nikhilparanjape.parksandrec.pandrSettings { <init>(...); }
 
-# view AndroidManifest.xml #generated:100
+# view AndroidManifest.xml #generated:102
 -keep class com.nikhilparanjape.parksandrec.wifiState { <init>(...); }
 
-# onClick res/layout/activity_main.xml #generated:74
+# onClick res/layout/activity_main.xml #generated:75
 -keepclassmembers class * { *** callPandr(...); }
 
-# onClick res/layout/schedule_menu.xml #generated:68
+# onClick res/layout/schedule_menu.xml #generated:69
 -keepclassmembers class * { *** groupSchedule(...); }
 
-# onClick res/layout/schedule_menu.xml #generated:44
+# onClick res/layout/schedule_menu.xml #generated:45
 -keepclassmembers class * { *** gymSchedule(...); }
 
-# onClick res/layout/activity_main.xml #generated:62
+# onClick res/layout/activity_main.xml #generated:63
 -keepclassmembers class * { *** openAgenda(...); }
 
-# onClick res/layout/activity_main.xml #generated:49
+# onClick res/layout/activity_main.xml #generated:50
 -keepclassmembers class * { *** openSchedule(...); }
 
-# onClick res/layout/schedule_menu.xml #generated:21
+# onClick res/layout/schedule_menu.xml #generated:22
 -keepclassmembers class * { *** poolSchedule(...); }
 
-# onClick res/layout/schedule_menu.xml #generated:56
+# onClick res/layout/schedule_menu.xml #generated:57
 -keepclassmembers class * { *** premGroupSchedule(...); }
 
-# onClick res/layout/schedule_menu.xml #generated:80
+# onClick res/layout/schedule_menu.xml #generated:81
 -keepclassmembers class * { *** privateSchedule(...); }
 
-# onClick res/layout/schedule_menu.xml #generated:32
+# onClick res/layout/schedule_menu.xml #generated:33
 -keepclassmembers class * { *** winterGroupSchedule(...); }
 

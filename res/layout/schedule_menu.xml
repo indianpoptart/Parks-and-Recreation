@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
+    android:screenOrientation="portrait"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -87,6 +88,6 @@
         android:layout_marginTop="15dp"
         android:background="@drawable/applabels"
         android:onClick="privateSchedule"
-        android:text="Spring Private Swim" />
+        android:text="Fall Private Swim" />
 
 </RelativeLayout>

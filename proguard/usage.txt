@@ -1176,10 +1176,10 @@ com.nikhilparanjape.parksandrec.BuildConfig
 com.nikhilparanjape.parksandrec.MainScreenActivity:
     private android.webkit.WebView mWebview
     public static final java.lang.String TAG
-    157:163:public void showLoadingDialog()
-    172:177:public java.lang.String getDeviceName()
-    183:190:private java.lang.String capitalize(java.lang.String)
-    206:211:private java.lang.StringBuilder getResult(org.apache.http.HttpResponse)
+    153:159:public void showLoadingDialog()
+    168:173:public java.lang.String getDeviceName()
+    179:186:private java.lang.String capitalize(java.lang.String)
+    202:207:private java.lang.StringBuilder getResult(org.apache.http.HttpResponse)
 com.nikhilparanjape.parksandrec.R
 com.nikhilparanjape.parksandrec.R$animator
 com.nikhilparanjape.parksandrec.R$attr
@@ -1191,6 +1191,7 @@ com.nikhilparanjape.parksandrec.R$layout
 com.nikhilparanjape.parksandrec.R$menu
 com.nikhilparanjape.parksandrec.R$string
 com.nikhilparanjape.parksandrec.R$style
+com.nikhilparanjape.parksandrec.ScheduleOpener
 org.jsoup.Connection:
     public abstract org.jsoup.Connection url(java.net.URL)
     public abstract org.jsoup.Connection userAgent(java.lang.String)
