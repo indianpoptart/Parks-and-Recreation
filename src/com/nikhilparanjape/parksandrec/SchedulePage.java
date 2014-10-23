@@ -104,6 +104,9 @@ public class SchedulePage extends Activity {
 	}
 	public void groupSchedule(View arg0) {
 		mainSchedule("group.pdf");
+		//Add a way to check network, then show the correct pdf
+		//If no internet, display local pdf
+		//if internet, display live pdf
 	}
 	public void premGroupSchedule(View arg0) {
 		mainSchedule("prem.pdf");
