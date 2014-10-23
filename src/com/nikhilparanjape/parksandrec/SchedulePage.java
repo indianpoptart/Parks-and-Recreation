@@ -7,6 +7,7 @@ import java.io.OutputStream;
 
 import com.nikhilparanjape.parksandrec.R;
 
+import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -56,6 +57,8 @@ public class SchedulePage extends Activity {
 			return super.onOptionsItemSelected(item);
 		}
 	}
+	@SuppressWarnings("deprecation")
+	@SuppressLint("WorldReadableFiles")
 	public void mainSchedule(String pdf){
 		//Pool schedule opener
 		Toast.makeText(this,"Loading Schedule...", Toast.LENGTH_LONG).show();

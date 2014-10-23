@@ -31,9 +31,7 @@ import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
@@ -41,14 +39,12 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.NetworkOnMainThreadException;
 import android.os.StrictMode;
-import android.telephony.TelephonyManager;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.Button;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -221,20 +217,16 @@ public class MainScreenActivity extends Activity {
 			try{
 				StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 				StrictMode.setThreadPolicy(policy);
-				Document doc = Jsoup.connect("http://ridgefieldparksandrec.org").get();
-				Element alert = doc.select("ul.featured-custom-posts").first();
+				Document doc = Jsoup.connect("http://ridgefieldparksandrec.org/daily/field-report-all-fields-are-open/").get();
+				Element alert = doc.select("h1.entry-title").first();
 				String res = alert.text();
-				String regex = "Field Report:";
-				res = res.replaceAll(regex, "");
-				if (res.contains("")){
+				String regex = "Field Report for";
+				String res2 = res.replaceAll(regex, "");
+				
 					t.setTextColor(Color.WHITE);
-					t.setText("There are currently no field reports");
-				}   
-				else{
-					t.setTextColor(Color.WHITE);
-					t.setText(res);
+					t.setText(res2);
 
-				}
+				
 			} catch (IOException e) {
 				e.printStackTrace();
 			}catch (NetworkOnMainThreadException e) {
