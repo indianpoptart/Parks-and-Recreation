@@ -3,11 +3,11 @@ Parks and Recreation App
 
 ![Pandr](http://images.nikhilp.org/pandr.png)
 
-Current stable relese: v2.1
+Current stable relese: v2.3
 
 Current unstable release: N/A
 
-Upcoming release: v2.2 - The L Update
+Upcoming release: v2.4 - Lollipop Release
 
 This app is for the Ridgefield Parks and Recreation customers in Ridgefield, Connecticut.
 Parks and Rec provides all of the information a customer needs in one place.
