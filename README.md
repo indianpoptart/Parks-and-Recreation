@@ -1,7 +1,7 @@
 Parks and Recreation App
 ====================
 
-![Pandr](http://images.nikhilp.org/pandr.png)
+![Pandr](https://nikhilp.org/images/pandr.png)
 
 Current stable relese: v2.4
 
