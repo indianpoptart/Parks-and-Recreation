@@ -1,14 +1,18 @@
 package com.nikhilparanjape.parksandrec;
 
+import java.net.URL;
+
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebSettings.RenderPriority;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Toast;
 
 @SuppressLint({ "SetJavaScriptEnabled", "InlinedApi" })
@@ -27,12 +31,12 @@ public class AgendaPage extends Activity {
 			setContentView(R.layout.agenda_menu);
 			WebView mywebview = (WebView) findViewById(R.id.webView1);
 			mywebview.loadUrl("http://ridgefieldparksandrec.org/agenda/");
+			String url = new String("http://ridgefieldparksandrec.org/agenda");
 			WebSettings webSettings = mywebview.getSettings();
 			webSettings.setJavaScriptEnabled(true);
 			mywebview.getSettings().setRenderPriority(RenderPriority.HIGH);
 			mywebview.getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
 			mywebview.getSettings().setBuiltInZoomControls(true);
-			Toast.makeText(AgendaPage.this,"Loading...",Toast.LENGTH_LONG).show();
 		}   
 		else
 			Toast.makeText(AgendaPage.this,"No Internet Connection",Toast.LENGTH_LONG).show();
