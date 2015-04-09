@@ -26,16 +26,17 @@
         <item name="android:background">@drawable/applabels</item>
         <item name="android:icon">@android:color/transparent</item>
     </style>
-
-    <style name="MyTheme" parent="android:Theme.Holo.Dialog">
-        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
-        <item name="android:windowBackground">@color/transparent</item>
-        <item name="android:textColorPrimary">#FFFFFF</item>
-        <item name="android:backgroundDimEnabled">false</item>
-        <item name="android:textColor">#FFFFFF</item>
-        <item name="android:textStyle">normal</item>
-        <item name="android:textSize">12sp</item>
-    </style>
+    <style name="GenericProgressBackground" parent="android:Theme">
+    <item name="android:layout_width">fill_parent</item>    
+    <item name="android:layout_height">fill_parent</item>
+    <item name="android:background">#DD111111</item>    
+    <item name="android:gravity">center</item>  
+</style>
+<style name="GenericProgressIndicator" parent="@android:style/Widget.ProgressBar.Small">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:indeterminate">true</item> 
+</style>
     
     <style name="Theme.SmoothProgressBarDefaults" parent="android:Theme.Holo">
         <item name="cpbStyle">@style/CircularProgressBar</item>

@@ -74,7 +74,10 @@ containing a value of this type.
         public static final int cpb_sweep_speed=0x7f010006;
     }
     public static final class color {
-        public static final int cpb_default_color=0x7f050001;
+        public static final int accent=0x7f050003;
+        public static final int cpb_default_color=0x7f050004;
+        public static final int main=0x7f050001;
+        public static final int sBar=0x7f050002;
         public static final int transparent=0x7f050000;
     }
     public static final class dimen {
@@ -110,29 +113,28 @@ containing a value of this type.
         public static final int reload=0x7f020012;
     }
     public static final class id {
-        public static final int TextView01=0x7f0b0010;
-        public static final int action_refresh=0x7f0b0015;
-        public static final int action_settings=0x7f0b0016;
-        public static final int agendaButton=0x7f0b0006;
+        public static final int TextView01=0x7f0b000f;
+        public static final int action_refresh=0x7f0b0014;
+        public static final int action_settings=0x7f0b0015;
+        public static final int agendaButton=0x7f0b0004;
         public static final int alertBackground=0x7f0b0000;
-        public static final int alertDisplay=0x7f0b0003;
+        public static final int alertDisplay=0x7f0b0006;
         public static final int alertLabel=0x7f0b0002;
-        public static final int button1=0x7f0b000a;
-        public static final int button2=0x7f0b000d;
-        public static final int button3=0x7f0b000c;
-        public static final int button4=0x7f0b000b;
-        public static final int button6=0x7f0b000e;
-        public static final int button7=0x7f0b000f;
-        public static final int callButton=0x7f0b0007;
-        public static final int imageView1=0x7f0b0005;
-        public static final int imageView2=0x7f0b0011;
-        public static final int loadingPanel=0x7f0b0009;
+        public static final int button1=0x7f0b0009;
+        public static final int button2=0x7f0b000c;
+        public static final int button3=0x7f0b000b;
+        public static final int button4=0x7f0b000a;
+        public static final int button6=0x7f0b000d;
+        public static final int button7=0x7f0b000e;
+        public static final int callButton=0x7f0b0005;
+        public static final int imageView2=0x7f0b0010;
+        public static final int loadingpanel=0x7f0b0008;
         public static final int rpsLabel=0x7f0b0001;
-        public static final int schedules=0x7f0b0004;
-        public static final int textView1=0x7f0b0014;
-        public static final int textView3=0x7f0b0013;
-        public static final int versionText=0x7f0b0012;
-        public static final int webView1=0x7f0b0008;
+        public static final int schedules=0x7f0b0003;
+        public static final int textView1=0x7f0b0013;
+        public static final int textView3=0x7f0b0012;
+        public static final int versionText=0x7f0b0011;
+        public static final int webView1=0x7f0b0007;
     }
     public static final class integer {
         public static final int cpb_default_max_sweep_angle=0x7f070001;
@@ -200,10 +202,11 @@ containing a value of this type.
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f090001;
-        public static final int CircularProgressBar=0x7f090006;
-        public static final int CustomAlertDialogStyle=0x7f090007;
-        public static final int MyTheme=0x7f090004;
-        public static final int Theme_SmoothProgressBarDefaults=0x7f090005;
+        public static final int CircularProgressBar=0x7f090007;
+        public static final int CustomAlertDialogStyle=0x7f090008;
+        public static final int GenericProgressBackground=0x7f090004;
+        public static final int GenericProgressIndicator=0x7f090005;
+        public static final int Theme_SmoothProgressBarDefaults=0x7f090006;
         public static final int ThemeSelector=0x7f090002;
         public static final int WindowTitleBackground=0x7f090003;
     }

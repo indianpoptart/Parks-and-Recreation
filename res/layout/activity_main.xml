@@ -29,24 +29,6 @@
         android:layout_centerHorizontal="true"
         android:textColor="#FFFFFF" />
 
-    <TextView
-        android:id="@+id/alertDisplay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/alertBackground"
-        android:layout_alignLeft="@+id/schedules"
-        android:layout_alignRight="@+id/imageView1"
-        android:layout_below="@+id/alertLabel"
-        android:layout_marginTop="-15dp"
-        android:gravity="center"
-        android:maxHeight="350px"
-        android:maxLines="5"
-        android:maxWidth="550px"
-        android:scrollHorizontally="false"
-        android:scrollbars="vertical"
-        android:text="Information"
-        android:textColor="#FFFFFF" />
-
     <Button
         android:id="@+id/schedules"
         android:layout_width="wrap_content"
@@ -58,6 +40,7 @@
         android:layout_marginTop="27dp"
         android:background="@drawable/applabels"
         android:onClick="openSchedule"
+        android:layout_centerInParent="true"
         android:text="Schedules" />
 
     <Button
@@ -70,6 +53,7 @@
         android:layout_marginTop="22dp"
         android:background="@drawable/applabels"
         android:onClick="openAgenda"
+        android:layout_centerInParent="true"
         android:text="Agenda" />
 
     <Button
@@ -82,14 +66,22 @@
         android:layout_marginTop="26dp"
         android:background="@drawable/applabels"
         android:onClick="callPandr"
+        android:layout_centerInParent="true"
         android:text="Call Rec Center" />
 
-    <ImageView
-        android:id="@+id/imageView1"
+    <TextView
+        android:id="@+id/alertDisplay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/callButton"
+        android:layout_below="@+id/alertLabel"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/rec" />
+        android:gravity="center"
+        android:maxHeight="350px"
+        android:maxLines="5"
+        android:maxWidth="550px"
+        android:scrollHorizontally="false"
+        android:scrollbars="vertical"
+        android:text="Information"
+        android:textColor="#FFFFFF" />
 
 </RelativeLayout>

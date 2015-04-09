@@ -36,17 +36,16 @@ public class AgendaPage extends Activity {
 			webSettings.setJavaScriptEnabled(true);
 			mywebview.getSettings().setRenderPriority(RenderPriority.HIGH);
 			mywebview.getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
-			mywebview.getSettings().setBuiltInZoomControls(true);
+			mywebview.setWebViewClient(new WebViewClient(){
+				public void onPageFinished(WebView mywebview, String url){
+					findViewById(R.id.loadingpanel).setVisibility(View.GONE);
+				}
+			});
 		}   
-		else
+		else{
 			Toast.makeText(AgendaPage.this,"No Internet Connection",Toast.LENGTH_LONG).show();
-
+		}
 	}
-
-
-
-
-
 }
 
 
