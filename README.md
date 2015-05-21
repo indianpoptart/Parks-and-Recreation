@@ -34,8 +34,9 @@ This app is to be used by the members of the [Ridgefield Parks and Recreation Ce
 * LG Optimus S/V (Broken)
 * Motorola DROID RAZR MAXX
 * Moto X
+* Moto X (2014)
 * Nexus 4
-* Nexus 5 (And Android L)
+* Nexus 5 (And Lollipop)
 * ~~Nexus 7 (2013)~~
 * ~~Nexus 10~~
 * Samsung Galaxy S5
