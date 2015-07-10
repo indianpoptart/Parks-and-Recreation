@@ -1,0 +1,227 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .idea/
+* .idea/.name
+* .idea/compiler.xml
+* .idea/copyright/
+* .idea/copyright/profiles_settings.xml
+* .idea/misc.xml
+* .idea/modules.xml
+* .idea/vcs.xml
+* .idea/workspace.xml
+* CNAME
+* LICENSE
+* PandR-Feature.png
+* PandR-Feature.pxm
+* README.md
+* app/
+* app/build.gradle
+* app/lint.xml
+* app/proguard-project.txt
+* app/src/
+* app/src/main/
+* app/src/main/AndroidManifest.xml
+* app/src/main/assets/
+* app/src/main/assets/group.pdf
+* app/src/main/assets/gym.pdf
+* app/src/main/assets/pool.pdf
+* app/src/main/assets/prem.pdf
+* app/src/main/assets/test.pdf
+* app/src/main/assets/wg.pdf
+* app/src/main/assets/wpSwim.pdf
+* app/src/main/java/
+* app/src/main/java/com/
+* app/src/main/java/com/github/
+* app/src/main/java/com/github/kevinsawicki/
+* app/src/main/java/com/github/kevinsawicki/http/
+* app/src/main/java/com/github/kevinsawicki/http/HttpRequest.java
+* app/src/main/java/com/nikhilparanjape/
+* app/src/main/java/com/nikhilparanjape/parksandrec/
+* app/src/main/java/com/nikhilparanjape/parksandrec/AgendaPage.java
+* app/src/main/java/com/nikhilparanjape/parksandrec/CheckNetwork.java
+* app/src/main/java/com/nikhilparanjape/parksandrec/MainScreenActivity.java
+* app/src/main/java/com/nikhilparanjape/parksandrec/ScheduleOpener.java
+* app/src/main/java/com/nikhilparanjape/parksandrec/SchedulePage.java
+* app/src/main/java/com/nikhilparanjape/parksandrec/SettingsPage.java
+* app/src/main/res/
+* app/src/main/res/animator/
+* app/src/main/res/animator/loading.xml
+* app/src/main/res/animator/stop.xml
+* app/src/main/res/drawable-hdpi/
+* app/src/main/res/drawable-hdpi/applabels.png
+* app/src/main/res/drawable-hdpi/applabelsdark.png
+* app/src/main/res/drawable-hdpi/background.png
+* app/src/main/res/drawable-hdpi/backward_icon.png
+* app/src/main/res/drawable-hdpi/box_alarm.png
+* app/src/main/res/drawable-hdpi/box_checked.png
+* app/src/main/res/drawable-hdpi/box_unchecked.png
+* app/src/main/res/drawable-hdpi/execucode.png
+* app/src/main/res/drawable-hdpi/forward_icon.png
+* app/src/main/res/drawable-hdpi/grey.png
+* app/src/main/res/drawable-hdpi/homework_view.png
+* app/src/main/res/drawable-hdpi/ic_action_refresh.png
+* app/src/main/res/drawable-hdpi/ic_alert_bar.png
+* app/src/main/res/drawable-hdpi/ic_launcher.png
+* app/src/main/res/drawable-hdpi/label_pressed.png
+* app/src/main/res/drawable-hdpi/menu_icon.png
+* app/src/main/res/drawable-hdpi/prlogo.png
+* app/src/main/res/drawable-hdpi/rec.png
+* app/src/main/res/drawable-hdpi/reload.png
+* app/src/main/res/drawable-ldpi/
+* app/src/main/res/drawable-ldpi/applabels.png
+* app/src/main/res/drawable-ldpi/applabelsdark.png
+* app/src/main/res/drawable-ldpi/background.png
+* app/src/main/res/drawable-ldpi/backward_icon.png
+* app/src/main/res/drawable-ldpi/box_alarm.png
+* app/src/main/res/drawable-ldpi/box_checked.png
+* app/src/main/res/drawable-ldpi/box_unchecked.png
+* app/src/main/res/drawable-ldpi/execucode.png
+* app/src/main/res/drawable-ldpi/forward_icon.png
+* app/src/main/res/drawable-ldpi/grey.png
+* app/src/main/res/drawable-ldpi/homework_view.png
+* app/src/main/res/drawable-ldpi/ic_alert_bar.png
+* app/src/main/res/drawable-ldpi/ic_launcher.png
+* app/src/main/res/drawable-ldpi/label_pressed.png
+* app/src/main/res/drawable-ldpi/menu_icon.png
+* app/src/main/res/drawable-ldpi/prlogo.png
+* app/src/main/res/drawable-ldpi/rec.png
+* app/src/main/res/drawable-ldpi/reload.png
+* app/src/main/res/drawable-mdpi/
+* app/src/main/res/drawable-mdpi/applabels.png
+* app/src/main/res/drawable-mdpi/applabelsdark.png
+* app/src/main/res/drawable-mdpi/background.png
+* app/src/main/res/drawable-mdpi/backward_icon.png
+* app/src/main/res/drawable-mdpi/box_alarm.png
+* app/src/main/res/drawable-mdpi/box_checked.png
+* app/src/main/res/drawable-mdpi/box_unchecked.png
+* app/src/main/res/drawable-mdpi/execucode.png
+* app/src/main/res/drawable-mdpi/forward_icon.png
+* app/src/main/res/drawable-mdpi/grey.png
+* app/src/main/res/drawable-mdpi/homework_view.png
+* app/src/main/res/drawable-mdpi/ic_action_refresh.png
+* app/src/main/res/drawable-mdpi/ic_alert_bar.png
+* app/src/main/res/drawable-mdpi/ic_launcher.png
+* app/src/main/res/drawable-mdpi/label_pressed.png
+* app/src/main/res/drawable-mdpi/menu_icon.png
+* app/src/main/res/drawable-mdpi/prlogo.png
+* app/src/main/res/drawable-mdpi/rec.png
+* app/src/main/res/drawable-mdpi/reload.png
+* app/src/main/res/drawable-xhdpi/
+* app/src/main/res/drawable-xhdpi/applabels.png
+* app/src/main/res/drawable-xhdpi/applabelsdark.png
+* app/src/main/res/drawable-xhdpi/background.png
+* app/src/main/res/drawable-xhdpi/backward_icon.png
+* app/src/main/res/drawable-xhdpi/box_alarm.png
+* app/src/main/res/drawable-xhdpi/box_checked.png
+* app/src/main/res/drawable-xhdpi/box_unchecked.png
+* app/src/main/res/drawable-xhdpi/forward_icon.png
+* app/src/main/res/drawable-xhdpi/grey.png
+* app/src/main/res/drawable-xhdpi/homework_view.png
+* app/src/main/res/drawable-xhdpi/ic_action_refresh.png
+* app/src/main/res/drawable-xhdpi/ic_alert_bar.png
+* app/src/main/res/drawable-xhdpi/ic_launcher.png
+* app/src/main/res/drawable-xhdpi/label_pressed.png
+* app/src/main/res/drawable-xhdpi/menu_icon.png
+* app/src/main/res/drawable-xhdpi/prlogo.png
+* app/src/main/res/drawable-xhdpi/rec.png
+* app/src/main/res/drawable-xhdpi/reload.png
+* app/src/main/res/drawable-xxhdpi/
+* app/src/main/res/drawable-xxhdpi/applabels.png
+* app/src/main/res/drawable-xxhdpi/applabelsdark.png
+* app/src/main/res/drawable-xxhdpi/background.png
+* app/src/main/res/drawable-xxhdpi/backward_icon.png
+* app/src/main/res/drawable-xxhdpi/ic_action_refresh.png
+* app/src/main/res/drawable-xxhdpi/ic_launcher.png
+* app/src/main/res/drawable-xxhdpi/label_pressed.png
+* app/src/main/res/drawable-xxhdpi/menu_icon.png
+* app/src/main/res/drawable-xxhdpi/prlogo.png
+* app/src/main/res/drawable-xxhdpi/rec.png
+* app/src/main/res/drawable-xxhdpi/reload.png
+* app/src/main/res/drawable-xxxhdpi/
+* app/src/main/res/drawable-xxxhdpi/ic_launcher.png
+* app/src/main/res/layout/
+* app/src/main/res/layout/activity_main.xml
+* app/src/main/res/layout/agenda_menu.xml
+* app/src/main/res/layout/schedule_menu.xml
+* app/src/main/res/layout/settings_page.xml
+* app/src/main/res/menu/
+* app/src/main/res/menu/action_bar.xml
+* app/src/main/res/menu/main.xml
+* app/src/main/res/menu/refresh.xml
+* app/src/main/res/values-sw600dp/
+* app/src/main/res/values-sw600dp/dimens.xml
+* app/src/main/res/values-sw720dp-land/
+* app/src/main/res/values-sw720dp-land/dimens.xml
+* app/src/main/res/values-v11/
+* app/src/main/res/values-v11/styles.xml
+* app/src/main/res/values-v14/
+* app/src/main/res/values-v14/styles.xml
+* app/src/main/res/values/
+* app/src/main/res/values/attrs.xml
+* app/src/main/res/values/colors.xml
+* app/src/main/res/values/defaults.xml
+* app/src/main/res/values/dimens.xml
+* app/src/main/res/values/strings.xml
+* app/src/main/res/values/styles.xml
+* baseIcon.png
+* build.gradle
+* gradle/
+* gradle/wrapper/
+* gradle/wrapper/gradle-wrapper.jar
+* gradle/wrapper/gradle-wrapper.properties
+* gradlew
+* gradlew.bat
+* ic_launcher-web.png
+* jsoup-1.8.1.jar
+* proguard/
+* proguard/dump.txt
+* proguard/mapping.txt
+* proguard/seeds.txt
+* proguard/usage.txt
+* settings.gradle
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:20.0.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app/src/main/AndroidManifest.xml
+* assets/ => app/src/main/assets/
+* lint.xml => app/lint.xml
+* proguard-project.txt => app/proguard-project.txt
+* res/ => app/src/main/res/
+* src/ => app/src/main/java/
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
