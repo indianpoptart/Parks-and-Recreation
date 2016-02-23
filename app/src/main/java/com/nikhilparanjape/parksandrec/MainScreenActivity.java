@@ -78,6 +78,7 @@ public class MainScreenActivity extends Activity {
 			TextView t = (TextView)findViewById(R.id.alertDisplay);
 			t.setText("Error");
 		}
+		showLoadingDialog();
 		Button theButton = (Button)findViewById(R.id.schedules);
 		theButton.setBackgroundResource(R.drawable.applabels);
 		Button agendaBut = (Button)findViewById(R.id.agendaButton);
