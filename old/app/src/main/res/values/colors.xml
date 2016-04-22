@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="main">#FFBB33</color>
+    <color name="sBar">#F0A000</color>
+    <color name="accent">#FF5722</color>
+    <color name="primary">#ffbb33</color>
+    <color name="primary_dark">#FF9800</color>
+    
+</resources>

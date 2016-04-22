@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Nikhil\Documents\GitHub\Parks-and-Recreation\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e5f32fa48a3eb2de0c987025c11b6e3864b634d9">
+        <dex dex="C:\Users\Nikhil\Documents\GitHub\Parks-and-Recreation\app\build\intermediates\pre-dexed\debug\classes-9de3a73aeee647207c8df761e54bf8731db1a2d2.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nikhil\Documents\GitHub\Parks-and-Recreation\app\build\intermediates\exploded-aar\com.mikepenz\iconics-core\2.5.4\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="dcacf665e5536c0da76732c56bae2ae1e202d5da">
+        <dex dex="C:\Users\Nikhil\Documents\GitHub\Parks-and-Recreation\app\build\intermediates\pre-dexed\debug\classes-6156ca2e6b0109c8be784ecda4c766a7cb7deb38.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nikhil\Documents\GitHub\Parks-and-Recreation\app\build\intermediates\exploded-aar\com.android.support\design\23.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1aa5b025efe97f5006f5be16d6ca67c6c3c0c0d8">
+        <dex dex="C:\Users\Nikhil\Documents\GitHub\Parks-and-Recreation\app\build\intermediates\pre-dexed\debug\classes-dac304a35be78e2f3fafc5361e97e9e469cd3fde.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nikhil\Documents\GitHub\Parks-and-Recreation\app\build\intermediates\exploded-aar\com.mikepenz\materialdrawer\4.6.4\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="25c8422fe5a0acee6cee4f7e52449c2802f6ca19">
+        <dex dex="C:\Users\Nikhil\Documents\GitHub\Parks-and-Recreation\app\build\intermediates\pre-dexed\debug\classes-e2da24cb266f85bcc257548807865e013e85a827.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nikhil\Documents\GitHub\Parks-and-Recreation\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d4c936aa8c7d2522c82e3f1829c791d9e367f009">
+        <dex dex="C:\Users\Nikhil\Documents\GitHub\Parks-and-Recreation\app\build\intermediates\pre-dexed\debug\classes-f4f7e9384825e060e8eb42e78940b72f93880c2a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nikhil\Documents\GitHub\Parks-and-Recreation\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8c108c22c99e794eff255bb34d2a461200c4cbb0">
+        <dex dex="C:\Users\Nikhil\Documents\GitHub\Parks-and-Recreation\app\build\intermediates\pre-dexed\debug\classes-704e10b7c3b48e787d53631875d77d1f64121777.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nikhil\Downloads\android-sdk-windows\extras\android\m2repository\com\android\support\support-annotations\23.2.0\support-annotations-23.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c5bf571bb10462bd90e5419ade67793f71acbc87">
+        <dex dex="C:\Users\Nikhil\Documents\GitHub\Parks-and-Recreation\app\build\intermediates\pre-dexed\debug\support-annotations-23.2.0-bfd21f020a9aec0ba1400cf2057422b90b56857c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nikhil\Documents\GitHub\Parks-and-Recreation\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\jars\libs\internal_impl-23.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6e239441500605809818997dd63b62a947195f8c">
+        <dex dex="C:\Users\Nikhil\Documents\GitHub\Parks-and-Recreation\app\build\intermediates\pre-dexed\debug\internal_impl-23.2.0-f831445aab88c0f3c77e61b36d46ad110fe84c56.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nikhil\Documents\GitHub\Parks-and-Recreation\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6e3578f92f7462d1a935a1d36173e3bdd1234976">
+        <dex dex="C:\Users\Nikhil\Documents\GitHub\Parks-and-Recreation\app\build\intermediates\pre-dexed\debug\classes-574750153a6a2146c7a688dd985ea9e9b478b0fd.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nikhil\Documents\GitHub\Parks-and-Recreation\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="292a9fa091757208efa65e77eef63088247e51f3">
+        <dex dex="C:\Users\Nikhil\Documents\GitHub\Parks-and-Recreation\app\build\intermediates\pre-dexed\debug\classes-0a3cc860d0eb4692e49e5d8e544dc7f212ab72ca.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nikhil\Documents\GitHub\Parks-and-Recreation\app\build\intermediates\exploded-aar\com.mikepenz\google-material-typeface\2.2.0.1.original\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="53e176889382956e3910232309ab7056730553e8">
+        <dex dex="C:\Users\Nikhil\Documents\GitHub\Parks-and-Recreation\app\build\intermediates\pre-dexed\debug\classes-fbdc3d64e3d7c3f8a2bd16b23c5d55686bc7c8b5.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nikhil\Documents\GitHub\Parks-and-Recreation\app\build\intermediates\exploded-aar\com.mikepenz\materialize\0.5.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="25e8af11fff99ad02250f52f2436e25f60cc1bbe">
+        <dex dex="C:\Users\Nikhil\Documents\GitHub\Parks-and-Recreation\app\build\intermediates\pre-dexed\debug\classes-ccc057b954eaacb42787df5b01c426a34ff4744f.jar" />
+    </item>
+
+</items>

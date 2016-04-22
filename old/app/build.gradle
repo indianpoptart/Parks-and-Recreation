@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        pandr {
+            keyAlias 'pandr'
+            keyPassword '6heya4UN!'
+            storeFile file('/Users/nikhilparanjape/Documents/pandr')
+            storePassword '6heya4UN!'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "22.0.1"
+    defaultConfig {
+        applicationId "com.nikhilparanjape.parksandrec"
+        minSdkVersion 15
+        targetSdkVersion 22
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile('com.mikepenz:materialdrawer:4.6.4@aar') {
+        transitive = true
+    }
+    compile 'com.android.support:appcompat-v7:23.2.0'
+    compile 'com.android.support:design:23.2.0'
+    compile 'com.mikepenz:google-material-typeface:2.2.0.1.original@aar'
+    compile 'com.android.support:support-v4:23.2.0'
+}
