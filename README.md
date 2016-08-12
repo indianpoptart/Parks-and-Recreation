@@ -9,6 +9,8 @@ Current unstable release: v2.5a
 
 Upcoming release: v2.5 - The Final Edition
 
+!! THIS PROJECT HAS BEEN ABANDONED BY THE RIDGEFIELD PARKS AND RECREATION. I MAY CONTINUE TO WORK ON IT IF I WANT !!
+
 This app is for the Ridgefield Parks and Recreation customers in Ridgefield, Connecticut.
 Parks and Rec provides all of the information a customer needs in one place.
 With alerts of closings, the app provides an easy way to stay updated on events taking place at the Rec center.
