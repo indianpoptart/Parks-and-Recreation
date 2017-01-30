@@ -1,3 +1,6 @@
+This project is no longer being maintained
+==========================================
+
 Parks and Recreation App
 ====================
 
